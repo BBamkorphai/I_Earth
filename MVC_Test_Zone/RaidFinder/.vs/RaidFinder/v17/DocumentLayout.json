@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\playerstat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\playerstat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\models\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:models\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\description.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\description.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\views\\user\\viewstat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\user\\viewstat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\views\\user\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\user\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\views\\user\\editstat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\user\\editstat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\asus\\source\\repos\\bbamkorphai\\i_earth\\mvc_test_zone\\raidfinder\\models\\stat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:models\\stat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,88 +42,114 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerStat.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\PlayerStat.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\PlayerStat.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\PlayerStat.cshtml",
-              "RelativeToolTip": "Views\\Home\\PlayerStat.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-22T10:22:19.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Home\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-22T10:21:55.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Description.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Description.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Description.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Description.cshtml",
-              "RelativeToolTip": "Views\\Home\\Description.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-22T10:21:18.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-22T10:17:28.657Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwBUAAAAiAAAA",
+              "Title": "AddUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\User\\AddUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\AddUser.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\User\\AddUser.cshtml",
+              "RelativeToolTip": "Views\\User\\AddUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-23T15:14:16.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditStat.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\User\\EditStat.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\EditStat.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\User\\EditStat.cshtml",
+              "RelativeToolTip": "Views\\User\\EditStat.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-23T14:29:36.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Stat.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\Stat.cs",
+              "RelativeDocumentMoniker": "Models\\Stat.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\Stat.cs",
+              "RelativeToolTip": "Models\\Stat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T10:11:14.041Z",
+              "WhenOpened": "2024-02-23T14:14:47.039Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Program.cs",
-              "RelativeToolTip": "Program.cs",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T10:35:31.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserDB.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\UserDB.cs",
+              "RelativeDocumentMoniker": "Models\\UserDB.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\UserDB.cs*",
+              "RelativeToolTip": "Models\\UserDB.cs*",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAWwBEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T10:33:27.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T10:05:48.618Z",
+              "WhenOpened": "2024-02-23T08:19:39.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAtwCwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T08:17:51.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViewStat.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\User\\ViewStat.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\ViewStat.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\User\\ViewStat.cshtml",
+              "RelativeToolTip": "Views\\User\\ViewStat.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-23T08:17:49.224Z",
               "EditorCaption": ""
             }
           ]

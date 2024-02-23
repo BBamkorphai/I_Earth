@@ -1,0 +1,13 @@
+﻿@using RaidFinder.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model User
+
+
+
+<form method="post" asp-controller="user" asp-action="adduser">
+    <b>Name </b><input type="text" asp-for="Name" /><br />
+    <b>Level </b><input type="text" asp-for="Stat.Level" /><br />
+    <b>PLV </b><input type="text" asp-for="Stat.PowerLevel" /><br />
+    <b>Class </b><input type="text" asp-for="Stat.Class" /><br />
+    <input type="submit" value="Save" />
+</form>
