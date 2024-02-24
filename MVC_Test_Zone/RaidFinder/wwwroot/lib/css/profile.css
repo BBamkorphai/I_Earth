@@ -1,0 +1,73 @@
+h1{
+    font-size:50px;
+    color: blue;
+}
+[class *= "col-"]{
+    width:100%;
+}
+html {
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+.maincontrainer {
+    min-height: 100%;
+    background-color: aquamarine;
+    height: max-content;
+}
+
+.title{
+    background-color:aliceblue;
+}
+.stat-zone {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.block-content {
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+.bar-stat {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding:200px;
+}
+.number-stat {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 200px;
+}
+.profile-image {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 200px;
+}
+.player-name {
+    font-size:25px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width:1080px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}

@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\profile.css",
+      "PackagePath": "staticwebassets\\lib\\css\\profile.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RaidFinder.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RaidFinder.props",
+      "PackagePath": "build\\RaidFinder.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RaidFinder.props",
+      "PackagePath": "buildMultiTargeting\\RaidFinder.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RaidFinder.props",
+      "PackagePath": "buildTransitive\\RaidFinder.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "ksEAELBxw1eqXdWNi/jJxbggG1wjqI4YMjl84Zi1ln4=",
+  "Hash": "kuZD6HpUi21want2XP0ls/MkhyD8qfagnH4ymOjcs98=",
   "Source": "RaidFinder",
   "BasePath": "_content/RaidFinder",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "RaidFinder\\wwwroot",
+      "Source": "RaidFinder",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\",
+      "BasePath": "_content/RaidFinder",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\profile.css",
+      "SourceId": "RaidFinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\",
+      "BasePath": "_content/RaidFinder",
+      "RelativePath": "lib/css/profile.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\css\\profile.css"
+    }
+  ]
 }
