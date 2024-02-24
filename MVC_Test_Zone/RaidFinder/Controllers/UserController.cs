@@ -7,6 +7,7 @@ namespace RaidFinder.Controllers
     {
         public IActionResult ViewStat(int? id)
         {
+            UserDB.UpdateDB();
             var Users = UserDB.GetUsers();
 
             return View(Users);
