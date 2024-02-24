@@ -26,3 +26,31 @@ C:\Users\Asus\source\repos\BBamkorphai\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debu
 C:\Users\Asus\source\repos\BBamkorphai\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\ref\RaidFinder.dll
 C:\Users\Asus\source\repos\BBamkorphai\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.RazorAssemblyInfo.cache
 C:\Users\Asus\source\repos\BBamkorphai\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.RazorAssemblyInfo.cs
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.GeneratedMSBuildEditorConfig.editorconfig
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.AssemblyInfoInputs.cache
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.AssemblyInfo.cs
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.csproj.CoreCompileInputs.cache
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.MvcApplicationPartsAssemblyInfo.cache
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.RazorAssemblyInfo.cache
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.RazorAssemblyInfo.cs
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.sourcelink.json
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.dll
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\refint\RaidFinder.dll
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.pdb
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\bin\Debug\net8.0\appsettings.Development.json
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\bin\Debug\net8.0\appsettings.json
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\bin\Debug\net8.0\RaidFinder.exe
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\bin\Debug\net8.0\RaidFinder.deps.json
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\bin\Debug\net8.0\RaidFinder.runtimeconfig.json
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\bin\Debug\net8.0\RaidFinder.dll
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\bin\Debug\net8.0\RaidFinder.pdb
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\staticwebassets.build.json
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\staticwebassets.development.json
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\staticwebassets\msbuild.RaidFinder.Microsoft.AspNetCore.StaticWebAssets.props
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\staticwebassets\msbuild.build.RaidFinder.props
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RaidFinder.props
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RaidFinder.props
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\staticwebassets.pack.json
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\scopedcss\bundle\RaidFinder.styles.css
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\RaidFinder.genruntimeconfig.cache
+D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\obj\Debug\net8.0\ref\RaidFinder.dll
