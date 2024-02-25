@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\RaidFinder.csproj",
+      "projectUniqueName": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\RaidFinder.csproj",
       "projectName": "RaidFinder",
-      "projectPath": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\RaidFinder.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\obj\\",
+      "projectPath": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\RaidFinder.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

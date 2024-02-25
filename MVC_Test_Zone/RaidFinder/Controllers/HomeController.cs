@@ -24,5 +24,9 @@ namespace RaidFinder.Controllers
             return View();
         }
 
+        public IActionResult RoomInfo()
+        {
+            return View();
+        }
     }
 }
