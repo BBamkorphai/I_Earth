@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kuZD6HpUi21want2XP0ls/MkhyD8qfagnH4ymOjcs98=",
+  "Hash": "Cn62Hzdoz0T2W5Iz8O3B4nDT9C8kQV08hJZ3WOUCeH4=",
   "Source": "RaidFinder",
   "BasePath": "_content/RaidFinder",
   "Mode": "Default",
@@ -34,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\css\\profile.css"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\profile2.css",
+      "SourceId": "RaidFinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\",
+      "BasePath": "_content/RaidFinder",
+      "RelativePath": "lib/css/profile2.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\css\\profile2.css"
     }
   ]
 }

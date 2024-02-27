@@ -11,6 +11,7 @@ h1 {
 html, body {
     height: 100%;
     margin: 0;
+
 }
 
 .maincontrainer {
@@ -19,7 +20,6 @@ html, body {
     display: flex;
     flex-direction: column;
 }
-
 .title {
     background-color: aliceblue;
     margin: 0;

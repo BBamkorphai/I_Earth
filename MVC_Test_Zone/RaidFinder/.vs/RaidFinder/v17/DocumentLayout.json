@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\hp\\desktop\\i_earth\\mvc_test_zone\\raidfinder\\wwwroot\\lib\\css\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:wwwroot\\lib\\css\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\hp\\desktop\\i_earth\\mvc_test_zone\\raidfinder\\wwwroot\\lib\\css\\profile2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:wwwroot\\lib\\css\\profile2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\hp\\desktop\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\hp\\desktop\\i_earth\\mvc_test_zone\\raidfinder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\hp\\desktop\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\profile.cshtml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\profile.cshtml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\hp\\desktop\\i_earth\\mvc_test_zone\\raidfinder\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,23 +40,60 @@
               "RelativeDocumentMoniker": "Views\\Home\\Profile.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Profile.cshtml",
               "RelativeToolTip": "Views\\Home\\Profile.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAACJAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-24T05:11:28.745Z",
+              "WhenOpened": "2024-02-27T04:30:33.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "profile.css",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\profile.css",
-              "RelativeDocumentMoniker": "wwwroot\\lib\\css\\profile.css",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\profile.css",
-              "RelativeToolTip": "wwwroot\\lib\\css\\profile.css",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAAAFYAAAAVAAAA",
+              "Title": "profile2.css",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\profile2.css",
+              "RelativeDocumentMoniker": "wwwroot\\lib\\css\\profile2.css",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\profile2.css",
+              "RelativeToolTip": "wwwroot\\lib\\css\\profile2.css",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-02-24T07:36:52.653Z",
+              "WhenOpened": "2024-02-27T04:30:21.204Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T04:59:20.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Profile.cshtml",
+              "RelativeToolTip": "Views\\Home\\Profile.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-24T05:11:28.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T09:58:56.47Z"
             }
           ]
         }
