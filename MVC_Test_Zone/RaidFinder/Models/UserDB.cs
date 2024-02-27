@@ -29,7 +29,7 @@ namespace RaidFinder.Models
                     user.Name = reader["Name"].ToString();
                     user.UserId = Convert.ToInt32(reader["UserId"]);
                     user.Stat.PowerLevel = Convert.ToInt32(reader["PowerLevel"]);
-                    user.Stat.Level = Convert.ToInt32(reader["Level"]);
+                    user.Stat.Level = Convert.ToInt32(reader["Lv"]);
                     user.Stat.Class = reader["Class"].ToString();
                     if (_Users.FirstOrDefault(x => x.UserId == user.UserId) == null)
                     {
@@ -44,7 +44,7 @@ namespace RaidFinder.Models
             if (_Users.Count() == 0) { user.UserId = 1; }
             else { user.UserId = _Users.Max(x => x.UserId) + 1; }
             string sqlcmd = null;
-            sqlcmd = "SET IDENTITY_INSERT Users ON; INSERT INTO Users ([UserId], [Name], [Class], [PowerLevel], [Level]) VALUES (@UserId, @Name, @Class, @PowerLevel, @Level); SET IDENTITY_INSERT Users OFF";
+            sqlcmd = "SET IDENTITY_INSERT Users ON; INSERT INTO Users ([UserId], [Name], [Class], [PowerLevel], [Lv]) VALUES (@UserId, @Name, @Class, @PowerLevel, @Level); SET IDENTITY_INSERT Users OFF";
             using (SqlConnection con = new SqlConnection("data source=LAPTOP-ISNE8U4H;initial catalog=UserDB;trusted_connection=true"))
             {
                 con.Open();

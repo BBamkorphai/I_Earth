@@ -66,8 +66,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-02-24T17:15:46.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-24T17:15:46.407Z"
             },
             {
               "$type": "Document",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "Models\\Stat.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T14:14:47.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T14:14:47.039Z"
             },
             {
               "$type": "Document",
@@ -92,8 +90,7 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T10:35:31.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T10:35:31.641Z"
             },
             {
               "$type": "Document",
@@ -103,7 +100,7 @@
               "RelativeDocumentMoniker": "Models\\UserDB.cs",
               "ToolTip": "C:\\Users\\Asus\\source\\repos\\BBamkorphai\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\UserDB.cs*",
               "RelativeToolTip": "Models\\UserDB.cs*",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAwwBEAAAAbAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAkwCQAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-23T10:33:27.807Z",
               "EditorCaption": ""
@@ -118,8 +115,7 @@
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T08:17:51.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T08:17:51.929Z"
             },
             {
               "$type": "Document",
@@ -131,8 +127,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-02-24T17:15:48.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-24T17:15:48.589Z"
             },
             {
               "$type": "Document",
@@ -144,8 +139,7 @@
               "RelativeToolTip": "Views\\User\\EditStat.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-23T14:29:36.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T14:29:36.383Z"
             },
             {
               "$type": "Document",
@@ -157,8 +151,7 @@
               "RelativeToolTip": "Views\\User\\AddUser.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-23T15:14:16.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T15:14:16.377Z"
             },
             {
               "$type": "Document",
@@ -170,8 +163,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T08:19:39.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T08:19:39.239Z"
             },
             {
               "$type": "Document",
@@ -183,8 +175,7 @@
               "RelativeToolTip": "Views\\User\\ViewStat.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwBgAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-23T08:17:49.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T08:17:49.224Z"
             }
           ]
         }
