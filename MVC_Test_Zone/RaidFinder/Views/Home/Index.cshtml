@@ -1,6 +1,35 @@
-﻿<html>
-    <head><title>Test12</title></head>
-    <body>
-        <b>Test</b>
-    </body>
+﻿@using RaidFinder.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<RaidingPostModels>
+
+<html>
+<head>
+    <title>Posts</title>
+</head>
+<body>
+    @if (Model != null && Model.Count() > 0)
+    {
+        @foreach (var Post in Model)
+        {
+            <b>
+                <span>ID : @Post.PostId</span>
+                <span>Name : @Post.Name</span>
+                <span>Desc. : @Post.Description</span>
+                <span>PowerLevel : @Post.PowerLevel</span>
+                @foreach (var User in Post.PartyList)
+                {
+                    @if (User != null)
+                    {
+                        <p>U : @User.Name</p>
+                    }
+                }
+                
+                <a asp-controller="home" asp-action="editpost" asp-route-id="@Post.PostId">Edit</a>
+                <a asp-controller="home" asp-action="deletepost" asp-route-id="@Post.PostId">Delete</a>
+                <br />
+            </b>
+        }
+    }
+    <a asp-controller="home" asp-action="addpost">Add</a>
+</body>
 </html>

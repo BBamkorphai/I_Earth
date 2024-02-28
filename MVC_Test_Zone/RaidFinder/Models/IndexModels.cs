@@ -13,12 +13,12 @@ namespace RaidFinder.Models
     {
         private static List<RaidingPostModels> _Posts = new List<RaidingPostModels>();
 
-        public static void UpdateDB()
+        public static void UpdatePostDB()
         {
             _Posts.Clear();
             using (SqlConnection con = new SqlConnection("data source=LAPTOP-ISNE8U4H;initial catalog=UserDB;trusted_connection=true"))
             {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Users", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Post", con);
                 cmd.CommandType = CommandType.Text;
                 con.Open();
 
@@ -26,97 +26,111 @@ namespace RaidFinder.Models
                 while (reader.Read())
                 {
                     var post = new RaidingPostModels();
-                    //user.Name = reader["Name"].ToString();
-                    //user.OwnerId = Convert.ToInt32(reader["UserId"]);
-                    //user.Stat.PowerLevel = Convert.ToInt32(reader["PowerLevel"]);
-                    //user.Stat.Level = Convert.ToInt32(reader["Lv"]);
-                    //user.Stat.Class = reader["Class"].ToString();
-                    //if (_Posts.FirstOrDefault(x => x.UserId == user.UserId) == null)
+                    post.Name = reader["Name"].ToString();
+                    post.PowerLevel = Convert.ToInt32(reader["PowerLevel"]);
+                    post.MaxSize = Convert.ToInt32(reader["MaxSize"]);
+                    post.Description = reader["Description"].ToString();
+                    post.OwnerId = Convert.ToInt32(reader["OwnerId"]);
+                    var tmp = reader["PartyList"].ToString().Split('s').Where(x => int.TryParse(x, out _)).Select(int.Parse).ToList();
+                    foreach (var item in tmp)
                     {
-                        //_Posts.Add(user);
+                        post.PartyList.Add(UserDB.GetUserCopyById(item));
                     }
+                    post.TimeOut = reader["TimeOut"].ToString();
+                    post.PostId = Convert.ToInt32(reader["PostId"]);
+
+                    _Posts.Add(post);
                 }
             }
         }
 
-        public static void AddUser(User user)
+        public static void AddPost(RaidingPostModels post)
         {
-            if (_Users.Count() == 0) { user.UserId = 1; }
-            else { user.UserId = _Users.Max(x => x.UserId) + 1; }
+            if (_Posts.Count == 0) { post.PostId = 1; }
+            else if (post.PostId == 0) { post.PostId = _Posts.Max(x => x.PostId) + 1; }
             string sqlcmd = null;
-            sqlcmd = "SET IDENTITY_INSERT Users ON; INSERT INTO Users ([UserId], [Name], [Class], [PowerLevel], [Lv]) VALUES (@UserId, @Name, @Class, @PowerLevel, @Level); SET IDENTITY_INSERT Users OFF";
+            sqlcmd = "INSERT INTO Post ([Name], [PowerLevel], [MaxSize], [Description], [OwnerId], [PartyList], [TimeOut], [PostId]) VALUES (@Name, @PowerLevel, @MaxSize, @Description, @OwnerId, @PartyList, @TimeOut , @PostId);";
             using (SqlConnection con = new SqlConnection("data source=LAPTOP-ISNE8U4H;initial catalog=UserDB;trusted_connection=true"))
             {
                 con.Open();
                 //SqlCommand iuon = new SqlCommand("SET IDENTITY_INSERT Users ON", con);
                 using (SqlCommand cmd = new SqlCommand(sqlcmd, con))
                 {
-                    cmd.Parameters.Add("@UserId", SqlDbType.Int).Value = user.UserId;
-                    cmd.Parameters.Add("@Name", SqlDbType.Char).Value = user.Name;
-                    cmd.Parameters.Add("@PowerLevel", SqlDbType.Int).Value = user.Stat.PowerLevel;
-                    cmd.Parameters.Add("@Class", SqlDbType.Char).Value = user.Stat.Class;
-                    cmd.Parameters.Add("@Level", SqlDbType.Int).Value = user.Stat.Level;
+                    cmd.Parameters.Add("@PostId", SqlDbType.Int).Value = post.PostId;
+                    cmd.Parameters.Add("@Name", SqlDbType.Char).Value = post.Name;
+                    cmd.Parameters.Add("@PowerLevel", SqlDbType.Int).Value = post.PowerLevel;
+                    cmd.Parameters.Add("@MaxSize", SqlDbType.Int).Value = post.MaxSize;
+                    cmd.Parameters.Add("@Description", SqlDbType.Char).Value = post.Description;
+                    cmd.Parameters.Add("@OwnerId", SqlDbType.Int).Value = post.OwnerId;
+                    cmd.Parameters.Add("@TimeOut", SqlDbType.DateTime).Value = DateTime.Now;
+                    //var tmp = new List<String>();
+                    //foreach (var user in post.PartyList)
+                    //{
+                    //    tmp.Add(user.UserId.ToString());
+                    //}
+                    cmd.Parameters.Add("@PartyList", SqlDbType.Char).Value = post.OwnerId.ToString();
                     int Out = cmd.ExecuteNonQuery();
                 }
                 //SqlCommand iuoff = new SqlCommand("SET IDENTITY_INSERT Users OFF", con);
             }
-            UpdateDB();
+            UpdatePostDB();
         }
 
-        public static List<User> GetUsers() => _Users;
+        public static List<RaidingPostModels> GetPosts() => _Posts;
 
-        public static User? GetUserCopyById(int id)
+        public static RaidingPostModels? GetPostCopyById(int id)
         {
-            var tmp = _Users.FirstOrDefault(x => x.UserId == id);
+            var tmp = _Posts.FirstOrDefault(x => x.PostId == id);
             if (tmp == null)
             {
                 return null;
             }
-            return new User
+            return new RaidingPostModels
             {
-                UserId = tmp.UserId,
-                Stat = new Stat { Level = tmp.Stat.Level, Class = tmp.Stat.Class, PowerLevel = tmp.Stat.PowerLevel },
+                PostId = tmp.PostId,
+                PowerLevel = tmp.PowerLevel,
                 Name = tmp.Name,
-                OwnedPostId = tmp.OwnedPostId
+                MaxSize = tmp.MaxSize,
+                Description = tmp.Description,
+                OwnerId = tmp.OwnerId,
+                PartyList = tmp.PartyList,
+                TimeOut = tmp.TimeOut
             };
         }
-        public static int UpdateUser(int id, User user)
+        public static int UpdatePost(int id, RaidingPostModels post)
         {
-            var tmp = _Users.FirstOrDefault(x => x.UserId == id);
+            var tmp = _Posts.FirstOrDefault(x => x.PostId == id);
             if (tmp == null)
             {
                 return 404;
             }
             else
             {
-                tmp.Stat.Class = user.Stat.Class;
-                tmp.Stat.PowerLevel = user.Stat.PowerLevel;
-                tmp.Stat.Level = user.Stat.Level;
-                tmp.Name = user.Name;
+                post.PartyList = tmp.PartyList;
+                DeletePost(id);
+                AddPost(post);
                 return 200;
             }
         }
 
-        public static int DeleteUser(int id)
+        public static int DeletePost(int id)
         {
-            var tmp = _Users.FirstOrDefault(x => x.UserId == id);
+            var tmp = _Posts.FirstOrDefault(x => x.PostId == id);
             if (tmp == null) { return 404; }
             else
             {
                 string sqlcmd = null;
-                sqlcmd = "DELETE FROM Users WHERE UserId=@UserId;";
+                sqlcmd = "DELETE FROM Post WHERE PostId=@PostId;";
                 using (SqlConnection con = new SqlConnection("data source=LAPTOP-ISNE8U4H;initial catalog=UserDB;trusted_connection=true"))
                 {
                     con.Open();
-                    //SqlCommand iuon = new SqlCommand("SET IDENTITY_INSERT Users ON", con);
                     using (SqlCommand cmd = new SqlCommand(sqlcmd, con))
                     {
-                        cmd.Parameters.Add("@UserId", SqlDbType.Int).Value = tmp.UserId;
+                        cmd.Parameters.Add("@PostId", SqlDbType.Int).Value = tmp.PostId;
                         int Out = cmd.ExecuteNonQuery();
                     }
-                    //SqlCommand iuoff = new SqlCommand("SET IDENTITY_INSERT Users OFF", con);
                 }
-                UpdateDB();
+                UpdatePostDB();
                 return 200;
             }
         }

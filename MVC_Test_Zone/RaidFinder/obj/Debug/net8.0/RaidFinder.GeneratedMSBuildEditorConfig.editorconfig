@@ -18,12 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Asus\source\repos\BBamkorphai\I_Earth\MVC_Test_Zone\RaidFinder
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Asus/source/repos/BBamkorphai/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/AddPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRQb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Asus/source/repos/BBamkorphai/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Description.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXNjcmlwdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Asus/source/repos/BBamkorphai/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/source/repos/BBamkorphai/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/EditPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0UG9zdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Asus/source/repos/BBamkorphai/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Index.cshtml]

@@ -42,7 +42,7 @@ namespace RaidFinder.Models
         public static void AddUser(User user)
         {
             if (_Users.Count() == 0) { user.UserId = 1; }
-            else { user.UserId = _Users.Max(x => x.UserId) + 1; }
+            else if (user.UserId == 0) { user.UserId = _Users.Max(x => x.UserId) + 1; }
             string sqlcmd = null;
             sqlcmd = "SET IDENTITY_INSERT Users ON; INSERT INTO Users ([UserId], [Name], [Class], [PowerLevel], [Lv]) VALUES (@UserId, @Name, @Class, @PowerLevel, @Level); SET IDENTITY_INSERT Users OFF";
             using (SqlConnection con = new SqlConnection("data source=LAPTOP-ISNE8U4H;initial catalog=UserDB;trusted_connection=true"))
@@ -86,10 +86,8 @@ namespace RaidFinder.Models
             }
             else
             {
-                tmp.Stat.Class = user.Stat.Class;
-                tmp.Stat.PowerLevel = user.Stat.PowerLevel;
-                tmp.Stat.Level = user.Stat.Level;
-                tmp.Name = user.Name;
+                DeleteUser(tmp.UserId);
+                AddUser(user);
                 return 200;
             }
         }
