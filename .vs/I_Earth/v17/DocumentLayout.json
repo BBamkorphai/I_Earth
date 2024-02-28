@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\roominfo.css",
               "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\roominfo.css",
               "RelativeToolTip": "MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\roominfo.css",
-              "ViewState": "AQIAADkAAAAAAAAAAADwv84AAAAAAAAA",
+              "ViewState": "AQIAAPoAAAAAAAAAAADwvwcBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-02-25T07:50:17.216Z",
               "EditorCaption": ""
@@ -45,7 +45,7 @@
               "RelativeDocumentMoniker": "MVC_Test_Zone\\RaidFinder\\Views\\Home\\RoomInfo.cshtml",
               "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\RoomInfo.cshtml",
               "RelativeToolTip": "MVC_Test_Zone\\RaidFinder\\Views\\Home\\RoomInfo.cshtml",
-              "ViewState": "AQIAADcAAAAAAAAAAADwv04AAAAAAAAA",
+              "ViewState": "AQIAAE0AAAAAAAAAAADwv1sAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-02-25T07:50:07.822Z",
               "EditorCaption": ""
@@ -60,8 +60,7 @@
               "RelativeToolTip": "MVC_Test_Zone\\RaidFinder\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T05:05:37.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-25T05:05:37.632Z"
             }
           ]
         }
