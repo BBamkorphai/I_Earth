@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RaidFinder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17597db29cd1001a11bf75c643d48983d8b9be40")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e57a970957361283a511d7fa08a4bc7393d592d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("RaidFinder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RaidFinder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

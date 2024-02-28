@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:wwwroot\\lib\\css\\profile2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\hp\\desktop\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\hp\\desktop\\i_earth\\mvc_test_zone\\raidfinder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\hp\\desktop\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|c:\\users\\hp\\desktop\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\profile.cshtml||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -30,21 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Profile.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Profile.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Profile.cshtml",
-              "RelativeToolTip": "Views\\Home\\Profile.cshtml",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAABIAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-27T04:30:33.242Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -53,7 +40,7 @@
               "RelativeDocumentMoniker": "wwwroot\\lib\\css\\profile2.css",
               "ToolTip": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\profile2.css",
               "RelativeToolTip": "wwwroot\\lib\\css\\profile2.css",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAC4AAAABAAAA",
+              "ViewState": "AQIAAF4BAAAAAAAAAAAowGYBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-02-27T04:30:21.204Z",
               "EditorCaption": ""
@@ -61,6 +48,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Profile.cshtml",
+              "RelativeToolTip": "Views\\Home\\Profile.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-27T04:30:33.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -81,7 +81,8 @@
               "RelativeToolTip": "Views\\Home\\Profile.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-24T05:11:28.745Z"
+              "WhenOpened": "2024-02-24T05:11:28.745Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
