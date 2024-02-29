@@ -1,0 +1,652 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+:root {
+    --color-background: #1A1818;
+    --color-title-font: #BEA455;
+    --color-font-detial: #FFFFFF;
+    --color-body: #000000;
+    --color-background-title: #1A1818;
+    --color-button: #665F4B;
+    --color-background-content: #897F6C;
+}
+progress{
+    -webkit-appearance: none;
+}
+::-webkit-progress-inner-element {
+    border: 2px solid black;
+}
+
+.button {
+    background-color: var(--color-button);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+body {
+    font-family: "HammerSmith One",sans-serif;
+}
+
+@media only screen and (max-width:400px) {
+    img {
+        border-radius: 50%;
+    }
+
+    body {
+        background-color: var(--color-body);
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .profile-image {
+    }
+
+    .player-name {
+        background-color: var(--color-body);
+        color: var(--color-title-font);
+        font-size: 35px;
+        text-align: center;
+        padding: 2%;
+    }
+
+    .imagecontrainer {
+        position: relative;
+        left: 18%;
+        top: 20px;
+    }
+
+    .level, .player-level {
+        padding-left: 20%;
+        font-size: 20px;
+    }
+
+    .level {
+        padding-top: 10%;
+    }
+
+    .player-level {
+        width: 20%;
+        padding-bottom: 10%;
+    }
+
+    .stat-zone {
+        position: relative;
+        left: 10%;
+        padding-top: 10%;
+        margin: 0;
+        width: 80%;
+        border-top: 4px solid black;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .bar-stat {
+        display: flex;
+        row-gap: 11px;
+        flex-direction: column;
+    }
+
+    .number-stat {
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
+    }
+
+    .title {
+        color: var(--color-title-font);
+        background-color: var(--color-background-title);
+        padding-left: 2%;
+    }
+
+    .block-content {
+        background-color: var(--color-background-content);
+        padding-bottom: 20%;
+    }
+
+    button {
+        position: relative;
+        top: 20%;
+    }
+}
+@media only screen and (min-width:400px){
+    @media only screen and (max-width:1920px) {
+        img {
+            border-radius: 50%;
+        }
+
+        body {
+            background-color: var(--color-body);
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .player-name {
+            background-color: var(--color-body);
+            color: var(--color-title-font);
+            font-size: 35px;
+            text-align: center;
+            padding: 2%;
+        }
+
+        .maincontrainer {
+            background-color: var(--color-body);
+            margin: 0;
+        }
+
+        .block-content {
+            background-color: var(--color-background-content);
+            display: flex;
+            justify-content: space-around;
+            margin: 0% 1% 1% 1%;
+            height: 65%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .stat-zone {
+            position: relative;
+            height: 100%;
+            width: 40%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            /*grid-template-columns: repeat(5,20%);
+    grid-template-rows: auto;
+    column-gap: 1%;
+    */
+            border-left: 4px solid black;
+            padding-left: 15%;
+            /* grid-template-areas:
+        "one one . two two"
+        "one one . two two"
+        "one one . two two";
+    */
+        }
+
+        .level {
+            padding-bottom: 20px;
+        }
+
+        .number-stat {
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 9%;
+        }
+
+        .bar-stat {
+            display: flex;
+            flex-direction: column;
+            row-gap: 11.1%;
+        }
+
+            .bar-stat > progress {
+                height: 4%;
+            }
+
+        .title {
+            color: var(--color-title-font);
+            font-size: 40px;
+            background-color: var(--color-background-title);
+            margin: 0;
+            padding-left: 2%;
+        }
+
+        .imagecontrainer {
+            position: relative;
+            left: 30%;
+            padding-bottom: 50%;
+        }
+
+        .profile-image {
+            position: relative;
+            top: 10%;
+            width: 5%;
+            padding: 0;
+            margin: 0;
+            font-size: 19px;
+        }
+
+        button {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-width:1440px) {
+        img {
+            border-radius: 50%;
+        }
+
+        body {
+            background-color: var(--color-body);
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .player-name {
+            background-color: var(--color-body);
+            color: var(--color-title-font);
+            font-size: 35px;
+            text-align: center;
+            padding: 2%;
+        }
+
+        .maincontrainer {
+            background-color: var(--color-body);
+            margin: 0;
+        }
+
+        .block-content {
+            background-color: var(--color-background-content);
+            display: flex;
+            justify-content: space-around;
+            margin: 0% 1% 1% 1%;
+            height: 65%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .stat-zone {
+            position: relative;
+            height: 100%;
+            width: 30%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            /*grid-template-columns: repeat(5,20%);
+    grid-template-rows: auto;
+    column-gap: 1%;
+    */
+            border-left: 4px solid black;
+            padding-left: 15%;
+            /* grid-template-areas:
+        "one one . two two"
+        "one one . two two"
+        "one one . two two";
+    */
+        }
+
+        .level {
+            padding-bottom: 20px;
+        }
+
+        .number-stat {
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 9.9%;
+        }
+
+        .bar-stat {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10.8%;
+        }
+
+            .bar-stat > progress {
+                height: 4%;
+            }
+
+        .title {
+            color: var(--color-title-font);
+            font-size: 40px;
+            background-color: var(--color-background-title);
+            margin: 0;
+            padding-left: 2%;
+        }
+
+        .imagecontrainer {
+            position: relative;
+            left: 30%;
+            padding-bottom: 50%;
+        }
+
+        .profile-image {
+            position: relative;
+            top: 10%;
+            right: 3%;
+            width: 10%;
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        button {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-width:1078px) {
+        img {
+            border-radius: 50%;
+            max-width: 220px;
+            max-height: 220px;
+        }
+
+        body {
+            background-color: var(--color-body);
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .player-name {
+            background-color: var(--color-body);
+            color: var(--color-title-font);
+            font-size: 35px;
+            text-align: center;
+            padding: 2%;
+        }
+
+        .maincontrainer {
+            background-color: var(--color-body);
+            margin: 0;
+        }
+
+        .block-content {
+            background-color: var(--color-background-content);
+            display: flex;
+            justify-content: space-around;
+            margin: 0% 1% 1% 1%;
+            height: 65%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .stat-zone {
+            position: relative;
+            height: 100%;
+            width: 35%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            /*grid-template-columns: repeat(5,20%);
+    grid-template-rows: auto;
+    column-gap: 1%;
+    */
+            border-left: 4px solid black;
+            padding-left: 10%;
+            /* grid-template-areas:
+        "one one . two two"
+        "one one . two two"
+        "one one . two two";
+    */
+        }
+
+        .level {
+            padding-bottom: 20px;
+        }
+
+        .number-stat {
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10.1%;
+        }
+
+        .bar-stat {
+            display: flex;
+            flex-direction: column;
+            row-gap: 11%;
+        }
+
+            .bar-stat > progress {
+                height: 4%;
+            }
+
+        .title {
+            color: var(--color-title-font);
+            font-size: 40px;
+            background-color: var(--color-background-title);
+            margin: 0;
+            padding-left: 2%;
+        }
+
+        .imagecontrainer {
+            position: relative;
+            right: 150px;
+            padding-bottom: 50%;
+        }
+
+        .profile-image {
+            position: relative;
+            top: 10%;
+            width: 10%;
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        button {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-width:810px) {
+        img {
+            border-radius: 50%;
+            max-width: 220px;
+            max-height: 220px;
+        }
+
+        body {
+            background-color: var(--color-body);
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .player-name {
+            background-color: var(--color-body);
+            color: var(--color-title-font);
+            font-size: 35px;
+            text-align: center;
+            padding: 2%;
+        }
+
+        .maincontrainer {
+            background-color: var(--color-body);
+            margin: 0;
+        }
+
+        .block-content {
+            background-color: var(--color-background-content);
+            display: flex;
+            justify-content: space-around;
+            margin: 0% 1% 1% 1%;
+            height: 65%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .stat-zone {
+            position: relative;
+            height: 100%;
+            width: 40%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            /*grid-template-columns: repeat(5,20%);
+    grid-template-rows: auto;
+    column-gap: 1%;
+    */
+            border-left: 4px solid black;
+            padding-left: 2%;
+            /* grid-template-areas:
+        "one one . two two"
+        "one one . two two"
+        "one one . two two";
+    */
+        }
+
+        .level {
+            padding-bottom: 20px;
+        }
+
+        .number-stat {
+            position: relative;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10.2%;
+        }
+
+        .bar-stat {
+            position: relative;
+            left: 30%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 11%;
+        }
+
+            .bar-stat > progress {
+                height: 4%;
+            }
+
+        .title {
+            color: var(--color-title-font);
+            font-size: 40px;
+            background-color: var(--color-background-title);
+            margin: 0;
+            padding-left: 2%;
+        }
+
+        .imagecontrainer {
+            position: relative;
+            left: -5px;
+            padding-bottom: 50%;
+        }
+
+        .profile-image {
+            position: relative;
+            top: 10%;
+            width: 10%;
+            padding: 0;
+            margin: 0;
+            font-size: 18px;
+        }
+
+        button {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-width:700px) {
+        img {
+            border-radius: 50%;
+            max-width: 180px;
+            max-height: 180px;
+        }
+
+        body {
+
+            background-color: var(--color-body);
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .player-name {
+            background-color: var(--color-body);
+            color: var(--color-title-font);
+            font-size: 35px;
+            text-align: center;
+            padding: 2%;
+        }
+
+        .maincontrainer {
+            background-color: var(--color-body);
+            margin: 0;
+        }
+
+        .block-content {
+            background-color: var(--color-background-content);
+            display: flex;
+            justify-content: space-around;
+            margin: 0% 1% 1% 1%;
+            height: 65%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .stat-zone {
+            position: relative;
+            height: 100%;
+            width: 40%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            /*grid-template-columns: repeat(5,20%);
+    grid-template-rows: auto;
+    column-gap: 1%;
+    */
+            border-left: 4px solid black;
+            padding-left: 10%;
+            /* grid-template-areas:
+        "one one . two two"
+        "one one . two two"
+        "one one . two two";
+    */
+        }
+
+        .level {
+            padding-bottom: 20px;
+        }
+
+        .number-stat {
+            position: relative;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 11%;
+        }
+
+        .bar-stat {
+            position: relative;
+            left: 20%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 11%;
+        }
+
+            .bar-stat > progress {
+                height: 4%;
+            }
+
+        .title {
+            color: var(--color-title-font);
+            font-size: 40px;
+            background-color: var(--color-background-title);
+            margin: 0;
+            padding-left: 2%;
+        }
+
+        .imagecontrainer {
+            position: relative;
+            left: -5px;
+            padding-bottom: 50%;
+        }
+
+        .profile-image {
+            position: relative;
+            top: 10%;
+            width: 10%;
+            padding: 0;
+            margin: 0;
+            font-size: 17px;
+        }
+
+        button {
+            font-size: 20px;
+        }
+    }
+}
