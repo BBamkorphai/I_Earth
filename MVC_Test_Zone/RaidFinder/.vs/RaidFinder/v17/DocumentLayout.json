@@ -7,52 +7,44 @@
       "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\roominfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\playerstat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\playerstat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\editpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\editpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\description.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\description.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\addpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\addpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\models\\indexmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:models\\indexmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\models\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:models\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\models\\raidingpostmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:models\\raidingpostmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\models\\indexmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:models\\indexmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\models\\stat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:models\\stat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\views\\user\\viewstat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\user\\viewstat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\views\\user\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\user\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\wwwroot\\lib\\css\\roominfo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:wwwroot\\lib\\css\\roominfo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\description.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\description.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\playerstat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\playerstat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{984A7891-7430-4C63-8B58-0AC7500B7DC8}|RaidFinder.csproj|d:\\my study\\web dev\\project\\i_earth\\mvc_test_zone\\raidfinder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,23 +62,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "roominfo.css",
+              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\roominfo.css",
+              "RelativeDocumentMoniker": "wwwroot\\lib\\css\\roominfo.css",
+              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\roominfo.css",
+              "RelativeToolTip": "wwwroot\\lib\\css\\roominfo.css",
+              "ViewState": "AQIAAOIAAAAAAAAAAADwvwgBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-02-29T08:22:50.673Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "EditPost.cshtml",
-              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\EditPost.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\EditPost.cshtml",
-              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\EditPost.cshtml",
-              "RelativeToolTip": "Views\\Home\\EditPost.cshtml",
+              "Title": "ViewStat.cshtml",
+              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\User\\ViewStat.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\ViewStat.cshtml",
+              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\User\\ViewStat.cshtml",
+              "RelativeToolTip": "Views\\User\\ViewStat.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-29T07:53:26.069Z",
+              "WhenOpened": "2024-02-29T08:20:51.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IndexModels.cs",
+              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\IndexModels.cs",
+              "RelativeDocumentMoniker": "Models\\IndexModels.cs",
+              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\IndexModels.cs",
+              "RelativeToolTip": "Models\\IndexModels.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAkwDMAAADjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T08:16:16.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RaidingPostModels.cs",
+              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\RaidingPostModels.cs",
+              "RelativeDocumentMoniker": "Models\\RaidingPostModels.cs",
+              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\RaidingPostModels.cs",
+              "RelativeToolTip": "Models\\RaidingPostModels.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T08:16:12.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Stat.cs",
+              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\Stat.cs",
+              "RelativeDocumentMoniker": "Models\\Stat.cs",
+              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\Stat.cs",
+              "RelativeToolTip": "Models\\Stat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T08:13:25.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T08:13:11.179Z",
               "EditorCaption": ""
             },
             {
@@ -97,27 +150,14 @@
               "RelativeDocumentMoniker": "Views\\Home\\RoomInfo.cshtml",
               "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\RoomInfo.cshtml*",
               "RelativeToolTip": "Views\\Home\\RoomInfo.cshtml*",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADMAAAAuAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACgAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-25T07:01:19.381Z",
+              "WhenOpened": "2024-02-29T08:08:25.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddPost.cshtml",
-              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\AddPost.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\AddPost.cshtml",
-              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\AddPost.cshtml",
-              "RelativeToolTip": "Views\\Home\\AddPost.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-29T07:15:29.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "PlayerStat.cshtml",
               "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\PlayerStat.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\PlayerStat.cshtml",
@@ -125,90 +165,35 @@
               "RelativeToolTip": "Views\\Home\\PlayerStat.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-22T10:22:19.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-22T10:22:19.988Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-22T10:17:28.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-22T10:17:28.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAjAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAkwEoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T10:11:14.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAkwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T07:48:13.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-22T10:11:14.041Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "IndexModels.cs",
-              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\IndexModels.cs",
-              "RelativeDocumentMoniker": "Models\\IndexModels.cs",
-              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\IndexModels.cs",
-              "RelativeToolTip": "Models\\IndexModels.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAiwEcAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T07:48:25.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ViewStat.cshtml",
-              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\User\\ViewStat.cshtml",
-              "RelativeDocumentMoniker": "Views\\User\\ViewStat.cshtml",
-              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\User\\ViewStat.cshtml",
-              "RelativeToolTip": "Views\\User\\ViewStat.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-29T07:15:44.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserDB.cs",
-              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\UserDB.cs",
-              "RelativeDocumentMoniker": "Models\\UserDB.cs",
-              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\UserDB.cs",
-              "RelativeToolTip": "Models\\UserDB.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAiwC4AAACMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T07:16:50.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Description.cshtml",
               "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Description.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Description.cshtml",
@@ -216,38 +201,11 @@
               "RelativeToolTip": "Views\\Home\\Description.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-22T10:21:18.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RaidingPostModels.cs",
-              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\RaidingPostModels.cs",
-              "RelativeDocumentMoniker": "Models\\RaidingPostModels.cs",
-              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Models\\RaidingPostModels.cs",
-              "RelativeToolTip": "Models\\RaidingPostModels.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAswAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T07:48:22.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-22T10:21:18.269Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "AddUser.cshtml",
-              "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\User\\AddUser.cshtml",
-              "RelativeDocumentMoniker": "Views\\User\\AddUser.cshtml",
-              "ToolTip": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\User\\AddUser.cshtml",
-              "RelativeToolTip": "Views\\User\\AddUser.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-29T07:15:43.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Views\\Home\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Edit.cshtml",
@@ -259,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",

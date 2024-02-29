@@ -37,8 +37,8 @@
                         <div class="box">
                             <span></span>
                             <div class="number">
-                                <b class='top' style="--i:0;">29</b>
-                                <b class='bot' style="--i:1;">30</b>
+                                <b class='top' style="--i:0;">@Model.PartyList.Count()</b>
+                                <b class='bot' style="--i:1;">@Model.MaxSize</b>
                             </div>
                         </div>
                         <div class="roomtitle">
@@ -54,53 +54,27 @@
                     </div>
                 </div><hr>
                 <div class="memberlist">
-                    <div>
-                        <button>X</button>
-                        <img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
-                        <h3><b>Party Leader</b></h3>
-                        <p>---- LV--</p>
-                        <p>PW -----</p>
-                    </div>
-                    <div>
-                        <button>X</button>
-                        <img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
-                        <h3><b>Player 2</b></h3>
-                        <p>---- LV--</p>
-                        <p>PW -----</p>
-                    </div>
-                    <div>
-                        <button>X</button>
-                        <img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
-                        <h3><b>Player 3</b></h3>
-                        <p>---- LV--</p>
-                        <p>PW -----</p>
-                    </div>
-                    <div>
-                        <button>X</button>
-                        <img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
-                        <h3><b>Player 4</b></h3>
-                        <p>---- LV--</p>
-                        <p>PW -----</p>
-                    </div>
-                    <div>
-                        <button>X</button>
-                        <img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
-                        <h3><b>Player 5</b></h3>
-                        <p>---- LV--</p>
-                        <p>PW -----</p>
-                    </div>
-                    <div>
-                        <button>X</button>
-                        <img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
-                        <h3><b>Player 6</b></h3>
-                        <p>---- LV--</p>
-                        <p>PW -----</p>
-                    </div>
+                    @foreach (var User in Model.PartyList)
+                    {
+                        @if (User != null)
+                        {
+                            <div>
+                                <button>X</button>
+                                <img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
+                                <h3><b>Party Leader</b></h3>
+                                <p>U : @User.Name</p>
+                                <p>@User.Stat.Class LV @User.Stat.Level</p>
+                                <p>PW @User.Stat.PowerLevel</p>
+                            </div>
+                        }
+                    }
                 </div>
 
-                <button class="join"> + Join team </button>
-                <button class="delete"> Delete Post </button>
-                <button class="save"> Save Post </button>
+                <div class="roominteractive">
+                    <button id="join"> + Join team </button>
+                    <button id="delete"> Delete Post </button>
+                    <button id="save"> Save Post </button>
+                </div>
             </div>
         </div>
     </body>
