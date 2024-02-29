@@ -16,7 +16,7 @@ namespace RaidFinder.Models
         public static void UpdatePostDB()
         {
             _Posts.Clear();
-            using (SqlConnection con = new SqlConnection("data source=LAPTOP-ISNE8U4H;initial catalog=UserDB;trusted_connection=true"))
+            using (SqlConnection con = new SqlConnection("Server=localhost;Database=UserDB;Trusted_Connection=True;"))
             {
                 SqlCommand cmd = new SqlCommand("SELECT * FROM Post", con);
                 cmd.CommandType = CommandType.Text;
@@ -50,7 +50,7 @@ namespace RaidFinder.Models
             else if (post.PostId == 0) { post.PostId = _Posts.Max(x => x.PostId) + 1; }
             string sqlcmd = null;
             sqlcmd = "INSERT INTO Post ([Name], [PowerLevel], [MaxSize], [Description], [OwnerId], [PartyList], [TimeOut], [PostId]) VALUES (@Name, @PowerLevel, @MaxSize, @Description, @OwnerId, @PartyList, @TimeOut , @PostId);";
-            using (SqlConnection con = new SqlConnection("data source=LAPTOP-ISNE8U4H;initial catalog=UserDB;trusted_connection=true"))
+            using (SqlConnection con = new SqlConnection("Server=localhost;Database=UserDB;Trusted_Connection=True;"))
             {
                 con.Open();
                 //SqlCommand iuon = new SqlCommand("SET IDENTITY_INSERT Users ON", con);
@@ -121,7 +121,7 @@ namespace RaidFinder.Models
             {
                 string sqlcmd = null;
                 sqlcmd = "DELETE FROM Post WHERE PostId=@PostId;";
-                using (SqlConnection con = new SqlConnection("data source=LAPTOP-ISNE8U4H;initial catalog=UserDB;trusted_connection=true"))
+                using (SqlConnection con = new SqlConnection("Server=localhost;Database=UserDB;Trusted_Connection=True;"))
                 {
                     con.Open();
                     using (SqlCommand cmd = new SqlCommand(sqlcmd, con))

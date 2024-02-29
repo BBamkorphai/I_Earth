@@ -54,6 +54,15 @@ public class HomeController : Controller
         IndexModels.DeletePost(id.Value);
         return RedirectToAction("Index");
     }
+
+    public IActionResult RoomInfo(int? id)
+    {
+        UserDB.UpdateDB();
+        IndexModels.UpdatePostDB();
+        var post = IndexModels.GetPostCopyById(id.HasValue ? id.Value : 0);
+
+        return View(post);
+    }
     //dummy leader
     //[HttpGet]
 

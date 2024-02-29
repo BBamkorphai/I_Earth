@@ -16,7 +16,7 @@ namespace RaidFinder.Models
         public static void UpdateDB()
         {
             _Users.Clear();
-            using (SqlConnection con = new SqlConnection("data source=LAPTOP-ISNE8U4H;initial catalog=UserDB;trusted_connection=true"))
+            using (SqlConnection con = new SqlConnection("Server=localhost;Database=UserDB;Trusted_Connection=True;"))
             {
                 SqlCommand cmd = new SqlCommand("SELECT * FROM Users", con);
                 cmd.CommandType = CommandType.Text;
@@ -44,8 +44,8 @@ namespace RaidFinder.Models
             if (_Users.Count() == 0) { user.UserId = 1; }
             else if (user.UserId == 0) { user.UserId = _Users.Max(x => x.UserId) + 1; }
             string sqlcmd = null;
-            sqlcmd = "SET IDENTITY_INSERT Users ON; INSERT INTO Users ([UserId], [Name], [Class], [PowerLevel], [Lv]) VALUES (@UserId, @Name, @Class, @PowerLevel, @Level); SET IDENTITY_INSERT Users OFF";
-            using (SqlConnection con = new SqlConnection("data source=LAPTOP-ISNE8U4H;initial catalog=UserDB;trusted_connection=true"))
+            sqlcmd = "INSERT INTO Users ([UserId], [Name], [Class], [PowerLevel], [Lv]) VALUES (@UserId, @Name, @Class, @PowerLevel, @Level)";
+            using (SqlConnection con = new SqlConnection("Server=localhost;Database=UserDB;Trusted_Connection=True;"))
             {
                 con.Open();
                 //SqlCommand iuon = new SqlCommand("SET IDENTITY_INSERT Users ON", con);
@@ -100,7 +100,7 @@ namespace RaidFinder.Models
             {
                 string sqlcmd = null;
                 sqlcmd = "DELETE FROM Users WHERE UserId=@UserId;";
-                using (SqlConnection con = new SqlConnection("data source=LAPTOP-ISNE8U4H;initial catalog=UserDB;trusted_connection=true"))
+                using (SqlConnection con = new SqlConnection("Server=localhost;Database=UserDB;Trusted_Connection=True;"))
                 {
                     con.Open();
                     //SqlCommand iuon = new SqlCommand("SET IDENTITY_INSERT Users ON", con);
