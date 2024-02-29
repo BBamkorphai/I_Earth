@@ -1,0 +1,15 @@
+﻿@using RaidFinder.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model RaidingPostModels
+
+
+
+<form method="post" asp-controller="home" asp-action="addpost">
+    <b>Name </b><input type="text" asp-for="Name" /><br />
+    <b>PowerLevel </b><input type="text" asp-for="PowerLevel" /><br />
+    <b>MaxSize </b><input type="text" asp-for="MaxSize" /><br />
+    <b>Description </b><input type="text" asp-for="Description" /><br />
+    <b>OwnerId </b><input type="text" asp-for="OwnerId" /><br />
+    <input type="hidden" asp-for="PartyList" /><br />
+    <input type="submit" value="Save" />
+</form>

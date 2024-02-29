@@ -1,0 +1,289 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+.title {
+    background:#1f1f1e;
+    color:#7d731a;
+    padding:10px;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+    z-index: 10000;
+}
+
+.title label {
+    float:right;
+}
+
+.title #toggle[type=checkbox] {
+    display: none;
+}
+.title #toggle:checked ~ .navbar li{
+    height:53px;
+}
+
+.navbar li {
+    transition: all 0.5s;
+    position: absolute;
+    display: flex;
+    font-size: 30px;
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    height: 0px;
+    background-color: white;
+    z-index: 10000;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navbar li ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar li ul a {
+    padding: 10px;
+    display: block;
+    color: purple;
+    text-decoration: none;
+}
+
+.navbar li ul a:hover {
+    background-color: grey;
+}
+
+
+
+.logo {
+    text-decoration: none;
+    color: #7d731a;
+}
+
+.subnav {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.subnav h2 {
+    color: #7d731a;
+    padding: 10px;
+}
+
+.subnav button {
+    position: absolute;
+    background-color: #948566;
+    color: white;
+    border-radius: 10px;
+    border: solid white 2px;
+    padding: 10px;
+    left: 150px;
+    font-size: 20px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.room {
+    background-color: #948566;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    height: 525px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.roominfo {
+    display: grid;
+    grid-template-columns: 440px 440px 440px;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.roomdest {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-left: 15px;
+}
+
+    .roomdest p {
+        word-wrap: break-word;
+    }
+
+.memberlist {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.memberlist div {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.memberlist img {
+    border: solid white 4px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.memberlist p {
+    font-size: 20px;
+}
+
+.memberlist button {
+    display: none;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.kick {
+    display: none;
+    position: absolute;
+    background-color: #948566;
+    color: white;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 20px;
+    border: solid white 2px;
+    cursor: pointer;
+}
+
+
+
+.box {
+    height: 130px;
+    width: 130px;
+    border: solid white 3px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+}
+
+    .box span {
+        position: absolute;
+        left: calc(50%-2px);
+        height: 100%;
+        width: 2px;
+        transform: rotate(45deg);
+        background-color: white;
+    }
+
+.number {
+    display: flex;
+    height: 130px;
+    width: 130px;
+}
+
+.number b {
+    position: absolute;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.top {
+    left: 20px;
+    top: 20px;
+}
+
+.bot {
+    left: calc(75% * var(--i) - 30px * var(--i));
+    top: calc(75% * var(--i) - 30px * var(--i));
+}
+
+.roomtitle {
+    position: absolute;
+    top: -15px;
+    font-size: 25px;
+    left: 160px;
+    text-align: center;
+}
+
+.join {
+    position: absolute;
+    background-color: #948566;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: solid white 2px;
+    cursor: pointer;
+}
+
+    .join:hover {
+        background-color: black;
+    }
+
+.delete {
+    display: none;
+    position: absolute;
+    background-color: #948566;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: solid white 2px;
+    cursor: pointer;
+}
+
+    .delete:hover {
+        background-color: black;
+    }
+
+.save {
+    display: none;
+    position: absolute;
+    background-color: #948566;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 20px;
+    left: 20px;
+    bottom: 20px;
+    border: solid white 2px;
+    cursor: pointer;
+}
+
+.save:hover {
+    background-color: black;
+}
+
+@media (max-width:720px) {
+    .navbar li {
+        display: block;
+    }
+
+    .title #toggle:checked ~ .navbar li {
+        height: 100%;
+    }
+
+    .room {
+        height: 2100px;
+    }
+
+        .room .roominfo, .memberlist {
+            display: block;
+        }
+
+    .roomtitle {
+        right: 0px;
+    }
+}

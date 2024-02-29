@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="wwwroot\lib\css\profile.css" />
+=======
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+>>>>>>> 2fe2428906b6ef933664773b6651173750af153a
   </ItemGroup>
 
 </Project>

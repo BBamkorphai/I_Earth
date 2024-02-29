@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using I_EARTH.Models;
+using RaidFinder.Models;
 
 namespace I_EARTH.Controllers;
 
@@ -42,28 +42,61 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        UserDB.UpdateDB();
+        IndexModels.UpdatePostDB();
+        var Posts = IndexModels.GetPosts();
+
+        return View(Posts);
+    }
+
+    public IActionResult AddPost()
+    {
         return View();
     }
 
-    //dummy leader
-    [HttpGet]
-    public IActionResult dummy_leader()
+    [HttpPost]
+    public IActionResult AddPost(RaidingPostModels post)
     {
-        var partymember = new PartyMember{ ID= "1111", Power = 5000};
-        Console.WriteLine(partymember.ID +" "+ partymember.Power);
-        return Ok(partymember);
+        IndexModels.AddPost(post);
+        return RedirectToAction("Index");
+    }
+
+    public IActionResult EditPost(int? id)
+    {
+        var post = IndexModels.GetPostCopyById(id.HasValue ? id.Value : 0);
+
+        return View(post);
     }
 
     [HttpPost]
-    public IActionResult Privacy([FromBody] RaidingPostModels model)
+    public IActionResult EditPost(RaidingPostModels post)
     {
-        Console.WriteLine(model.RaidingName + model.PowerLevel + model.PartyMaxSize + model.LeaderIP + model.RaidingTime);
-        return Ok(model);
+
+        IndexModels.UpdatePost(post.PostId, post);
+        return RedirectToAction("Index");
+    }
+    public IActionResult DeletePost(int? id)
+    {
+        if (!id.HasValue) { return RedirectToAction("Index"); }
+        IndexModels.DeletePost(id.Value);
+        return RedirectToAction("Index");
     }
 
-    // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    // public IActionResult Error()
-    // {
-    //     return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    // }
+    public IActionResult RoomInfo(int? id)
+    {
+        UserDB.UpdateDB();
+        IndexModels.UpdatePostDB();
+        var post = IndexModels.GetPostCopyById(id.HasValue ? id.Value : 0);
+
+        return View(post);
+    }
+    //dummy leader
+    //[HttpGet]
+
+    //[HttpPost]
+    //public IActionResult Privacy([FromBody] RaidingPostModels model)
+    //{
+    //    Console.WriteLine(model.RaidingName + model.PowerLevel + model.PartyMaxSize + model.LeaderIP + model.RaidingTime);
+    //    return Ok(model);
+    //}
 }

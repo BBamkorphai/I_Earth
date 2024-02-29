@@ -1,39 +1,30 @@
 using System;
 using System.Collections.Generic;
 
-namespace I_EARTH.Models
+namespace RaidFinder.Models
 {
-    public class PartyMember
-    {
-        public string? ID { get; set; }
-        public int Power { get; set; }
-    }
 
     public class RaidingPostModels
     {
-        public string? RaidingName { get; set; }
+        public string? Name { get; set; }
         public int? PowerLevel { get; set; }
-        public int? PartyMaxSize { get; set; }
+        public int? MaxSize { get; set; } = 5;
         public string? Description { get; set; }
-        public string? LeaderIP { get; set; }
-        public List<PartyMember> PartyList { get; set; }
-        public string? RaidingTime { get; set; }
+        public int? OwnerId { get; set; }
+        public List<User> PartyList { get; set; } = new List<User>();
+        public string? TimeOut { get; set; }
+        public int PostId { get; set; } = 0;
 
         public RaidingPostModels()
         {
-            PartyList = new List<PartyMember>();
+            PartyList = new List<User>();
         }
 
-        public string AddPartyList(PartyMember newPartyMember)
+        public void AddPartyList(User newPartyMember)
         {
-            if (PartyList.Count < PartyMaxSize)
+            if (PartyList.Count < MaxSize)
             {
                 PartyList.Add(newPartyMember);
-                return "AddPartySuccess";
-            }
-            else
-            {
-                return "AddPartyFailure";
             }
         }
 
@@ -42,14 +33,14 @@ namespace I_EARTH.Models
             int totalPower = 0;
             foreach (var partyMember in PartyList)
             {
-                totalPower += partyMember.Power;
+                totalPower += partyMember.Stat.PowerLevel;
             }
             return totalPower;
         }
 
-        public string KickPartyList(string kickindID)
+        public string KickPartyList(int kickindID)
         {
-            PartyMember memberToRemove = PartyList.Find(member => member.ID == kickindID);
+            User memberToRemove = PartyList.Find(member => member.UserId == kickindID);
             if (memberToRemove != null)
             {
                 PartyList.Remove(memberToRemove);

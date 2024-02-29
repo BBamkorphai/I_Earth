@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "Cn62Hzdoz0T2W5Iz8O3B4nDT9C8kQV08hJZ3WOUCeH4=",
+=======
+  "Hash": "d9iAK7Yo8UyYhxFgip75eizi8T7GE2crz9zcEaqvz04=",
+>>>>>>> 2fe2428906b6ef933664773b6651173750af153a
   "Source": "RaidFinder",
   "BasePath": "_content/RaidFinder",
   "Mode": "Default",
@@ -10,19 +14,32 @@
     {
       "Name": "RaidFinder\\wwwroot",
       "Source": "RaidFinder",
+<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\",
+=======
+      "ContentRoot": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\",
+>>>>>>> 2fe2428906b6ef933664773b6651173750af153a
       "BasePath": "_content/RaidFinder",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\profile.css",
       "SourceId": "RaidFinder",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\",
       "BasePath": "_content/RaidFinder",
       "RelativePath": "lib/css/profile.css",
+=======
+      "Identity": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\roominfo.css",
+      "SourceId": "RaidFinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\",
+      "BasePath": "_content/RaidFinder",
+      "RelativePath": "lib/css/roominfo.css",
+>>>>>>> 2fe2428906b6ef933664773b6651173750af153a
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,6 +50,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\css\\profile.css"
     },
     {
@@ -53,6 +71,9 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\css\\profile2.css"
+=======
+      "OriginalItemSpec": "wwwroot\\lib\\css\\roominfo.css"
+>>>>>>> 2fe2428906b6ef933664773b6651173750af153a
     }
   ]
 }

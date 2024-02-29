@@ -9,12 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RaidFinder
 build_property.RootNamespace = RaidFinder
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\HP\Desktop\I_Earth\MVC_Test_Zone\RaidFinder\
+=======
+build_property.ProjectDir = C:\Users\Asus\source\repos\BBamkorphai\I_Earth\MVC_Test_Zone\RaidFinder\
+>>>>>>> 2fe2428906b6ef933664773b6651173750af153a
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = C:\Users\HP\Desktop\I_Earth\MVC_Test_Zone\RaidFinder
 build_property._RazorSourceGeneratorDebug = 
 
@@ -36,4 +41,31 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/HP/Desktop/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWxlLmNzaHRtbA==
+=======
+build_property.MSBuildProjectDirectory = C:\Users\Asus\source\repos\BBamkorphai\I_Earth\MVC_Test_Zone\RaidFinder
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Asus/source/repos/BBamkorphai/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Description.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXNjcmlwdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/source/repos/BBamkorphai/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/source/repos/BBamkorphai/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/source/repos/BBamkorphai/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/PlayerStat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQbGF5ZXJTdGF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/source/repos/BBamkorphai/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/T1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/source/repos/BBamkorphai/I_Earth/MVC_Test_Zone/RaidFinder/Views/User/ViewStat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWaWV3U3RhdC5jc2h0bWw=
+>>>>>>> 2fe2428906b6ef933664773b6651173750af153a
 build_metadata.AdditionalFiles.CssScope = 

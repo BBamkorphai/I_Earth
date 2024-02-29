@@ -1,12 +1,17 @@
 {
   "Files": [
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\profile.css",
       "PackagePath": "staticwebassets\\lib\\css\\profile.css"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\profile2.css",
       "PackagePath": "staticwebassets\\lib\\css\\profile2.css"
+=======
+      "Id": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\roominfo.css",
+      "PackagePath": "staticwebassets\\lib\\css\\roominfo.css"
+>>>>>>> 2fe2428906b6ef933664773b6651173750af153a
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RaidFinder.Microsoft.AspNetCore.StaticWebAssets.props",

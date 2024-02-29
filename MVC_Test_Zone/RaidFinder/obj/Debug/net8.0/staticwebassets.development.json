@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"ContentRoots":["C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\"],"Root":{"Children":{"lib":{"Children":{"css":{"Children":{"profile.css":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"lib/css/profile.css"},"Patterns":null},"profile2.css":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"lib/css/profile2.css"},"Patterns":null}},"Asset":null,"Patterns":null}},"Asset":null,"Patterns":null}},"Asset":null,"Patterns":[{"ContentRootIndex":0,"Pattern":"**","Depth":0}]}}
+=======
+{"ContentRoots":["D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\"],"Root":{"Children":{"lib":{"Children":{"css":{"Children":{"roominfo.css":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"lib/css/roominfo.css"},"Patterns":null}},"Asset":null,"Patterns":null}},"Asset":null,"Patterns":null}},"Asset":null,"Patterns":[{"ContentRootIndex":0,"Pattern":"**","Depth":0}]}}
+>>>>>>> 2fe2428906b6ef933664773b6651173750af153a

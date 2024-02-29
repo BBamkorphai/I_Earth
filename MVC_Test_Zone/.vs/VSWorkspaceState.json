@@ -1,7 +1,18 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< HEAD
     "\\RaidFinder"
   ],
+=======
+    "\\RaidFinder",
+    "\\RaidFinder\\Controllers",
+    "\\RaidFinder\\Models",
+    "\\RaidFinder\\Views",
+    "\\RaidFinder\\Views\\Home",
+    "\\RaidFinder\\Views\\User"
+  ],
+  "SelectedNode": "\\RaidFinder\\Views\\User\\ViewStat.cshtml",
+>>>>>>> 2fe2428906b6ef933664773b6651173750af153a
   "PreviewInSolutionExplorer": false
 }
