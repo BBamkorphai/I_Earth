@@ -9,34 +9,12 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RaidFinder
 build_property.RootNamespace = RaidFinder
-<<<<<<< HEAD
-build_property.ProjectDir = D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\
-=======
 build_property.ProjectDir = C:\Users\HP\Desktop\I_Earth\MVC_Test_Zone\RaidFinder\
->>>>>>> a5743e09149823e9cd1cee98a32ab56a8d4efb3c
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-<<<<<<< HEAD
-build_property.MSBuildProjectDirectory = D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder
-build_property._RazorSourceGeneratorDebug = 
-
-[D:/KMITL/year_2/sem_2/web dev/final_project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Description.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXNjcmlwdGlvbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/KMITL/year_2/sem_2/web dev/final_project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/KMITL/year_2/sem_2/web dev/final_project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/KMITL/year_2/sem_2/web dev/final_project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/PlayerStat.cshtml]
-=======
 build_property.MSBuildProjectDirectory = C:\Users\HP\Desktop\I_Earth\MVC_Test_Zone\RaidFinder
 build_property._RazorSourceGeneratorDebug = 
 
@@ -53,7 +31,6 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/HP/Desktop/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/PlayerStat.cshtml]
->>>>>>> a5743e09149823e9cd1cee98a32ab56a8d4efb3c
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQbGF5ZXJTdGF0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 

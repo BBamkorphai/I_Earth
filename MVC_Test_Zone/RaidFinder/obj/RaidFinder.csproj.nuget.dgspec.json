@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\KMITL\\year_2\\sem_2\\web dev\\final_project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\RaidFinder.csproj": {}
   },
   "projects": {
@@ -12,14 +13,41 @@
         "projectPath": "D:\\KMITL\\year_2\\sem_2\\web dev\\final_project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\RaidFinder.csproj",
         "packagesPath": "C:\\Users\\korph\\.nuget\\packages\\",
         "outputPath": "D:\\KMITL\\year_2\\sem_2\\web dev\\final_project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\obj\\",
+=======
+    "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\RaidFinder.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\RaidFinder.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\RaidFinder.csproj",
+        "projectName": "RaidFinder",
+        "projectPath": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\RaidFinder.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\obj\\",
+>>>>>>> a5743e09149823e9cd1cee98a32ab56a8d4efb3c
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\korph\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> a5743e09149823e9cd1cee98a32ab56a8d4efb3c
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+<<<<<<< HEAD
+=======
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+>>>>>>> a5743e09149823e9cd1cee98a32ab56a8d4efb3c
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -10,7 +10,34 @@ public class HomeController : Controller
 
     public HomeController(ILogger<HomeController> logger)
     {
+<<<<<<< HEAD
         _logger = logger;
+=======
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Description()
+        {
+            return View();
+        }
+
+        public IActionResult Edit()
+        {
+            return View();
+        }
+
+        public IActionResult PlayerStat()
+        {
+            return View();
+        }
+        public IActionResult Profile()
+        {
+            return View();
+        }
+
+>>>>>>> a5743e09149823e9cd1cee98a32ab56a8d4efb3c
     }
 
     public IActionResult Index()

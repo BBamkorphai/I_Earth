@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "y+PJONZyCJ2MbDWmtNlF1f+zduwBaODk7MNOfGnkGG6O4eOP3jtaibk82zOdB2Xmp0uom6XwsK0a0mkB3Cumzw==",
   "success": true,
   "projectFilePath": "D:\\KMITL\\year_2\\sem_2\\web dev\\final_project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\RaidFinder.csproj",
+=======
+  "dgSpecHash": "EnFA8/a9PkhHbB8AB2Qs3B5QfJ3GiwDxwPJPwC5K6fSORte3bSV1l5DsgVQvlmNHiFf9ij1e+NjZI4VvcTIgzw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\I_Earth\\MVC_Test_Zone\\RaidFinder\\RaidFinder.csproj",
+>>>>>>> a5743e09149823e9cd1cee98a32ab56a8d4efb3c
   "expectedPackageFiles": [],
   "logs": []
 }
