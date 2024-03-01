@@ -1,11 +1,15 @@
 body {
     background-color: black;
     margin: 0px;
+    font-family: "Anta",sans-serif;
+    padding-top:60px;
 }
 
-.title {
-    background: #1f1f1e;
-    color: #7d731a;
+/*NAVBAR START*/
+.webtab {
+    position: fixed;
+    background: #0b0e12;
+    color: #A49261;
     padding: 10px;
     top: 0px;
     left: 0px;
@@ -15,58 +19,75 @@ body {
     margin: 0px;
 }
 
-    .title label {
+.webtab #toggle[type=checkbox] {
+    display: none;
+}
+
+    .webtab label {
         float: right;
         cursor: pointer;
     }
 
-    .title #toggle[type=checkbox] {
-        display: none;
-    }
-
-    .title #toggle:checked ~ .navbar li {
+    .webtab #toggle:checked ~ .navbar li {
         height: 53px;
     }
+
 
 .navbar li {
     transition: all 0.5s;
     position: absolute;
     display: flex;
     font-size: 30px;
-    top: 60px;
+    top:59px;
     left: 0px;
     right: 0px;
     height: 0px;
-    background-color: white;
+    margin: 0px;
+    background-color: #0f1217;
     z-index: 10000;
     text-align: center;
+    align-items: center;
     overflow: hidden;
 }
 
     .navbar li ul {
         padding: 0px;
         margin: 0px;
+        position: relative;
     }
 
         .navbar li ul a {
             padding: 10px;
             display: block;
-            color: purple;
+            color: white;
             text-decoration: none;
         }
 
-            .navbar li ul a:hover {
-                background-color: grey;
+            .navbar li ul a::after {
+                content: "";
+                position: absolute;
+                background-color: #ffb700;
+                height: 3px;
+                width: 0px;
+                transition: 0.5s ;
+                left: 0px;
+                bottom: 2px;
+            }
+
+            .navbar li ul a:hover::after {
+                width: 100%;
             }
 
 
 
 .logo {
     text-decoration: none;
-    color: #7d731a;
+    color: #A49261;
 }
 
-.subnav {
+/*NAVBAR END*/
+
+.subtab {
     position: relative;
     align-items: center;
     margin-left: 20px;
@@ -74,12 +95,12 @@ body {
     display: flex;
 }
 
-    .subnav h2 {
-        color: #7d731a;
+    .subtab h2 {
+        color: #A49261;
         padding: 10px;
     }
 
-    .subnav button {
+    .subtab button {
         background-color: #948566;
         color: white;
         border-radius: 10px;
@@ -88,6 +109,7 @@ body {
         margin: 20px;
         font-size: 20px;
         cursor: pointer;
+        font-family: "Anta",sans-serif;
     }
 
 .room {
@@ -227,6 +249,7 @@ body {
         bottom: 20px;
         border: solid white 2px;
         cursor: pointer;
+        font-family: "Anta",sans-serif;
     }
 
         .roominteractive button:hover {
@@ -250,8 +273,8 @@ body {
         display: block;
     }
 
-    .title #toggle:checked ~ .navbar li {
-        height: 100%;
+    .webtab #toggle:checked ~ .navbar li {
+        height: 300px;
     }
 
     .room .roominfo, .memberlist {
