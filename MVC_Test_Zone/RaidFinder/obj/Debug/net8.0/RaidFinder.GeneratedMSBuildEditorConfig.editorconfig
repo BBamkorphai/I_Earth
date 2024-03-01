@@ -9,6 +9,7 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RaidFinder
 build_property.RootNamespace = RaidFinder
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 build_property.ProjectDir = D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder\
@@ -18,39 +19,47 @@ build_property.ProjectDir = C:\Users\HP\Desktop\I_Earth\MVC_Test_Zone\RaidFinder
 =======
 build_property.ProjectDir = D:\My study\WEB DEV\Project\I_Earth\MVC_Test_Zone\RaidFinder\
 >>>>>>> 2fe2428906b6ef933664773b6651173750af153a
+=======
+build_property.ProjectDir = D:\KMITL\year_2\sem_2\web dev\I_Earth\MVC_Test_Zone\RaidFinder\
+>>>>>>> Stashed changes
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 build_property.MSBuildProjectDirectory = D:\KMITL\year_2\sem_2\web dev\final_project\I_Earth\MVC_Test_Zone\RaidFinder
 =======
 build_property.MSBuildProjectDirectory = D:\My study\WEB DEV\Project\I_Earth\MVC_Test_Zone\RaidFinder
 >>>>>>> 2fe2428906b6ef933664773b6651173750af153a
+=======
+build_property.MSBuildProjectDirectory = D:\KMITL\year_2\sem_2\web dev\I_Earth\MVC_Test_Zone\RaidFinder
+>>>>>>> Stashed changes
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/My study/WEB DEV/Project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/AddPost.cshtml]
+[D:/KMITL/year_2/sem_2/web dev/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/AddPost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRQb3N0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My study/WEB DEV/Project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Description.cshtml]
+[D:/KMITL/year_2/sem_2/web dev/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Description.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXNjcmlwdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My study/WEB DEV/Project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Edit.cshtml]
+[D:/KMITL/year_2/sem_2/web dev/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My study/WEB DEV/Project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/EditPost.cshtml]
+[D:/KMITL/year_2/sem_2/web dev/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/EditPost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0UG9zdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My study/WEB DEV/Project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Index.cshtml]
+[D:/KMITL/year_2/sem_2/web dev/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 [D:/KMITL/year_2/sem_2/web dev/final_project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/PlayerStat.cshtml]
 =======
@@ -78,26 +87,33 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWxlLmNzaHRtbA==
 =======
 [D:/My study/WEB DEV/Project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/PlayerStat.cshtml]
+=======
+[D:/KMITL/year_2/sem_2/web dev/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/PlayerStat.cshtml]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQbGF5ZXJTdGF0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My study/WEB DEV/Project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/RoomInfo.cshtml]
+[D:/KMITL/year_2/sem_2/web dev/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/RoomInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSb29tSW5mby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My study/WEB DEV/Project/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/T1.cshtml]
+[D:/KMITL/year_2/sem_2/web dev/I_Earth/MVC_Test_Zone/RaidFinder/Views/Home/T1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUMS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My study/WEB DEV/Project/I_Earth/MVC_Test_Zone/RaidFinder/Views/User/AddUser.cshtml]
+[D:/KMITL/year_2/sem_2/web dev/I_Earth/MVC_Test_Zone/RaidFinder/Views/Login/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5caW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/KMITL/year_2/sem_2/web dev/I_Earth/MVC_Test_Zone/RaidFinder/Views/User/AddUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGRVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My study/WEB DEV/Project/I_Earth/MVC_Test_Zone/RaidFinder/Views/User/EditStat.cshtml]
+[D:/KMITL/year_2/sem_2/web dev/I_Earth/MVC_Test_Zone/RaidFinder/Views/User/EditStat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0U3RhdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My study/WEB DEV/Project/I_Earth/MVC_Test_Zone/RaidFinder/Views/User/ViewStat.cshtml]
+[D:/KMITL/year_2/sem_2/web dev/I_Earth/MVC_Test_Zone/RaidFinder/Views/User/ViewStat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWaWV3U3RhdC5jc2h0bWw=
 >>>>>>> 2fe2428906b6ef933664773b6651173750af153a
 build_metadata.AdditionalFiles.CssScope = 
