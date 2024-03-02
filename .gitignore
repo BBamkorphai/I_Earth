@@ -2,11 +2,10 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/MVC_Test_Zone/RaidFinder/.vs/RaidFinder/FileContentIndex/103f79f2-6c21-472e-845f-314c6d82826e.vsidx
-/MVC_Test_Zone/RaidFinder/.vs/RaidFinder/FileContentIndex/7944f65e-98d9-460a-9f03-2afd73114d0c.vsidx
-/MVC_Test_Zone/RaidFinder/.vs/RaidFinder/FileContentIndex/28a6365e-bf9c-489f-8f57-7f656cedc8a4.vsidx
-/MVC_Test_Zone/RaidFinder/.vs/RaidFinder/FileContentIndex/8132a386-2bcb-4200-b37d-18a3c3485103.vsidx
-/MVC_Test_Zone/RaidFinder/.vs/RaidFinder/FileContentIndex/b15b50d7-cc8e-4c74-a488-be31dfb6cc0d.vsidx
-/.vs/I_Earth/FileContentIndex
-/MVC_Test_Zone/.vs/MVC_Test_Zone/FileContentIndex
-/MVC_Test_Zone/RaidFinder/.vs/RaidFinder/FileContentIndex
+/MVC_Test_Zone/RaidFinder/.vs
+/.vs
+/MVC_Test_Zone/.vs
+/MVC_Test_Zone/RaidFinder/bin
+/MVC_Test_Zone/RaidFinder/obj
+/MVC_Test_Zone/RaidFinder/Properties
+/MVC_Test_Zone/RaidFinder/wwwroot
