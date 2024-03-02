@@ -174,7 +174,7 @@ body {
     }
 
     .memberlist button {
-        display: initial;
+        display: none;
         position: absolute;
         width: 25px;
         height: 25px;
@@ -215,7 +215,7 @@ body {
     }
 
 .top {
-    left: 30px;
+    left: 20px;
     top: 20px;
 }
 
@@ -257,15 +257,15 @@ body {
         }
 
     .roominteractive #join {
-        display: none;
+        display: inline;
     }
 
     .roominteractive #delete {
-        display: inline;
+        display: none;
     }
 
     .roominteractive #save {
-        display: inline;
+        display: none;
     }
 
 @media (max-width:720px) {

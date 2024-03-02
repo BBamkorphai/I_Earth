@@ -86,7 +86,9 @@ public class HomeController : Controller
     }
 
     public IActionResult Profile()
-    { return View(); }
+    { 
+        return View(); 
+    }
     //dummy leader
     //[HttpGet]
 
