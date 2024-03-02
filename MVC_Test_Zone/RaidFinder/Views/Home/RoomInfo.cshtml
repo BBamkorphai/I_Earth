@@ -1,13 +1,20 @@
 @using RaidFinder.Models
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @model RaidingPostModels
+@inject IHttpContextAccessor contxt;
 
 
 @if (Model != null) {
     <html>
     <head>
         <title>RoomInfo</title>
-        <link rel="stylesheet" href="~/lib/css/roominfo.css">
+        @if (Model.OwnerId == @contxt.HttpContext.Session.GetInt32("UserId"))
+        {
+            <link rel="stylesheet" href="~/lib/css/roominfo.css">
+        }
+        else {
+            <link rel="stylesheet" href="~/lib/css/roominfo2.css">
+        }
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
@@ -47,7 +54,7 @@
                         </div>
                         <div class="roomtitle">
                             <h2>POWER LEVEL</h2>
-                            <b>100000</b>
+                            <b>@Model.PowerLevel</b>
                         </div>
                     </div>
                     <div class="roomdest" style="border-left:solid white">
@@ -65,7 +72,10 @@
                             <div>
                                 <button>X</button>
                                 <img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
-                                <h3><b>Party Leader</b></h3>
+                                @if (Model.OwnerId == User.UserId)
+                                {
+                                    <h3><b>Party Leader</b></h3>
+                                }
                                 <p>U : @User.Name</p>
                                 <p>@User.Stat.Class LV @User.Stat.Level</p>
                                 <p>PW @User.Stat.PowerLevel</p>

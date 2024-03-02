@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using RaidFinder.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<RaidingPostModels>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,6 +12,7 @@
   <link rel="stylesheet" href="~/lib/css/Base.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="~/lib/js/BoxClick.js"></script>
 </head>
 
 <body>
@@ -28,266 +33,41 @@
       </div>
     </div>
     <div class="line"></div>
-
-    <div class="grid-container">
+        <div class="grid-container">
+        @if (Model != null && Model.Count() > 0)
+        {
+            @foreach (var Post in Model)
+            {
+                    <div class="box-item" @("onclick=GoToRoom('" + Post.PostId + "')")>
+                        <div class="score">
+                            <div class="box">
+                                <span></span>
+                                <div class="number">
+                                    <b class='top' style="--i:0;">@Post.PartyList.Count()</b>
+                                    <b class='bot' style="--i:1;">@Post.MaxSize</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="level">
+                            <h3>Power Level</h3>
+                            <h2>@Post.PowerLevel+</h2>
+                        </div>
+                        <div class="line-block"></div>
+                        <div class="data">
+                            <h2 class="name">@Post.Name</h2>
+                            <h3 class="info">
+                                @Post.Description
+                            </h3>
+                            <small class="date">@Post.TimeOut</small>
+                            <div class="icon"><i class="fa fa-plus-circle"></i></div>
+                        </div>
+                    </div>
+            }
+        }
+      
       <!-- box 1 -->
-      <div class="box-item">
-        <div class="score">
-          <div class="box">
-            <span></span>
-            <div class="number">
-              <b class='top' style="--i:0;">29</b>
-              <b class='bot' style="--i:1;">30</b>
-            </div>
-          </div>
-        </div>
-        <div class="level">
-          <h3>Power Level</h3>
-          <h2>19000+</h2>
-        </div>
-        <div class="line-block"></div>
-        <div class="data">
-          <h2 class="name">NorNor(IV)</h2>
-          <h3 class="info">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Suscipit sed unde
-            odio quis
-            voluptatibus ad enim quasi
-            optio praesentium.
-          </h3>
-          <small class="date">02/12/2023 posted</small>
-          <div class="icon"><i class="fa fa-plus-circle"></i></div>
-        </div>
-      </div>
-      <!-- box 2 -->
-      <div class="box-item">
-        <div class="score">
-          <div class="box">
-            <span></span>
-            <div class="number">
-              <b class='top' style="--i:0;">29</b>
-              <b class='bot' style="--i:1;">30</b>
-            </div>
-          </div>
-        </div>
-        <div class="level">
-          <h3>Power Level</h3>
-          <h2>19000+</h2>
-        </div>
-        <div class="line-block"></div>
-        <div class="data">
-          <h2 class="name">Vakaramasu(IV)</h2>
-          <h3 class="info">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Suscipit sed unde
-            odio quis
-            voluptatibus ad enim quasi
-            optio praesentium.
-          </h3>
-          <small class="date">02/12/2023 posted</small>
-          <div class="icon"><i class="fa fa-plus-circle"></i></div>
-        </div>
-      </div>
+      
 
-      <!-- box3 -->
-      <div class="box-item">
-        <div class="score">
-          <div class="box">
-            <span></span>
-            <div class="number">
-              <b class='top' style="--i:0;">29</b>
-              <b class='bot' style="--i:1;">30</b>
-            </div>
-          </div>
-        </div>
-        <div class="level">
-          <h3>Power Level</h3>
-          <h2>19000+</h2>
-        </div>
-        <div class="line-block"></div>
-        <div class="data">
-          <h2 class="name">Vakaramasu(IV)</h2>
-          <h3 class="info">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Suscipit sed unde
-            odio quis
-            voluptatibus ad enim quasi
-            optio praesentium.
-          </h3>
-          <small class="date">02/12/2023 posted</small>
-          <div class="icon"><i class="fa fa-plus-circle"></i></div>
-        </div>
-      </div>
-
-      <!-- box4 -->
-      <div class="box-item">
-        <div class="score">
-          <div class="box">
-            <span></span>
-            <div class="number">
-              <b class='top' style="--i:0;">29</b>
-              <b class='bot' style="--i:1;">30</b>
-            </div>
-          </div>
-        </div>
-        <div class="level">
-          <h3>Power Level</h3>
-          <h2>19000+</h2>
-        </div>
-        <div class="line-block"></div>
-        <div class="data">
-          <h2 class="name">Vakaramasu(IV)</h2>
-          <h3 class="info">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Suscipit sed unde
-            odio quis
-            voluptatibus ad enim quasi
-            optio praesentium.
-          </h3>
-          <small class="date">02/12/2023 posted</small>
-          <div class="icon"><i class="fa fa-plus-circle"></i></div>
-        </div>
-      </div>
-
-      <!-- box 5 -->
-      <div class="box-item">
-        <div class="score">
-          <div class="box">
-            <span></span>
-            <div class="number">
-              <b class='top' style="--i:0;">29</b>
-              <b class='bot' style="--i:1;">30</b>
-            </div>
-          </div>
-        </div>
-        <div class="level">
-          <h3>Power Level</h3>
-          <h2>19000+</h2>
-        </div>
-        <div class="line-block"></div>
-        <div class="data">
-          <h2 class="name">Vakaramasu(IV)</h2>
-          <h3 class="info">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Suscipit sed unde
-            odio quis
-            voluptatibus ad enim quasi
-            optio praesentium.
-          </h3>
-          <small class="date">02/12/2023 posted</small>
-          <div class="icon"><i class="fa fa-plus-circle"></i></div>
-        </div>
-      </div>
-
-      <!-- box 6 -->
-      <div class="box-item">
-        <div class="score">
-          <div class="box">
-            <span></span>
-            <div class="number">
-              <b class='top' style="--i:0;">29</b>
-              <b class='bot' style="--i:1;">30</b>
-            </div>
-          </div>
-        </div>
-        <div class="level">
-          <h3>Power Level</h3>
-          <h2>19000+</h2>
-        </div>
-        <div class="line-block"></div>
-        <div class="data">
-          <h2 class="name">Vakaramasu(IV)</h2>
-          <h3 class="info">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Suscipit sed unde
-            odio quis
-            voluptatibus ad enim quasi
-            optio praesentium.
-          </h3>
-          <small class="date">02/12/2023 posted</small>
-          <div class="icon"><i class="fa fa-plus-circle"></i></div>
-        </div>
-      </div>
-
-      <!-- box 7 -->
-      <div class="box-item">
-        <div class="score">
-          <div class="box">
-            <span></span>
-            <div class="number">
-              <b class='top' style="--i:0;">29</b>
-              <b class='bot' style="--i:1;">30</b>
-            </div>
-          </div>
-        </div>
-        <div class="level">
-          <h3>Power Level</h3>
-          <h2>19000+</h2>
-        </div>
-        <div class="line-block"></div>
-        <div class="data">
-          <h2 class="name">Vakaramasu(IV)</h2>
-          <h3 class="info">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Suscipit sed unde
-            odio quis
-            voluptatibus ad enim quasi
-            optio praesentium.
-          </h3>
-          <small class="date">02/12/2023 posted</small>
-          <div class="icon"><i class="fa fa-plus-circle"></i></div>
-        </div>
-      </div>
-      <!-- box 8 -->
-      <div class="box-item">
-        <div class="score">
-          <div class="box">
-            <span></span>
-            <div class="number">
-              <b class='top' style="--i:0;">29</b>
-              <b class='bot' style="--i:1;">30</b>
-            </div>
-          </div>
-        </div>
-        <div class="level">
-          <h3>Power Level</h3>
-          <h2>19000+</h2>
-        </div>
-        <div class="line-block"></div>
-        <div class="data">
-          <h2 class="name">Vakaramasu(IV)</h2>
-          <h3 class="info">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Suscipit sed unde
-            odio quis
-            voluptatibus ad enim quasi
-            optio praesentium.
-          </h3>
-          <small class="date">02/12/2023 posted</small>
-          <div class="icon"><i class="fa fa-plus-circle"></i></div>
-        </div>
-      </div>
-
-      <!-- box 9 -->
-      <div class="box-item">
-        <div class="score">
-          <div class="box">
-            <span></span>
-            <div class="number">
-              <b class='top' style="--i:0;">29</b>
-              <b class='bot' style="--i:1;">30</b>
-            </div>
-          </div>
-        </div>
-        <div class="level">
-          <h3>Power Level</h3>
-          <h2>19000+</h2>
-        </div>
-        <div class="line-block"></div>
-        <div class="data">
-          <h2 class="name">Vakaramasu(IV)</h2>
-          <h3 class="info">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Suscipit sed unde
-            odio quis
-            voluptatibus ad enim quasi
-            optio praesentium.
-          </h3>
-          <small class="date">02/12/2023 posted</small>
-          <div class="icon"><i class="fa fa-plus-circle"></i></div>
-        </div>
-      </div>
 
     </div>
 
