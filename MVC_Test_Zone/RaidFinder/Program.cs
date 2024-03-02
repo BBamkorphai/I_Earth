@@ -13,7 +13,7 @@ builder.Services.AddSession(options =>
 
 var app = builder.Build();
 
-pp.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 
