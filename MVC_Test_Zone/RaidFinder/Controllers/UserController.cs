@@ -49,12 +49,12 @@ namespace RaidFinder.Controllers
         public IActionResult test(Auth auth) {
             return View(auth);
         }
-        public IActionResult debug()
-        {
-            AuthDB.UpdateDB();
-            var Users = AuthDB.GetUsers();
-            return View(Users);
-        }
+        //public IActionResult debug()
+        //{
+        //    AuthDB.UpdateDB();
+        //    var Users = AuthDB.GetUsers();
+        //    return View(Users);
+        //}
 
     }
 }
