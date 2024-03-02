@@ -1,16 +1,18 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using RaidFinder.Models;
-
+using Microsoft.AspNetCore.Http;
+using System.Net.NetworkInformation;
 namespace I_EARTH.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IHttpContextAccessor contxt;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(IHttpContextAccessor httpContextAccessor)
     {
-        _logger = logger;
+        contxt = httpContextAccessor;
     }
 
     public IActionResult Index()
@@ -26,7 +28,6 @@ public class HomeController : Controller
     {
         return View();
     }
-
     [HttpPost]
     public IActionResult AddPost(RaidingPostModels post)
     {
@@ -62,6 +63,23 @@ public class HomeController : Controller
         var post = IndexModels.GetPostCopyById(id.HasValue ? id.Value : 0);
 
         return View(post);
+    }
+    public IActionResult Login()
+    {
+        return View();
+    }
+    [HttpPost]
+    public IActionResult Login(Auth auth)
+    {
+        AuthDB.UpdateDB();
+        var id = AuthDB.Authentication(auth);
+        contxt.HttpContext.Session.SetInt32("UserId",id);
+        if (id > 0)
+        {
+            auth.UserId = id;
+            return RedirectToAction("test","User",auth);
+        }
+        return View();
     }
     //dummy leader
     //[HttpGet]

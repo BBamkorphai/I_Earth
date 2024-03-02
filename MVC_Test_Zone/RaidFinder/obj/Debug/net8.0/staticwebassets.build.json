@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d9iAK7Yo8UyYhxFgip75eizi8T7GE2crz9zcEaqvz04=",
+  "Hash": "pnT+/czb5VBQWrbKuen1iDPFtW4itlyXt0l6XJL5eh8=",
   "Source": "RaidFinder",
   "BasePath": "_content/RaidFinder",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "RaidFinder\\wwwroot",
       "Source": "RaidFinder",
-      "ContentRoot": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\Source\\Repos\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\",
       "BasePath": "_content/RaidFinder",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\roominfo.css",
+      "Identity": "C:\\Users\\HP\\Source\\Repos\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\lib\\css\\roominfo.css",
       "SourceId": "RaidFinder",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My study\\WEB DEV\\Project\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\HP\\Source\\Repos\\I_Earth\\MVC_Test_Zone\\RaidFinder\\wwwroot\\",
       "BasePath": "_content/RaidFinder",
       "RelativePath": "lib/css/roominfo.css",
       "AssetKind": "All",

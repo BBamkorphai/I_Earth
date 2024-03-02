@@ -1,0 +1,10 @@
+﻿@using RaidFinder.Models
+@inject IHttpContextAccessor contxt;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<h1>this is user id @contxt.HttpContext.Session.GetInt32("UserId")</h1>
+
+<form>
+    <button  asp-action="logout" asp-controller="Account">
+        Logout
+    </button>
+</form>

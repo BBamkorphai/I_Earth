@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using RaidFinder.Models;
+using System.Reflection;
 
 namespace RaidFinder.Controllers
 {
@@ -44,6 +45,15 @@ namespace RaidFinder.Controllers
             if (!id.HasValue) { return RedirectToAction("ViewStat"); }
             UserDB.DeleteUser(id.Value);
             return RedirectToAction("ViewStat");
+        }
+        public IActionResult test(Auth auth) {
+            return View(auth);
+        }
+        public IActionResult debug()
+        {
+            AuthDB.UpdateDB();
+            var Users = AuthDB.GetUsers();
+            return View(Users);
         }
 
     }
