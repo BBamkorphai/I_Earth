@@ -1,0 +1,96 @@
+h1 {
+    font-size: 50px;
+    color: blue;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+
+}
+
+.maincontrainer {
+    min-height: 80%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 20px;
+}
+
+.player-name {
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    background-color: chartreuse
+}
+
+.block-content {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    justify-content:space-around;
+}
+
+.profile-image {
+    margin-bottom: 20px;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+}
+.profile-image > div, .profile-image > img {
+    margin-bottom: 25px;
+    font-size:25px;
+}
+.stat-zone{
+    display:flex;
+    justify-content:space-around;
+    margin-left:300px;
+}
+.number-stat{
+    display:flex;
+    flex-direction:column;
+}
+.bar-stat{
+    display:flex;
+    flex-direction:column;
+    margin-left:50px;
+}
+.bar-stat > progress{
+    margin-bottom:50px
+}
+.number-stat > div {
+    margin-bottom: 42px;
+    font-size: 20px;
+    width: fit-content;
+}
+.image {
+    width: 150%;
+    height: auto;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+@media only screen and (max-width: 800px) {
+    .number-stat > div {
+        margin-bottom: 47px;
+        font-size: 16px;
+        width: fit-content;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .number-stat > div {
+        margin-bottom: 49px;
+        font-size: 14px;
+        width: fit-content;
+    }
+}

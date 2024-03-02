@@ -1,0 +1,10 @@
+@using RaidFinder.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Auth
+
+<form method="post" asp-controller="home" asp-action="login">
+    <b>Username </b><input type="text" asp-for="Username" /><br />
+    <b>Password </b><input type="text" asp-for="Password" /><br />
+    <input type="hidden" asp-for="UserId" /><br />
+    <input type="submit" value="login" />
+</form>

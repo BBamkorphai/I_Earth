@@ -1,98 +1,123 @@
 body {
     background-color: black;
     margin: 0px;
+    font-family: "Anta",sans-serif;
+    padding-top:60px;
 }
 
-.title {
-    background:#1f1f1e;
-    color:#7d731a;
-    padding:10px;
-    top:0px;
+/*NAVBAR START*/
+.webtab {
+    position: fixed;
+    background: #0b0e12;
+    color: #A49261;
+    padding: 10px;
+    top: 0px;
     left: 0px;
     right: 0px;
     align-items: center;
     z-index: 10000;
+    margin: 0px;
 }
 
-.title label {
-    float:right;
-}
-
-.title #toggle[type=checkbox] {
+.webtab #toggle[type=checkbox] {
     display: none;
 }
-.title #toggle:checked ~ .navbar li{
-    height:53px;
-}
+
+    .webtab label {
+        float: right;
+        cursor: pointer;
+    }
+
+    .webtab #toggle:checked ~ .navbar li {
+        height: 53px;
+    }
+
 
 .navbar li {
     transition: all 0.5s;
     position: absolute;
     display: flex;
     font-size: 30px;
-    top: 60px;
+    top:59px;
     left: 0px;
     right: 0px;
     height: 0px;
-    background-color: white;
+    margin: 0px;
+    background-color: #0f1217;
     z-index: 10000;
     text-align: center;
+    align-items: center;
     overflow: hidden;
 }
 
-.navbar li ul {
-    padding: 0px;
-    margin: 0px;
-}
+    .navbar li ul {
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+    }
 
-.navbar li ul a {
-    padding: 10px;
-    display: block;
-    color: purple;
-    text-decoration: none;
-}
+        .navbar li ul a {
+            padding: 10px;
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
 
-.navbar li ul a:hover {
-    background-color: grey;
-}
+            .navbar li ul a::after {
+                content: "";
+                position: absolute;
+                background-color: #ffb700;
+                height: 3px;
+                width: 0px;
+                transition: 0.5s ;
+                left: 0px;
+                bottom: 2px;
+            }
+
+            .navbar li ul a:hover::after {
+                width: 100%;
+            }
 
 
 
 .logo {
     text-decoration: none;
-    color: #7d731a;
+    color: #A49261;
 }
 
-.subnav {
+/*NAVBAR END*/
+
+.subtab {
     position: relative;
+    align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+    display: flex;
 }
 
-.subnav h2 {
-    color: #7d731a;
-    padding: 10px;
-}
+    .subtab h2 {
+        color: #A49261;
+        padding: 10px;
+    }
 
-.subnav button {
-    position: absolute;
-    background-color: #948566;
-    color: white;
-    border-radius: 10px;
-    border: solid white 2px;
-    padding: 10px;
-    left: 150px;
-    font-size: 20px;
-    top: 5px;
-    cursor: pointer;
-}
+    .subtab button {
+        background-color: #948566;
+        color: white;
+        border-radius: 10px;
+        border: solid white 2px;
+        padding: 10px;
+        margin: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: "Anta",sans-serif;
+    }
 
 .room {
     background-color: #948566;
     color: white;
     padding: 10px;
     margin: 20px;
-    height: 525px;
+    height: auto;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -117,50 +142,44 @@ body {
     }
 
 .memberlist {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 10px;
     padding: 10px;
 }
 
-.memberlist div {
-    text-align: center;
-    padding: 10px;
-    position: relative;
-}
+    .memberlist div {
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        word-wrap: break-word;
+        border: 2px solid transparent;
+    }
 
-.memberlist img {
-    border: solid white 4px;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
+        .memberlist div:hover {
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: #786942;
+        }
 
-.memberlist p {
-    font-size: 20px;
-}
+    .memberlist img {
+        border: solid white 4px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
 
-.memberlist button {
-    display: none;
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-}
+    .memberlist p {
+        font-size: 20px;
+    }
 
-.kick {
-    display: none;
-    position: absolute;
-    background-color: #948566;
-    color: white;
-    border-radius: 50%;
-    padding: 2px;
-    font-size: 20px;
-    border: solid white 2px;
-    cursor: pointer;
-}
-
-
+    .memberlist button {
+        display: none;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
 
 .box {
     height: 130px;
@@ -187,13 +206,13 @@ body {
     width: 130px;
 }
 
-.number b {
-    position: absolute;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-}
+    .number b {
+        position: absolute;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
 
 .top {
     left: 20px;
@@ -213,75 +232,54 @@ body {
     text-align: center;
 }
 
-.join {
-    position: absolute;
-    background-color: #948566;
-    color: white;
-    border-radius: 30px;
-    padding: 10px;
-    font-size: 20px;
-    right: 20px;
-    bottom: 20px;
-    border: solid white 2px;
-    cursor: pointer;
+.roominteractive {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
-    .join:hover {
-        background-color: black;
+    .roominteractive button {
+        background-color: #948566;
+        color: white;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        right: 20px;
+        bottom: 20px;
+        border: solid white 2px;
+        cursor: pointer;
+        font-family: "Anta",sans-serif;
     }
 
-.delete {
-    display: none;
-    position: absolute;
-    background-color: #948566;
-    color: white;
-    border-radius: 30px;
-    padding: 10px;
-    font-size: 20px;
-    right: 20px;
-    bottom: 20px;
-    border: solid white 2px;
-    cursor: pointer;
-}
+        .roominteractive button:hover {
+            background-color: black;
+        }
 
-    .delete:hover {
-        background-color: black;
+    .roominteractive #join {
+        display: inline;
     }
 
-.save {
-    display: none;
-    position: absolute;
-    background-color: #948566;
-    color: white;
-    border-radius: 30px;
-    padding: 10px;
-    font-size: 20px;
-    left: 20px;
-    bottom: 20px;
-    border: solid white 2px;
-    cursor: pointer;
-}
+    .roominteractive #delete {
+        display: none;
+    }
 
-.save:hover {
-    background-color: black;
-}
+    .roominteractive #save {
+        display: none;
+    }
 
 @media (max-width:720px) {
     .navbar li {
         display: block;
     }
 
-    .title #toggle:checked ~ .navbar li {
-        height: 100%;
+    .webtab #toggle:checked ~ .navbar li {
+        height: 300px;
     }
 
-    .room {
-        height: 2100px;
+    .room .roominfo, .memberlist {
+        display: block;
     }
-
-        .room .roominfo, .memberlist {
-            display: block;
-        }
 
     .roomtitle {
         right: 0px;
