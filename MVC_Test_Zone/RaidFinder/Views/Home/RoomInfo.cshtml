@@ -4,10 +4,12 @@
 @inject IHttpContextAccessor contxt;
 
 
+
 @if (Model != null) {
     <html>
     <head>
         <title>RoomInfo</title>
+        <script src="~/lib/js/BoxClick.js"></script>
         @if (Model.OwnerId == @contxt.HttpContext.Session.GetInt32("UserId"))
         {
             <link rel="stylesheet" href="~/lib/css/roominfo.css">
@@ -70,7 +72,7 @@
                         @if (User != null)
                         {
                             <div>
-                                <button>X</button>
+                                <button onclick="window.location.href='@Url.Action("KickUser", "Home", new { PostId = Model.PostId, UserId = User.UserId })';">X</button>
                                 <img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
                                 @if (Model.OwnerId == User.UserId)
                                 {
@@ -85,9 +87,9 @@
                 </div>
 
                 <div class="roominteractive">
-                    <button id="join"> + Join team </button>
-                    <button id="delete"> Delete Post </button>
-                    <button id="save"> Save Post </button>
+                    <button id="join" onclick="window.location.href='@Url.Action("JoinRoom", "Home", new { PostId = Model.PostId })';"> + Join team </button>
+                    <button id="delete" > Delete Post </button>
+                    <button id="save" > Save Post </button>
                 </div>
             </div>
         </div>

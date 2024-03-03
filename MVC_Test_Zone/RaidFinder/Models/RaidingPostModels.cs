@@ -12,7 +12,7 @@ namespace RaidFinder.Models
         public string? Description { get; set; }
         public int? OwnerId { get; set; }
         public List<User> PartyList { get; set; } = new List<User>();
-        public string? TimeOut { get; set; }
+        public DateTime? TimeOut { get; set; } = DateTime.Now;
         public int PostId { get; set; } = 0;
 
         public RaidingPostModels()

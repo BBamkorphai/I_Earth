@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Runtime.CompilerServices;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace RaidFinder.Models
 
@@ -36,7 +37,7 @@ namespace RaidFinder.Models
                     {
                         post.PartyList.Add(UserDB.GetUserCopyById(item));
                     }
-                    post.TimeOut = reader["TimeOut"].ToString();
+                    post.TimeOut = (DateTime)reader["TimeOut"];
                     post.PostId = Convert.ToInt32(reader["PostId"]);
 
                     _Posts.Add(post);
@@ -62,7 +63,7 @@ namespace RaidFinder.Models
                     cmd.Parameters.Add("@MaxSize", SqlDbType.Int).Value = post.MaxSize;
                     cmd.Parameters.Add("@Description", SqlDbType.Char).Value = post.Description;
                     cmd.Parameters.Add("@OwnerId", SqlDbType.Int).Value = post.OwnerId;
-                    cmd.Parameters.Add("@TimeOut", SqlDbType.DateTime).Value = DateTime.Now;
+                    cmd.Parameters.Add("@TimeOut", SqlDbType.DateTime).Value = post.TimeOut;
                     //var tmp = new List<String>();
                     //foreach (var user in post.PartyList)
                     //{
@@ -106,9 +107,29 @@ namespace RaidFinder.Models
             }
             else
             {
-                post.PartyList = tmp.PartyList;
-                DeletePost(id);
-                AddPost(post);
+                using (var connection = new SqlConnection("Server=localhost;Database=UserDB;Trusted_Connection=True;"))
+                {
+                    connection.Open();
+                    var query = "UPDATE Post SET Name = @Name, PowerLevel = @PowerLevel, MaxSize = @MaxSize, Description = @Description, PartyList = @PartyList, TimeOut = @TimeOut WHERE PostId = @PostId";
+
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.Add("@Name", SqlDbType.Char).Value = post.Name;
+                        command.Parameters.Add("@PowerLevel", SqlDbType.Int).Value = post.PowerLevel;
+                        command.Parameters.Add("@MaxSize", SqlDbType.Int).Value = post.MaxSize;
+                        command.Parameters.Add("@Description", SqlDbType.Char).Value = post.Description;
+                        var tmpstr = new List<string>();
+                        foreach (var user in post.PartyList)
+                        {
+                            tmpstr.Add(user.UserId.ToString());
+                        }
+                        command.Parameters.Add("@PartyList", SqlDbType.Char).Value = string.Join("s", tmpstr); ;
+                        command.Parameters.Add("@TimeOut", SqlDbType.DateTime).Value = post.TimeOut;
+                        command.Parameters.Add("@PostId", SqlDbType.Int).Value = id;
+
+                        command.ExecuteNonQuery();
+                    }
+                }
                 return 200;
             }
         }
