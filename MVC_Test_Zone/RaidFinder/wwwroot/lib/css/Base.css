@@ -218,7 +218,6 @@ header {
 
 .line-block {
     margin: auto;
-    padding: auto;
     border: 0.5px solid var(--color-font-white);
 }
 
@@ -269,7 +268,7 @@ header {
         border: solid var(--color-font-white) 3px;
         border-radius: 50%;
         text-align: center;
-        font-size: px;
+        font-size: 20px;
         position: relative;
     }
 
