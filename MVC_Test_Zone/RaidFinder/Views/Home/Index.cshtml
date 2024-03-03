@@ -2,6 +2,7 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @model List<RaidingPostModels>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,6 +39,23 @@
         {
             @foreach (var Post in Model)
             {
+                    
+                    TimeSpan diff = (TimeSpan)(Post.TimeOut - DateTime.Now);
+                    string temp = "";
+                    if (diff.TotalHours >= 1)
+                    {
+                        temp = $"{(int)diff.TotalHours} hours left";
+                    }
+                    else if (diff.TotalMinutes >= 1)
+                    {
+                        temp = $"{(int)diff.TotalMinutes} minutes left";
+                    }
+                    else
+                    {
+                        temp = $"Ended";
+                        @* continue; *@
+                    }
+                    
                     <div class="box-item" @("onclick=GoToRoom('" + Post.PostId + "')")>
                         <div class="score">
                             <div class="box">
@@ -58,7 +76,7 @@
                             <h3 class="info">
                                 @Post.Description
                             </h3>
-                            <small class="date">@Post.TimeOut</small>
+                            <small class="date">@temp</small>
                             <div class="icon"><i class="fa fa-plus-circle"></i></div>
                         </div>
                     </div>

@@ -31,8 +31,9 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult AddPost(RaidingPostModels post)
+    public IActionResult AddPost(RaidingPostModels post, int Hour, int Minute)
     {
+        post.TimeOut = DateTime.Now.AddHours(Hour).AddMinutes(Minute);
         IndexModels.AddPost(post);
         return RedirectToAction("Index");
     }
@@ -57,7 +58,30 @@ public class HomeController : Controller
         IndexModels.DeletePost(id.Value);
         return RedirectToAction("Index");
     }
+    public IActionResult JoinRoom(int? PostId)
+    {
+        var UserId = contxt.HttpContext.Session.GetInt32("UserId");
+        var post = IndexModels.GetPostCopyById(PostId.HasValue ? PostId.Value : 0);
+        if ((post.PartyList.FirstOrDefault(x => x.UserId == UserId) != null) || (contxt.HttpContext.Session.GetInt32("UserId") == 0) || post.PartyList.Count == post.MaxSize)
+        {
+            return NoContent();
+        }
+        post.PartyList.Add(UserDB.GetUserCopyById((int)contxt.HttpContext.Session.GetInt32("UserId")));
+        IndexModels.UpdatePost((int)PostId, post);
+        UserDB.UpdateDB();
+        IndexModels.UpdatePostDB();
+        return RedirectToAction("RoomInfo", "Home", new { id = PostId });
+    }
 
+    public IActionResult KickUser(int? PostId, int? UserId)
+    {
+        var post = IndexModels.GetPostCopyById(PostId.HasValue ? PostId.Value : 0);
+        post.PartyList.Remove((post.PartyList.FirstOrDefault(x => x.UserId == UserId)));
+        IndexModels.UpdatePost((int)PostId, post);
+        UserDB.UpdateDB();
+        IndexModels.UpdatePostDB();
+        return RedirectToAction("RoomInfo", "Home", new { id = PostId });
+    }
     public IActionResult RoomInfo(int? id)
     {
         UserDB.UpdateDB();
