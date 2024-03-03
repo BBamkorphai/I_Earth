@@ -1,86 +1,64 @@
 @using RaidFinder.Models
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @model RaidingPostModels
+@{
+	ViewData["Title"] = "RoomInfo";
+	Layout = "~/Views/Shared/Navbar.cshtml";
+}
 
+@section AdditionalCSS {
+	<link rel="stylesheet" href="~/lib/css/roominfo.css">
+}
 
-@if (Model != null) {
-    <html>
-    <head>
-        <title>RoomInfo</title>
-        <link rel="stylesheet" href="~/lib/css/roominfo.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+<div>
+	<div class="subtab">
+		<h2><b>Party List</b></h2>
+		<button><b>+ create your own</b></button>
+	</div><hr>
+	<div class="room">
+		<div class="roominfo">
+			<div>
+				<div class="box">
+					<span></span>
+					<div class="number">
+						<b class='top' style="--i:0;">@Model.PartyList.Count()</b>
+						<b class='bot' style="--i:1;">@Model.MaxSize</b>
+					</div>
+				</div>
+				<div class="roomtitle">
+					<h2>POWER LEVEL</h2>
+					<b>100000</b>
+				</div>
+			</div>
+			<div class="roomdest" style="border-left:solid white">
+				<h2>@Model.Name</h2>
+				<p>
+					@Model.Description
+				</p>
+			</div>
+		</div><hr>
+		<div class="memberlist">
+			@foreach (var User in Model.PartyList)
+			{
+				@if (User != null)
+				{
+					<div>
+						<button>X</button>
+						<img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
+						<h3><b>Party Leader</b></h3>
+						<p>U : @User.Name</p>
+						<p>@User.Stat.Class LV @User.Stat.Level</p>
+						<p>PW @User.Stat.PowerLevel</p>
+					</div>
+				}
+			}
+		</div>
 
-        <script src="https://kit.fontawesome.com/043b90f15a.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <h1 class="webtab">
-            <a href='#' class="logo">Raids Finder</a>
-            <input type="checkbox" id="toggle">
-            <label for="toggle">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <nav class="navbar">
-                <li>
-                    <ul><a href=".">Home</a></ul>
-                    <ul><a href="/user/viewstat">Profile</a></ul>
-                    <ul><a href="#">Create Room</a></ul>
-                </li>
-            </nav>
-        </h1>
-
-        <div>
-            <div class="subtab">
-                <h2><b>Party List</b></h2>
-                <button><b>+ create your own</b></button>
-            </div><hr>
-            <div class="room">
-                <div class="roominfo">
-                    <div>
-                        <div class="box">
-                            <span></span>
-                            <div class="number">
-                                <b class='top' style="--i:0;">@Model.PartyList.Count()</b>
-                                <b class='bot' style="--i:1;">@Model.MaxSize</b>
-                            </div>
-                        </div>
-                        <div class="roomtitle">
-                            <h2>POWER LEVEL</h2>
-                            <b>100000</b>
-                        </div>
-                    </div>
-                    <div class="roomdest" style="border-left:solid white">
-                        <h2>@Model.Name</h2>
-                        <p>
-                            @Model.Description
-                        </p>
-                    </div>
-                </div><hr>
-                <div class="memberlist">
-                    @foreach (var User in Model.PartyList)
-                    {
-                        @if (User != null)
-                        {
-                            <div>
-                                <button>X</button>
-                                <img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
-                                <h3><b>Party Leader</b></h3>
-                                <p>U : @User.Name</p>
-                                <p>@User.Stat.Class LV @User.Stat.Level</p>
-                                <p>PW @User.Stat.PowerLevel</p>
-                            </div>
-                        }
-                    }
-                </div>
-
-                <div class="roominteractive">
-                    <button id="join"> + Join team </button>
-                    <button id="delete"> Delete Post </button>
-                    <button id="save"> Save Post </button>
-                </div>
-            </div>
-        </div>
-    </body>
-    </html>
+		<div class="roominteractive">
+			<button id="join"> + Join team </button>
+			<button id="delete"> Delete Post </button>
+			<button id="save"> Save Post </button>
+		</div>
+	</div>
+</div>
 }
