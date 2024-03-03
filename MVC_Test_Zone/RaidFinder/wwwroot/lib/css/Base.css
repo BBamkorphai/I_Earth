@@ -93,7 +93,7 @@ header {
     display: grid;
     height: 70%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,400px);
+    grid-template-rows: repeat(auto,400px);
     gap: 1.7rem;
     padding: 20px;
 }
@@ -223,7 +223,7 @@ header {
 
 
 /* responsive */
-@media (max-width :1000px) {
+@media only screen and (max-width :720px) {
 
     .container-1 .text-party h2 {
         font-size: 30px;
@@ -249,8 +249,8 @@ header {
     }
 
     .grid-container {
-        grid-template-columns: repeat(2,400px);
-        grid-template-rows: repeat(auto,300px);
+        grid-template-columns: repeat(2,300px);
+        grid-template-rows: repeat(auto,200px);
         gap: 1.5rem;
     }
 
