@@ -92,15 +92,16 @@ header {
 .grid-container {
     display: grid;
     height: 70%;
+    width:100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto,400px);
-    gap: 1.7rem;
-    padding: 20px;
+    gap: 1.5rem;
+    padding: 5%;
 }
 
 .box-item {
     position: relative;
-    width: 30rem;
+    width: 25rem;
     height: 400px;
     background-color: var(--color-background-box);
     padding: 20px;
@@ -251,7 +252,7 @@ header {
     .grid-container {
         grid-template-columns: repeat(2,300px);
         grid-template-rows: repeat(auto,200px);
-        gap: 1.5rem;
+        gap: 1.2rem;
     }
 
     .box-item {
