@@ -119,11 +119,3 @@ input[type=submit]:hover {
     height: 20%;
 }
 
-#time {
-    font-size:20px;
-    margin: 8px 0;
-    padding:2px;
-    background-color: var(--color-background-box);
-    border: 2px solid var(--color-font-button);
-    border-radius: 10px;
-}
