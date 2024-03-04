@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
 <!DOCTYPE html>
 <html>
 
@@ -14,14 +13,15 @@
         <div class="LoginBlock">
             <h1>REGISTER</h1>
             <div class="Separator"></div>
-            <h2>USERNAME</h2>
-            <input type="text" id="username" name="text_input">
-            <h2>PASSWORD</h2>
-            <input type="text" id="password" name="text_input">
-            <br>
-            <div class="Separator"></div>
-            <button>continue</button>
-            </div>
+            <form method="post" action="@Url.Action("Register","Account")">
+                <h2>USERNAME</h2>
+                <input type="text" id="username" name="username">
+                <h2>PASSWORD</h2>
+                <input type="text" id="password" name="password">
+                <br>
+                <div class="Separator"></div>
+                <button type="submit">Continue</button>
+            </form>
         </div>
     </div>
 </body>
