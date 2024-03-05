@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Anta', sans-serif;
+    color: #a49261;
+    min-height: 100vh;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border : solid 2px red;
+}
+
+.a {
+    border : solid 2px yellow;
+}
+
+.b {
+    background-color : aliceblue;
+}
+
+.MainBox {
+    /*width: 800px;
+    height: 500px;
+    background: linear-gradient(135deg, #665F4B, #112233);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.5);*/
+    width: 800px;
+    position : relative;
+    height: 500px;
+    background: linear-gradient(135deg, #665F4B, #112233);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.5);
+    /*justify-content : center;*/
+}
+
+.Image {
+    border : solid 2px red;
+    width : 35%;
+    margin : 30px;
+}
+.Form {
+    border : solid 2px blue;
+    width : 65%;
+    margin : 30px;
+}
+
+.Form 

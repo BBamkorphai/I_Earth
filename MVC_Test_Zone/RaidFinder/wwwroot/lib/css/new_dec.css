@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Anta', sans-serif;
+    color: #a49261;
+    min-height: 100vh;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Profile {
+    width: 800px;
+    height: 500px;
+    background: linear-gradient(135deg, #665F4B, #112233);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.5);
+}
+
+.User{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.UserInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    align-content: space-between;
+}
+
+.UserProfile {
+    width: 250px;
+    height: 250px;
+    clip-path: circle();
+    margin-top: -90px;
+    margin:30px;
+}
+
+.wall{
+    border: solid 2px #a49261;
+    height: 80%;
+    position: relative;
+    top: 50px;
+}
+
+.Name_and_Level_block {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.class_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+
+.class_image {
+    width: 125px;
+    height: 125px;
+}
+
+.UserModify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    position:relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+h2 {
+    margin: 5px 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .Profile {
+        width: 500px;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wall{
+        display: none;
+    }
+    .User{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+    .UserProfile {
+        width: 100px;
+        height: 100px;
+        clip-path: circle();
+        margin: 30px;
+        display: flex;   
+    }
+    .class_block{
+        top: 0px;
+    }
+    .class_image{
+        height: 80px;
+        width: 80px;
+    }
+}

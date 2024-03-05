@@ -1,0 +1,40 @@
+﻿@using RaidFinder.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model User
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/lib/css/new_dec.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Container">
+        <div class="Profile">
+            <div class="User">
+                <img class="UserProfile" src="~/image/jhin.jpg" alt="User Profile"/>
+                <div style="font-size:32px; display:flex; justify-content: center;">Name: @Model.Name</div>
+            </div>
+            <div class="wall"></div>
+            <div class="UserInfo">
+                <div class="class_block">
+                    <img class="class_image" src="~/image/monk.png" alt="Class Image">
+                    <h2>Class: @Model.Stat.Class</h2>
+                </div>
+                <div class="Name_and_Level_block">
+                    <h2 style="margin-bottom: 20px;">Level: @Model.Stat.Level</h2>
+                    <h2 style="margin-bottom: 20px;">Power: @Model.Stat.PowerLevel</h2>
+                </div>
+                <div class="UserModify">
+                    <img style="margin: 20px;" class="icon" src="~/image/edit.png" alt="Edit Icon" onclick="window.location.href='@Url.Action("EditStat", "User", new { id = Model.UserId })';">
+                    <img style="margin: 20px;" class="icon" src="~/image/delete.png" alt="Delete Icon" onclick="window.location.href='@Url.Action("DeleteUser", "User", new { id = Model.UserId })';">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
