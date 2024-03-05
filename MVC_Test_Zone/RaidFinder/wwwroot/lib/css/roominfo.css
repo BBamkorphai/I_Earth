@@ -54,7 +54,8 @@
 
 .memberlist {
     display: grid;
-    grid-template-columns: auto auto auto;
+    /*justify-content: space-around;*/
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     padding: 10px;
 }
