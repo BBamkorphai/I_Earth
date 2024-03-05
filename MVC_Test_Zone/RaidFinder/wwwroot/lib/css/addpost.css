@@ -119,3 +119,21 @@ input[type=submit]:hover {
     height: 20%;
 }
 
+input[type=time] {
+    width: 5%;
+    padding: 6px;
+    margin:2px;
+    display: inline-block;
+    background-color: var(--color-background-box);
+    border: 2px solid var(--color-font-button);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+    input[type=time]:hover {
+        background-color: var(--color-background-button);
+    }
+
+input[type=time]::-webkit-datetime-edit-ampm-field {
+    display: none;
+}
