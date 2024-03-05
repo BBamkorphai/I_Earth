@@ -31,7 +31,7 @@
             <label for="Description">Description</label><br />
             <textarea id="Des" name="Description" rows="5" cols="20" asp-for="Description"></textarea><br />
             <label for="TimeOut">Timeout setting</label><br />
-            <input type="time" asp-for="TimeOut" name="TimeOut" id="time" />
+            <input type="text" asp-for="TimeOut" name="TimeOut" id="time" />
             <input id="ownerId" type="hidden" asp-for="OwnerId" value = "@contxt.HttpContext.Session.GetInt32("UserId")"/><br />
             <br />
             <input type="submit" value="Save" />
