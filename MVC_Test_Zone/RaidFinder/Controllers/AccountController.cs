@@ -10,23 +10,18 @@ namespace RaidFinder.Controllers
         {
             contxt = httpContextAccessor;
         }
-        public IActionResult Login()
+        [HttpGet]
+        public IActionResult Login(String Username, String Password)
         {
-            return View();
-        }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Login(Auth auth)
-        {
-            if (ModelState.IsValid)
+            AuthDB.UpdateDB();
+            Auth auth = new Auth();
+            auth.Username = Username;
+            auth.Password = Password;
+            var id = AuthDB.Authentication(auth);
+            contxt.HttpContext.Session.SetInt32("UserId", id);
+            if (id > 0)
             {
-                AuthDB.UpdateDB();
-                var id = AuthDB.Authentication(auth);
-                contxt.HttpContext.Session.SetInt32("UserId", id);
-                if (id > 0)
-                {
-                    return RedirectToAction("test", "User");
-                }
+                return RedirectToAction("test", "User");
             }
             return View();
         }
@@ -35,15 +30,23 @@ namespace RaidFinder.Controllers
             contxt.HttpContext.Session.SetInt32("UserId", 0);
             return RedirectToAction("Index","Home");
         }
-
-        public IActionResult Signup()
+        public IActionResult Index()
+        {
+            return View();
+        } 
+        public IActionResult Register()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult Signup(Auth auth) {
+        public IActionResult Register(string Username, string Password)
+        {
+            Auth auth = new Auth();
+            auth.Username = Username;
+            auth.Password = Password;
             AuthDB.AddUser(auth);
-            return RedirectToAction("login");
+            return RedirectToAction("index");
         }
+
     }
 }
