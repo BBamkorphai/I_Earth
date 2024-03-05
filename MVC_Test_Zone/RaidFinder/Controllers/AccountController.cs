@@ -15,14 +15,18 @@ namespace RaidFinder.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Login(Auth auth)
         {
-            AuthDB.UpdateDB();
-            var id = AuthDB.Authentication(auth);
-            contxt.HttpContext.Session.SetInt32("UserId", id);
-            if (id > 0)
+            if (ModelState.IsValid)
             {
-                return RedirectToAction("test", "User");
+                AuthDB.UpdateDB();
+                var id = AuthDB.Authentication(auth);
+                contxt.HttpContext.Session.SetInt32("UserId", id);
+                if (id > 0)
+                {
+                    return RedirectToAction("test", "User");
+                }
             }
             return View();
         }
@@ -30,6 +34,16 @@ namespace RaidFinder.Controllers
         {
             contxt.HttpContext.Session.SetInt32("UserId", 0);
             return RedirectToAction("Index","Home");
+        }
+
+        public IActionResult Signup()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Signup(Auth auth) {
+            AuthDB.AddUser(auth);
+            return RedirectToAction("login");
         }
     }
 }

@@ -90,28 +90,9 @@ public class HomeController : Controller
 
         return View(post);
     }
-
-    public IActionResult Login()
-    {
-        return View();
-    }
-    [HttpPost]
-    public IActionResult Login(Auth auth)
-    {
-        AuthDB.UpdateDB();
-        var id = AuthDB.Authentication(auth);
-        contxt.HttpContext.Session.SetInt32("UserId",id);
-        if (id > 0)
-        {
-            auth.UserId = id;
-            return RedirectToAction("test","User",auth);
-        }
-        return View();
-    }
-
     public IActionResult Profile()
-    { 
-        return View(); 
+    {
+        return View();
     }
     //dummy leader
     //[HttpGet]

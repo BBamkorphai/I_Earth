@@ -43,10 +43,11 @@ namespace RaidFinder.Models
                 //SqlCommand iuon = new SqlCommand("SET IDENTITY_INSERT Users ON", con);
                 using (SqlCommand cmd = new SqlCommand(sqlcmd, con))
                 {
-                    cmd.Parameters.Add("@Username", SqlDbType.Int).Value = auth.UserId;
-                    cmd.Parameters.Add("@Pass", SqlDbType.Char).Value = auth.Username;
-                    cmd.Parameters.Add("@UserId", SqlDbType.Char).Value = auth.UserId;
+                    cmd.Parameters.Add("@Username", SqlDbType.Char).Value = auth.Username;
+                    cmd.Parameters.Add("@Pass", SqlDbType.Char).Value = auth.Password;
+                    cmd.Parameters.Add("@UserId", SqlDbType.Int).Value = auth.UserId;
                     int Out = cmd.ExecuteNonQuery();
+
                 }
                 //SqlCommand iuoff = new SqlCommand("SET IDENTITY_INSERT Users OFF", con);
             }
