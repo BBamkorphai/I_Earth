@@ -119,7 +119,15 @@ input[type=submit]:hover {
     height: 20%;
 }
 
-input[type=time] {
+.box {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+input[type=number] {
     width: 5%;
     padding: 6px;
     margin:2px;
@@ -130,10 +138,7 @@ input[type=time] {
     box-sizing: border-box;
 }
 
-    input[type=time]:hover {
+    input[type=number]:hover {
         background-color: var(--color-background-button);
     }
 
-input[type=time]::-webkit-datetime-edit-ampm-field {
-    display: none;
-}
