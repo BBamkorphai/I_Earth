@@ -3,6 +3,7 @@ body {
     background: linear-gradient(135deg, #a49261, #112233);
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 
 .Container {

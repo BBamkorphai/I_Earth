@@ -3,6 +3,7 @@ body {
     background: linear-gradient(135deg, #a49261, #112233);
     display: flex;
     justify-content: center;
+    height:100vh;
 }
 
 .Container {
@@ -39,6 +40,13 @@ h1 {
 h2 {
     color: #a49261;
     font-family: 'Anta', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 input[type= text],input[type=password] {
