@@ -1,4 +1,5 @@
 ﻿@using RaidFinder.Models
+@inject IHttpContextAccessor contxt;
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @model RaidingPostModels
 
@@ -38,6 +39,7 @@
                 <input type="number" min="0" max="99" name="Minute"  placeholder="Min" />
             </div>
             <br />
+            <input id="ownerId" type="hidden" asp-for="OwnerId" value="@contxt.HttpContext.Session.GetInt32("UserId")" /><br />
             <input type="submit" value="Save" />
         </form>
     </div>
