@@ -13,7 +13,14 @@ namespace RaidFinder.Controllers
 
             return View(Users);
         }
-        public IActionResult EditStat(int? id)
+        public IActionResult Profile(int? id)
+        {
+            UserDB.UpdateDB();
+            var User = UserDB.GetUserCopyById((int)id);
+
+            return View(User);
+        }
+        public IActionResult EditProfile(int? id)
         {
             var User = UserDB.GetUserCopyById(id.HasValue?id.Value:0);
 
@@ -25,7 +32,7 @@ namespace RaidFinder.Controllers
         {
 
             UserDB.UpdateUser(user.UserId, user);
-            return RedirectToAction("ViewStat");
+            return RedirectToAction("Profile", "User", new { id = user.UserId });
         }
 
         public IActionResult AddUser()
@@ -42,9 +49,9 @@ namespace RaidFinder.Controllers
 
         public IActionResult DeleteUser(int? id) 
         { 
-            if (!id.HasValue) { return RedirectToAction("ViewStat"); }
+            if (!id.HasValue) { return RedirectToAction("Profile"); }
             UserDB.DeleteUser(id.Value);
-            return RedirectToAction("ViewStat");
+            return RedirectToAction("Profile", "User", new { id = id });
         }
         public IActionResult test(Auth auth) {
             return View(auth);
