@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using RaidFinder.Models;
 using Microsoft.AspNetCore.Http;
@@ -10,7 +10,6 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private readonly IHttpContextAccessor contxt;
-
     public HomeController(IHttpContextAccessor httpContextAccessor)
     {
         contxt = httpContextAccessor;
@@ -34,6 +33,13 @@ public class HomeController : Controller
     public IActionResult AddPost(RaidingPostModels post, int Hour, int Minute)
     {
         post.TimeOut = DateTime.Now.AddHours(Hour).AddMinutes(Minute);
+        if (post.OwnerId == null)
+        {
+            post.OwnerId = 0;
+        }
+        var hour = Hour;
+
+        var minute = Minute;
         IndexModels.AddPost(post);
         return RedirectToAction("Index");
     }

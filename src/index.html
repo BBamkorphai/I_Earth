@@ -1,6 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <b>This is test</b>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RaidFinder</title>
+  <link rel="stylesheet" href="~/lib/css/addpost.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <h1 id="title">Raid Finder</h1>
+    </header>
+    <div class="text">
+      <h2 id="text">Add Post</h2>
+    </div>
+
+
+  <div class="box-container">
+    <form id="form" method="post" asp-controller="home" asp-action="addpost">
+      <label for="NamePost">Post Name</label> </br>
+      <input type="text" asp-for="Name" name="NamePost" /><br />
+      <label for="PowerLevel">Power Level</label></br>
+      <input type="text" asp-for="PowerLevel" name="PowerLevel" /><br />
+      <label for="MaxSize">Capacity</label></br>
+      <input type="text" asp-for="MaxSize" name="MaxSize"/><br />
+      <label for="Description">Description</label></br>
+      <textarea id="Des" name="Description" rows="5" cols="20" asp-for="Description">
+        </textarea></br>
+      <label for="TimeOut setting">Timeout setting</label></br>
+      <input type="time" asp-for="TimeDate" name="time" id="time"/>
+        <br />
+      <input type="submit" value="Save" />
+  </form>
+  </div>
+ 
+</body>
 </html>

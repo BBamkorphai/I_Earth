@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hammersmith One", sans-serif;
+    color: var(--color-font-white);
+}
+
+:root {
+    --background-color: #000000;
+    --color-header: #1a1818;
+    --color-font-white: #FFFFFF;
+    --color-font: #BEA455;
+    --color-font-button: #D3DACC;
+    --color-background-button: #5F584A;
+    --color-background-box: #897F6C;
+    --color-hover-button: rgba(0, 0, 0, 0.4)
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-header);
+    border-radius: 5px;
+    margin: 2%;
+}
+
+#title {
+    font-size: 50px;
+    padding: 5px;
+    color: var(--color-font)
+}
+
+.text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--color-font-button) solid 3px;
+}
+
+#text {
+    text-align: center;
+    margin-left: 2%;
+    font-size: 40px;
+    padding-bottom: 2px;
+    color: var(--color-font)
+}
+
+.box-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#form {
+    height: 85vh;
+    width: 100%;
+    padding: 30px;
+    background-color: var(--color-background-box);
+}
+
+
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: var(--color-background-box);
+    border: 2px solid var(--color-font-button);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    border: 2px solid var(--color-font-button);
+    background-color: var(--color-background-button);
+    color: var(--color-font-white);
+    padding: 14px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type=text]:hover, #Des:hover {
+    background-color: var(--color-background-button);
+}
+
+input[type=submit]:hover {
+    box-shadow: 5px 5px var(--color-hover-button);
+    border-color: var(--color-font-white);
+    border: none;
+}
+
+#Des {
+    margin: 8px 0;
+    padding: 12px 20px;
+    background-color: var(--color-background-box);
+    border: 2px solid var(--color-font-button);
+    border-radius: 10px;
+    line-height: 1.5;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    resize: none;
+    width: 80%;
+    height: 20%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+input[type=number] {
+    width: 5%;
+    padding: 6px;
+    margin: 2px;
+    display: inline-block;
+    background-color: var(--color-background-box);
+    border: 2px solid var(--color-font-button);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+    input[type=number]:hover {
+        background-color: var(--color-background-button);
+    }

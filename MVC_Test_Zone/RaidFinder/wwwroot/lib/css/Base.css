@@ -89,7 +89,7 @@ header {
 .grid-container {
     display: grid;
     height: 70%;
-    width: 100%;
+    width:100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto,400px);
     gap: 1.5rem;

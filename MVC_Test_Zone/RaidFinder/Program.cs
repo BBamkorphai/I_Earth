@@ -1,3 +1,5 @@
+using RaidFinder.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();

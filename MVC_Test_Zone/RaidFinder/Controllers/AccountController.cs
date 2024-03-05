@@ -5,10 +5,10 @@ namespace RaidFinder.Controllers
     public class AccountController : Controller
     {
         private readonly IHttpContextAccessor contxt;
-
         public AccountController(IHttpContextAccessor httpContextAccessor)
         {
             contxt = httpContextAccessor;
+            contxt.HttpContext.Session.SetInt32("UserId", 0);
         }
         [HttpGet]
         public IActionResult Login(String Username, String Password)
@@ -21,7 +21,7 @@ namespace RaidFinder.Controllers
             contxt.HttpContext.Session.SetInt32("UserId", id);
             if (id > 0)
             {
-                return RedirectToAction("test", "User");
+                return RedirectToAction("index", "Home");
             }
             return View();
         }

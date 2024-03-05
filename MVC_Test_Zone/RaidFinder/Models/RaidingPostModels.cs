@@ -14,7 +14,6 @@ namespace RaidFinder.Models
         public List<User> PartyList { get; set; } = new List<User>();
         public DateTime? TimeOut { get; set; } = DateTime.Now;
         public int PostId { get; set; } = 0;
-
         public RaidingPostModels()
         {
             PartyList = new List<User>();
