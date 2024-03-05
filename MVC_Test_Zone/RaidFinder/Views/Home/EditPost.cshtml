@@ -33,7 +33,10 @@
             <textarea id="Des" name="Description" rows="5" cols="20" asp-for="Description">
         </textarea></br>
             <label for="TimeOut setting">Timeout setting</label></br>
-            <input type="text" asp-for="TimeOut" name="time" id="time" />
+            <div class="Box">
+                <input type="number" min="0" max="99" name="Hour" placeholder="Hour" />
+                <input type="number" min="0" max="99" name="Minute"  placeholder="Min" />
+            </div>
             <br />
             <input type="submit" value="Save" />
         </form>

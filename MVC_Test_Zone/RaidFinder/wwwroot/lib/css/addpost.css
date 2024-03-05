@@ -94,8 +94,8 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=text]:hover,#Des:hover { 
-    background-color:var(--color-background-button);
+input[type=text]:hover, #Des:hover {
+    background-color: var(--color-background-button);
 }
 
 input[type=submit]:hover {
@@ -130,7 +130,7 @@ input[type=submit]:hover {
 input[type=number] {
     width: 5%;
     padding: 6px;
-    margin:2px;
+    margin: 2px;
     display: inline-block;
     background-color: var(--color-background-box);
     border: 2px solid var(--color-font-button);
@@ -141,4 +141,3 @@ input[type=number] {
     input[type=number]:hover {
         background-color: var(--color-background-button);
     }
-

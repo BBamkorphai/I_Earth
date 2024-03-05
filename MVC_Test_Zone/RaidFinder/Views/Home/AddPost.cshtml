@@ -1,7 +1,8 @@
 ﻿@using RaidFinder.Models
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@inject IHttpContextAccessor contxt;
 @model RaidingPostModels
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,23 +23,25 @@
 
     <div class="box-container">
         <form id="form" method="post" asp-controller="home" asp-action="addpost">
-            <label for="Name">Post Name</label> <br />
+            <label for="NamePost">Post Name</label> </br>
             <input type="text" asp-for="Name" name="Name" /><br />
-            <label for="PowerLevel">Power Level</label><br />
+            <label for="PowerLevel">Power Level</label></br>
             <input type="text" asp-for="PowerLevel" name="PowerLevel" /><br />
-            <label for="MaxSize">Capacity</label><br />
+            <label for="MaxSize">Capacity</label></br>
             <input type="text" asp-for="MaxSize" name="MaxSize" /><br />
-            <label for="Description">Description</label><br />
-            <textarea id="Des" name="Description" rows="5" cols="20" asp-for="Description"></textarea><br />
-            <label for="TimeOut">Timeout setting</label><br />
-            <input type="text" asp-for="TimeOut" name="TimeOut" id="time" />
-            <input id="ownerId" type="hidden" asp-for="OwnerId" value = "@contxt.HttpContext.Session.GetInt32("UserId")"/><br />
+            <label for="Description">Description</label></br>
+            <textarea id="Des" name="Description" rows="5" cols="20" asp-for="Description">
+        </textarea></br>
+            <label for="TimeOut setting">Timeout setting</label></br>
+            <div class="Box">
+                <input type="number" min="0" max="99" name="Hour" placeholder="Hour" />
+                <input type="number" min="0" max="99" name="Minute"  placeholder="Min" />
+            </div>
             <br />
             <input type="submit" value="Save" />
         </form>
-    </div>        
+    </div>
 
-    </script>
 </body>
 
 </html>

@@ -30,12 +30,14 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult AddPost(RaidingPostModels post)
+    public IActionResult AddPost(RaidingPostModels post,int Hour,int Minute)
     {
         if (post.OwnerId == null)
         {
             post.OwnerId = 0;
         }
+        var hour = Hour;
+        var minute = Minute;
         IndexModels.AddPost(post);
         return RedirectToAction("Index");
     }
