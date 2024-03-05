@@ -5,7 +5,6 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Runtime.CompilerServices;
-
 namespace RaidFinder.Models
 
 {

@@ -10,7 +10,6 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private readonly IHttpContextAccessor contxt;
-
     public HomeController(IHttpContextAccessor httpContextAccessor)
     {
         contxt = httpContextAccessor;
@@ -33,6 +32,10 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult AddPost(RaidingPostModels post)
     {
+        if (post.OwnerId == null)
+        {
+            post.OwnerId = 0;
+        }
         IndexModels.AddPost(post);
         return RedirectToAction("Index");
     }
