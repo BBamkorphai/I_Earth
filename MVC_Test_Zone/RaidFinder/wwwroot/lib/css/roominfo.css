@@ -131,8 +131,8 @@
 }
 
 .bot {
-    left: calc(75% * var(--i) - 30px * var(--i));
-    top: calc(75% * var(--i) - 30px * var(--i));
+    right: 20px;
+    bottom: 20px;
 }
 
 .roomtitle {
