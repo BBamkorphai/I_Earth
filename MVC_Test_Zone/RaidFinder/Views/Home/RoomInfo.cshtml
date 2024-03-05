@@ -2,43 +2,17 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @model RaidingPostModels
 @inject IHttpContextAccessor contxt;
+@{
+	ViewData["Title"] = "RoomInfo";
+	Layout = "~/Views/Shared/Navbar.cshtml";
+}
 
+@section AdditionalCSS {
+	<link rel="stylesheet" href="~/lib/css/roominfo.css">
+}
 
 
 @if (Model != null) {
-    <html>
-    <head>
-        <title>RoomInfo</title>
-        <script src="~/lib/js/BoxClick.js"></script>
-        @if (Model.OwnerId == @contxt.HttpContext.Session.GetInt32("UserId"))
-        {
-            <link rel="stylesheet" href="~/lib/css/roominfo.css">
-        }
-        else {
-            <link rel="stylesheet" href="~/lib/css/roominfo2.css">
-        }
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
-
-        <script src="https://kit.fontawesome.com/043b90f15a.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <h1 class="webtab">
-            <a href='#' class="logo">Raids Finder</a>
-            <input type="checkbox" id="toggle">
-            <label for="toggle">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <nav class="navbar">
-                <li>
-                    <ul><a href=".">Home</a></ul>
-                    <ul><a href="/user/viewstat">Profile</a></ul>
-                    <ul><a href="#">Create Room</a></ul>
-                </li>
-            </nav>
-        </h1>
-
         <div>
             <div class="subtab">
                 <h2><b>Party List</b></h2>
@@ -93,6 +67,4 @@
                 </div>
             </div>
         </div>
-    </body>
-    </html>
 }

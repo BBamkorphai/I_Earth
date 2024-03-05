@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>@ViewData["Title"]</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="~/lib/css/navbar.css">
+	@RenderSection("AdditionalCSS",required: false)
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/043b90f15a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1 class="webtab">
+		<a href='#' class="logo">Raids Finder</a>
+		<input type="checkbox" id="toggle">
+		<label for="toggle">
+			<i class="fa-solid fa-bars"></i>
+		</label>
+		<nav class="navbar">
+			<li>
+				<ul><a href="/home">Home</a></ul>
+				<ul><a href="/user/viewstat">Profile</a></ul>
+				<ul><a href="/home/addpost">Create Room</a></ul>
+			</li>
+		</nav>
+	</h1>
+
+	<div>
+		@RenderBody()
+	</div>
+</body>
+</html>
