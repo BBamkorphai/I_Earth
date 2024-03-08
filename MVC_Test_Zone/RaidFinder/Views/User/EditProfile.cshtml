@@ -24,16 +24,31 @@
     <div class="Container">
         <div class="MainBox">
             <div class="Image">
-                <p>test</p>
+                <img class="UserProfile" src="~/image/jhin.jpg" alt="User Profile" />
+                <img class="UserProfile" src="~/image/jhin.jpg" alt="User Profile" />
             </div>
             <div class="Form">
-                <form method="post" asp-controller="user" asp-action="editstat">
+                <form method="post" asp-controller="user" asp-action="editstat" autocomplete="off">
                     <input type="hidden" asp-for="UserId" />
-                    <></>
-                    <b>Name </b><input type="text" asp-for="Name" /><br />
-                    <b>Level </b><input type="text" asp-for="Stat.Level" /><br />
-                    <b>PLV </b><input type="text" asp-for="Stat.PowerLevel" /><br />
-                    <b>Class </b><input type="text" asp-for="Stat.Class" /><br />
+                    <div class="Form_group">
+                        <input type="input" asp-for="Name" class="Form__field" placeholder="Name" id="name"/>
+                        <label for="name" class="Form__label">Name</label>
+                    </div>
+                    <div class="Form_group">
+                        
+                        <input type="input" asp-for="Stat.Level" class="Form__field" placeholder="Level" id="level"/>
+                        <label for="level" class="Form__label">Level</label>
+                    </div>
+                    <div class="Form_group">
+                        
+                        <input type="input" asp-for="Stat.PowerLevel" class="Form__field" placeholder="Power Level"id="powerLevel" />
+                        <label for="powerLevel" class="Form__label">Power Level</label>
+                    </div>
+                    <div class="Form_group">
+                        
+                        <input type="input" asp-for="Stat.Class" class="Form__field" placeholder="Class"id="class" />
+                        <label for="class" class="Form__label">Class</label>
+                    </div>
                     <input type="submit" value="Save" />
                 </form>
             </div>

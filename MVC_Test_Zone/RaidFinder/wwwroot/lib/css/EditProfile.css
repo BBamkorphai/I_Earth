@@ -15,7 +15,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    border : solid 2px red;
 }
 
 .a {
@@ -35,8 +34,9 @@ body {
     flex-direction: row;
     align-items: stretch;
     box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.5);*/
+    /*border: solid 2px gold;*/
     width: 800px;
-    position : relative;
+    position: relative;
     height: 500px;
     background: linear-gradient(135deg, #665F4B, #112233);
     border-radius: 50px;
@@ -44,18 +44,78 @@ body {
     flex-direction: row;
     align-items: stretch;
     box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
     /*justify-content : center;*/
 }
 
+
 .Image {
-    border : solid 2px red;
     width : 35%;
     margin : 30px;
 }
 .Form {
-    border : solid 2px blue;
-    width : 65%;
-    margin : 30px;
+    width: 65%;
+    margin: 30px;
+    position: relative;
 }
 
-.Form 
+input[type= text], input[type=password], input[type=input] {
+    padding-left: 10px;
+    font-family: 'Anta', sans-serif;
+}
+
+    .Form_group {
+    position : relative;
+    padding : 10px;
+    height : 75px;
+}
+
+.Form__field {
+    outline: none;
+    border: none;
+    width: 80%;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: #fff;
+    box-shadow: none;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    box-sizing : border-box;
+    outline-color: transparent;
+    transition: border-color 0.2s;
+}
+
+
+.Form__label {
+    width:100%;
+    padding: 3px;
+    position: relative;
+    left: 0px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.Form__field:focus {
+    padding-bottom: 9px;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #665F4B, #a49261);
+    border-image-slice: 1;
+}
+
+    .Form__field:focus ~ .Form__label {
+        position: relative;
+        left: 10px;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: #a49261;
+    }
+
+.UserProfile {
+    width: 180px;
+    height: 180px;
+    clip-path: circle();
+    margin: 15px;
+}
