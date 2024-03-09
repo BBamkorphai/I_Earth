@@ -37,9 +37,6 @@ public class HomeController : Controller
         {
             post.OwnerId = 0;
         }
-        var hour = Hour;
-
-        var minute = Minute;
         IndexModels.AddPost(post);
         return RedirectToAction("Index");
     }
@@ -47,14 +44,20 @@ public class HomeController : Controller
     public IActionResult EditPost(int? id)
     {
         var post = IndexModels.GetPostCopyById(id.HasValue ? id.Value : 0);
-
+        var userIds = post.PartyList.Select(user => user.UserId.ToString()).ToList();
+        ViewBag.PartyList = string.Join(",", userIds);
         return View(post);
     }
 
     [HttpPost]
-    public IActionResult EditPost(RaidingPostModels post)
+    public IActionResult EditPost(RaidingPostModels post, int Hour, int Minute, String Users)
     {
-
+        var userIds = Users.Split(',').Select(int.Parse).ToList();
+        foreach (var userId in userIds)
+        {
+            post.PartyList.Add(UserDB.GetUserCopyById(userId));
+        }
+        post.TimeOut = DateTime.Now.AddHours(Hour).AddMinutes(Minute);
         IndexModels.UpdatePost(post.PostId, post);
         return RedirectToAction("Index");
     }

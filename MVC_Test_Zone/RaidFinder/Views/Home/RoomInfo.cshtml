@@ -73,9 +73,11 @@
 
                 <div class="roominteractive">
                     <button id="join" onclick="window.location.href='@Url.Action("JoinRoom", "Home", new { PostId = Model.PostId })';"> + Join team </button>
-                    <button id="delete" > Delete Post </button>
-                    <button id="save" > Save Post </button>
+                    <button id="delete" onclick="window.location.href='@Url.Action("DeletePost", "Home", new { id = Model.PostId })';"> Delete Post </button>
+                    <button id="save" onclick="window.location.href='@Url.Action("EditPost", "Home", new { id = Model.PostId })';"> Edit Post </button>
                 </div>
             </div>
         </div>
+
+
 }
