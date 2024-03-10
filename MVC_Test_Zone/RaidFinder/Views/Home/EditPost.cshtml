@@ -27,10 +27,10 @@
             <input type="text" asp-for="Name" name="NamePost" /><br />
             <label for="PowerLevel">Power Level</label></br>
             <input type="text" asp-for="PowerLevel" name="PowerLevel" /><br />
-            <label for="MaxSize">Capacity</label></br>
-            <input type="text" asp-for="MaxSize" name="MaxSize" /><br />
+            <label for="MaxSize">Max size (Max:5)</label></br>
+            <input type="number" asp-for="MaxSize" name="MaxSize"min='0' max='5'/><br />
             <label for="Description">Description</label></br>
-            <textarea id="Des" name="Description" rows="5" cols="20" asp-for="Description">
+            <textarea id="Des" name="Description" rows="5" cols="20" maxlength="100" asp-for="Description">
         </textarea></br>
             <label for="TimeOut setting">Timeout setting</label></br>
             <div class="Box">
