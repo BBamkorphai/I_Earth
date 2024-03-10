@@ -82,7 +82,6 @@ body {
     height: 100vh;
     width:100%;
     grid-template-columns: repeat(3, 0.3fr);
-    /* grid-template-rows: repeat(auto,5%); */
     justify-content: center;
     row-gap: 3%;
     padding: 2% 5% 3% 8%;
