@@ -20,8 +20,8 @@
         <h2 id="text">Edit Post</h2>
     </div>
 
-
-    <div class="box-container">
+    <div class="main">
+        <div class="box-container">
         <form id="form" method="post" asp-controller="home" asp-action="addpost">
             <label for="NamePost">Post Name</label> </br>
             <input type="text" asp-for="Name" name="NamePost" /><br />
@@ -41,6 +41,8 @@
             <input type="submit" value="Save" />
         </form>
     </div>
+    </div>
+    
 
 </body>
 

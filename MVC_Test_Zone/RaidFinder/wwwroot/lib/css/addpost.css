@@ -9,69 +9,81 @@
 }
 
 :root {
-    --background-color: #000000;
-    --color-header: #1a1818;
     --color-font-white: #FFFFFF;
     --color-font: #BEA455;
     --color-font-button: #D3DACC;
-    --color-background-button: #5F584A;
-    --color-background-box: #897F6C;
-    --color-hover-button: rgba(0, 0, 0, 0.4)
+    --color-line:rgba(211, 218, 204,0.8);
+    --color-background-button:rgba(131,96,12,0.8);
+    --color-background-box:rgba(131,96,12,0.4);
+    --color-hover-button: rgba(0, 0, 0, 0.4);
 }
 
 body {
-    background-color: var(--background-color);
-}
+    height: 100vh;
+    background-image: linear-gradient(to left,rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url('https://img5.pic.in.th/file/secure-sv1/45196.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--color-header);
-    border-radius: 5px;
-    margin: 2%;
+   
+    padding-left: 2%;
+    border-bottom: var(--color-line) solid 2px;
 }
 
 #title {
-    font-size: 50px;
-    padding: 5px;
+    font-size: 40px;
+    padding: 2px;
     color: var(--color-font)
 }
 
 .text {
     display: flex;
     width: 100%;
+    padding-left: 2%;
     justify-content: space-between;
     align-items: center;
-    border-bottom: var(--color-font-button) solid 3px;
+    border-bottom:var(--color-line) solid 2px ;
 }
 
 #text {
     text-align: center;
-    margin-left: 2%;
-    font-size: 40px;
-    padding-bottom: 2px;
+    padding: 2px;
+    font-size: 30px;
+    padding-bottom: 1px;
     color: var(--color-font)
 }
 
+label {
+    text-shadow: 2px 2px var(--color-font);
+}
+
+
 .box-container {
-    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    
+  
 }
 
 #form {
-    height: 85vh;
     width: 100%;
-    padding: 30px;
-    background-color: var(--color-background-box);
+    height: auto;
+    padding: 30px 30px 5px 30px;
+   
 }
 
 
 input[type=text] {
-    width: 80%;
+    width: 70%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -82,11 +94,11 @@ input[type=text] {
 }
 
 input[type=submit] {
-    width: 50%;
+    width: 40%;
     position: absolute;
-    left: 25%;
+    left: 30%;
     border: 2px solid var(--color-font-button);
-    background-color: var(--color-background-button);
+    background-color: var(--color-background-box);
     color: var(--color-font-white);
     padding: 14px 20px;
     margin: 10px 0;
@@ -99,12 +111,15 @@ input[type=text]:hover, #Des:hover {
 }
 
 input[type=submit]:hover {
+    background-color: var(--color-background-button);
     box-shadow: 5px 5px var(--color-hover-button);
+    transition: 0.2s ease-in-out;
     border-color: var(--color-font-white);
     border: none;
 }
 
 #Des {
+    display:block ;
     margin: 8px 0;
     padding: 12px 20px;
     background-color: var(--color-background-box);
@@ -115,8 +130,8 @@ input[type=submit]:hover {
     overflow-x: hidden;
     scroll-behavior: smooth;
     resize: none;
-    width: 80%;
-    height: 20%;
+    width: 70%;
+    height: auto;
 }
 
 .box {
@@ -128,7 +143,7 @@ input[type=submit]:hover {
 }
 
 input[type=number] {
-    width: 5%;
+    width: 80px;
     padding: 6px;
     margin: 2px;
     display: inline-block;
@@ -139,5 +154,6 @@ input[type=number] {
 }
 
     input[type=number]:hover {
+       
         background-color: var(--color-background-button);
     }
