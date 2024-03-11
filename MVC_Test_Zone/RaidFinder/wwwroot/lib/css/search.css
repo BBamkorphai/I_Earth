@@ -1,0 +1,14 @@
+﻿#results {
+    list-style-type: none;
+    padding: 0;
+}
+
+    #results li {
+        cursor: pointer;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+        #results li:hover {
+            background-color: #f4f4f4;
+        }

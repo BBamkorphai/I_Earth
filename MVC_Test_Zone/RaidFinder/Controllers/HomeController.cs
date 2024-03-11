@@ -100,6 +100,11 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    public IActionResult Search()
+    {
+        return View();
+    }
     //dummy leader
     //[HttpGet]
 
