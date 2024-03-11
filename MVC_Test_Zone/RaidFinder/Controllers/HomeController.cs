@@ -105,6 +105,15 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    [HttpPost]
+    public IActionResult Search(string query)
+    {
+        
+        var filteredPosts = IndexModels.GetPosts().Where(post => post.Name.ToLower().StartsWith(query.ToLower())).ToList();
+        var Jsonified = Json(filteredPosts);
+        return Jsonified;
+    }
     //dummy leader
     //[HttpGet]
 
