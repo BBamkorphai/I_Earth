@@ -1,13 +1,32 @@
+html {
+    position: relative;
+}
+
+    html::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        z-index: -1;
+        pointer-events: none;
+    }
 body {
+    background: url(../../image/login_signup.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
     margin: 0px;
-    background: linear-gradient(135deg, #a49261, #112233);
     display: flex;
     justify-content: center;
     height: 100vh;
 }
 
 .Container {
-    background-color: inherit;
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -54,10 +73,17 @@ h2 {
 }
 
 input[type="text"] {
+    outline-color: transparent;
+    box-shadow: none;
+    outline: none;
     border: 2px solid #a49261;
     background-color: black;
     border-radius: 25px;
     color: #a49261;
+}
+#password {
+    -webkit-text-security: disc;
+    text-security: disc;
 }
 
 .Buttons {
@@ -77,10 +103,10 @@ button {
     font-family: 'Anta', sans-serif;
 }
 
-button:hover {
-    background-color: #a49261;
-    color: black;
-}
+    button:hover {
+        background-color: #a49261;
+        color: black;
+    }
 
 .ButtonSpacer {
     height: 30px;
@@ -105,12 +131,15 @@ ButtonSpacer:hover {
         flex-direction: column;
         align-items: center;
     }
-    .LogoImage{
+
+    .LogoImage {
         width: 300px;
     }
+
     .Placeholder {
         display: none;
     }
+
     .LoginBlock {
         width: 70%;
         max-width: none;

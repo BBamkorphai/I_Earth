@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
 <!DOCTYPE html>
 <html>
 
@@ -27,18 +26,18 @@
             <div class="Buttons">
                 <button id="login" onclick="Signup()">login</button>
                 <div class="ButtonSpacer"></div>
-                <button id="sign-in" onclick="window.location.href='@Url.Action("Register", "Account")';" >sign in</button>
+                <button id="sign-in" onclick="window.location.href='@Url.Action("Register", "Account")';">sign in</button>
             </div>
         </div>
     </div>
     <script>
         function Signup() {
             var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-        // Construct the URL manually
-        var url = '/Account/Login?Username=' + encodeURIComponent(username) + '&Password=' + encodeURIComponent(password);
-        // Redirect the user
-        window.location.href = url;
+            var password = document.getElementById("password").value;
+            // Construct the URL manually
+            var url = '/Account/Login?Username=' + encodeURIComponent(username) + '&Password=' + encodeURIComponent(password);
+            // Redirect the user
+            window.location.href = url;
         }
     </script>
 </body>
