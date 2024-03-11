@@ -50,10 +50,13 @@ body {
 
 
 .Image {
-    width : 35%;
-    margin : 30px;
+    display: flex;
+    flex-direction:column;
+    width: 35%;
+    margin: 30px;
 }
 .Form {
+    
     width: 65%;
     margin: 30px;
     position: relative;
@@ -61,7 +64,7 @@ body {
 
 input[type= text], input[type=password], input[type=input] {
     padding-left: 10px;
-    font-family: 'Anta', sans-serif;
+    font-family: inherit;
 }
 
     .Form_group {
@@ -114,8 +117,59 @@ input[type= text], input[type=password], input[type=input] {
     }
 
 .UserProfile {
-    width: 180px;
-    height: 180px;
-    clip-path: circle();
-    margin: 15px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 50%;
+}
+
+.file-input {
+    display:none;
+}
+
+.file-label {
+    font-family: inherit;
+    border: solid 2px #a49261;
+    padding: 10px;
+    color: #a49261;
+    background: transparent;
+    border-radius: 30px;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    width: fit-content;
+    flex-basis: content;
+}
+
+.file-label:hover {
+    border: solid 2px #a49261;
+    padding: 10px;
+    color : white;
+    background : #665F4B;
+    transition : 0.5s;
+    border-radius: 30px;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    width: fit-content;
+    flex-basis: content;
+}
+
+
+
+.circle {
+    width: 200px;
+    height: 200px;
+    margin : 40px;
+    background: linear-gradient(to top, #3acfd5 0%, #3a4ed5 100%);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    padding: 20px;
+    box-sizing: border-box;
 }

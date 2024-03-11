@@ -31,7 +31,7 @@
                 <h2 style="margin-bottom: 20px;">Power: @Model.User.Stat.PowerLevel</h2>
                 </div>
                 <div class="UserModify">
-                <img style="margin: 20px;" class="icon" src="~/image/edit.png" alt="Edit Icon" onclick="window.location.href='@Url.Action("EditStat", "User", new { id = Model.User.UserId })';">
+                <img style="margin: 20px;" class="icon" src="~/image/edit.png" alt="Edit Icon" onclick="window.location.href='@Url.Action("EditProfile", "User", new { id = Model.User.UserId })';">
                 <img style="margin: 20px;" class="icon" src="~/image/delete.png" alt="Delete Icon" onclick="window.location.href='@Url.Action("DeleteUser", "User", new { id = Model.User.UserId })';">
                 </div>
             </div>

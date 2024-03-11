@@ -36,7 +36,7 @@ namespace RaidFinder.Controllers
 			{
 				await connection.OpenAsync();
 
-				using (var command = new SqlCommand("INSERT INTO Images (UserId, ImageData) VALUES (@OwnerId, @ImageData)", connection))
+				using (var command = new SqlCommand("MERGE INTO Images AS target USING (VALUES (@OwnerId, @ImageData)) AS source (UserId, ImageData) ON target.UserId = source.UserId WHEN MATCHED THEN UPDATE SET target.ImageData = source.ImageData WHEN NOT MATCHED THEN INSERT (UserId, ImageData) VALUES (source.UserId, source.ImageData);", connection))
 				{
 					command.Parameters.AddWithValue("@OwnerId", model.OwnerId);
 					command.Parameters.AddWithValue("@ImageData", model.ImageData);
@@ -68,6 +68,10 @@ namespace RaidFinder.Controllers
             UserDB.UpdateDB();
             var User = UserDB.GetUserCopyById((int)id);
             var Image = GetImageById(id);
+            if (Image == null)
+            {
+                Image = GetImageById(0);
+            }
             var viewModel = new ProfileViewModel
             {
                 User = User,
@@ -79,15 +83,47 @@ namespace RaidFinder.Controllers
         public IActionResult EditProfile(int? id)
         {
             var User = UserDB.GetUserCopyById(id.HasValue?id.Value:0);
+            var Image = GetImageById(id);
+            if (Image == null)
+            {
+                Image = GetImageById(0);
+            }
+            var viewModel = new ProfileViewModel
+            {
+                User = User,
+                Image = Image
+            };
 
-            return View(User);
+            return View(viewModel);
         }
 
         [HttpPost]
-        public IActionResult EditStat(User user)
+        public async Task<IActionResult> EditProfile(ProfileViewModel viewModel, IFormFile file)
         {
-
+            User user = viewModel.User;
             UserDB.UpdateUser(user.UserId, user);
+            if (!(file == null || file.Length == 0))
+            {
+                byte[] ImageData = null;
+                using (var memoryStream = new MemoryStream())
+                {
+                    await file.CopyToAsync(memoryStream);
+                    ImageData = memoryStream.ToArray();
+                }
+
+                using (var connection = new SqlConnection("Server=localhost;Database=UserDB;Trusted_Connection=True;"))
+                {
+                    await connection.OpenAsync();
+
+                    using (var command = new SqlCommand("MERGE INTO Images AS target USING (VALUES (@OwnerId, @ImageData)) AS source (UserId, ImageData) ON target.UserId = source.UserId WHEN MATCHED THEN UPDATE SET target.ImageData = source.ImageData WHEN NOT MATCHED THEN INSERT (UserId, ImageData) VALUES (source.UserId, source.ImageData);", connection))
+                    {
+                        command.Parameters.AddWithValue("@OwnerId", viewModel.User.UserId);
+                        command.Parameters.AddWithValue("@ImageData", ImageData);
+
+                        await command.ExecuteNonQueryAsync();
+                    }
+                }
+            }
             return RedirectToAction("Profile", "User", new { id = user.UserId });
         }
 
