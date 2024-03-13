@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 };
 
                 // Create and configure elements
+                const img_box = document.createElement("div");
+                img_box.classList.add("img-box");
+
                 const score = document.createElement("div");
                 score.classList.add("score");
 
@@ -46,6 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const data = document.createElement("div");
                 data.classList.add("data");
+
+                const img = document.createElement("img");
+                img.setAttribute("src", "https://cdn.mos.cms.futurecdn.net/d379AErHqrYX8WErHFfTHX-650-80.jpeg.webp");
 
                 const box = document.createElement("div");
                 box.classList.add("box");
@@ -90,6 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 i.classList.add("fa", "fa-plus-circle");
 
                 // Construct the structure
+                img_box.appendChild(img);
                 box.appendChild(span);
                 number.appendChild(topElement);
                 number.appendChild(bot);
@@ -104,6 +111,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 data.appendChild(date);
                 icon.appendChild(i);
                 data.appendChild(icon);
+
+                box_item.appendChild(img_box);
                 box_item.appendChild(score);
                 box_item.appendChild(level);
                 box_item.appendChild(line);

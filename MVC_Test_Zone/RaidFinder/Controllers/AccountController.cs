@@ -55,7 +55,7 @@ namespace RaidFinder.Controllers
             model.OwnerId = UserDB.AddUser(user);
             AuthDB.AddUser(auth);
             
-            model.ImageData = System.IO.File.ReadAllBytes(@"C:\Users\Asus\Documents\Web\I_Earth\MVC_Test_Zone\RaidFinder\wwwroot\image\jhin.jpg");
+            model.ImageData = System.IO.File.ReadAllBytes(@"wwwroot/image/jhin.jpg");
 
             using (var connection = new SqlConnection("Server=localhost;Database=UserDB;Trusted_Connection=True;"))
             {
