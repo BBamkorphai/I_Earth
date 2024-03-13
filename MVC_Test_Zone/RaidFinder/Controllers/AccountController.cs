@@ -44,6 +44,9 @@ namespace RaidFinder.Controllers
             Auth auth = new Auth();
             auth.Username = Username;
             auth.Password = Password;
+            User user = new User();
+            user.Name = Username;
+            UserDB.AddUser(user);
             AuthDB.AddUser(auth);
             return RedirectToAction("index");
         }
