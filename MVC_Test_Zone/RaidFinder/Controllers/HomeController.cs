@@ -32,7 +32,8 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult AddPost(RaidingPostModels post, int Hour, int Minute)
     {
-        post.TimeOut = DateTime.Now.AddHours(Hour).AddMinutes(Minute);
+		IndexModels.UpdatePostDB();
+		post.TimeOut = DateTime.Now.AddHours(Hour).AddMinutes(Minute);
         if (post.OwnerId == null)
         {
             post.OwnerId = 0;
@@ -43,7 +44,8 @@ public class HomeController : Controller
 
     public IActionResult EditPost(int? id)
     {
-        var post = IndexModels.GetPostCopyById(id.HasValue ? id.Value : 0);
+		IndexModels.UpdatePostDB();
+		var post = IndexModels.GetPostCopyById(id.HasValue ? id.Value : 0);
         var userIds = post.PartyList.Select(user => user.UserId.ToString()).ToList();
         ViewBag.PartyList = string.Join(",", userIds);
         return View(post);
@@ -59,7 +61,7 @@ public class HomeController : Controller
         }
         post.TimeOut = DateTime.Now.AddHours(Hour).AddMinutes(Minute);
         IndexModels.UpdatePost(post.PostId, post);
-        return RedirectToAction("Index");
+        return RedirectToAction("RoomInfo", "Home", new { id = post.PostId });
     }
     public IActionResult DeletePost(int? id)
     {

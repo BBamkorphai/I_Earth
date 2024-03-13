@@ -82,8 +82,8 @@
 			</div>
 			<div class="roominteractive">
 				<button id="join" onclick="window.location.href='@Url.Action("JoinRoom", "Home", new { PostId = Model.PostId })';"><span> + Join team </span></button>
-				<button id="delete"><span> Delete Post </span></button>
-				<button id="save"><span> Save Post </span></button>
+				<button id="delete" onclick="window.location.href='@Url.Action("DeletePost", "Home", new { id = Model.PostId })';"><span> Delete Post </span></button>
+				<button id="save" onclick="window.location.href='@Url.Action("EditPost", "Home", new { id = Model.PostId })';"><span> Edit Post </span></button>
 			</div>
 		</div>
 	</div>

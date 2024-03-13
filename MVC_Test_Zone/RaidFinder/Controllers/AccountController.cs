@@ -69,7 +69,7 @@ namespace RaidFinder.Controllers
                     await command.ExecuteNonQueryAsync();
                 }
             }
-            return RedirectToAction("index");
+            return RedirectToAction("Login", "Account");
         }
 
     }
