@@ -45,7 +45,28 @@
 
                 <div class="box-item" @("onclick=GoToRoom('" + Post.PostId + "')")>
                     <div class="img-box">
-                            <img src="https://cdn.mos.cms.futurecdn.net/d379AErHqrYX8WErHFfTHX-650-80.jpeg.webp" alt="">  
+                        @{
+                            if (Post.Name.Split(',')[0] == "boss1")
+                            {
+                                <img src="image/DEILJHO.jpg" alt="">
+                            }
+                            else if (Post.Name.Split(',')[0] == "boss2")
+                            {
+                                <img src="image/KULVE_TAROTH.jpg" alt="">
+                            }
+                            else if (Post.Name.Split(',')[0] == "boss3")
+                            {
+                                <img src="image/KUSHALA_DAORA.jpg" alt="">
+                            }
+                            else if (Post.Name.Split(',')[0] == "boss4")
+                            {
+                                <img src="image/LUNASTRA.jpg" alt="">
+                            }
+                            else if (Post.Name.Split(',')[0] == "boss5")
+                            {
+                                <img src="image/NERGIGANTE.jpg" alt="">
+                            }
+                        }  
                         </div>
                     <div class="score">
                         <div class="box">

@@ -23,14 +23,23 @@
     <div class="main">
         <div class="box-container">
         <form id="form" method="post" asp-controller="home" asp-action="editpost">
+            <input id="postName" type="hidden" asp-for="Name" name="Name" /><br />
             <label for="NamePost">Post Name</label> </br>
-            <input type="text" asp-for="Name" name="Name" value="@Model.Name"/><br />
+            <input id="Name" type="text" name="input" value="@Model.Name.Split(',')[1]"/><br />
             <label for="PowerLevel">Power Level</label></br>
             <input type="text" asp-for="PowerLevel" name="PowerLevel" value="@Model.PowerLevel" /><br />
             <label for="MaxSize">Capacity</label></br>
 
             <label for="MaxSize">Max size (Max:5)</label></br>
-                <input type="number" asp-for="MaxSize" name="MaxSize" min='0' max='5' value="@Model.MaxSize" /><br />
+            <input type="number" asp-for="MaxSize" name="MaxSize" min='0' max='5' value="@Model.MaxSize" /><br />
+            <label for="Boss">Boss Name</label></br>
+            <select id="boss" name="boss">
+                <option value="boss1">boss1</option>
+                <option value="boss2">boss2</option>
+                <option value="boss3">boss3</option>
+                <option value="boss4">boss4</option>
+                <option value="boss5">boss5</option>
+            </select></br>
             <label for="Description">Description</label></br>
             <textarea id="Des" name="Description" rows="5" cols="20" maxlength="100" asp-for="Description">
         </textarea></br>
@@ -47,7 +56,7 @@
         </form>
     </div>
     </div>
-    
+    <script src="~/lib/js/post.js"></script>
 
 </body>
 
