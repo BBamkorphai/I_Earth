@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () { }
 
     function displayResults(results) {
         const parent = document.getElementsByClassName("grid-container")[0];

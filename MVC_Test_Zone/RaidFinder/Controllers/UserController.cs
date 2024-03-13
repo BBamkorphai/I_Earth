@@ -11,7 +11,6 @@ namespace RaidFinder.Controllers
         public UserController(IHttpContextAccessor httpContextAccessor)
         {
             contxt = httpContextAccessor;
-            contxt.HttpContext.Session.SetInt32("UserId", 0);
         }
         public IActionResult ViewStat(int? id)
         {
