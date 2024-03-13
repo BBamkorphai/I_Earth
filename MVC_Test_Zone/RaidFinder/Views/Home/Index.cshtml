@@ -30,30 +30,38 @@
         {
             @foreach (var Post in Model)
             {
-
-                TimeSpan diff = (TimeSpan)(Post.TimeOut - DateTime.Now);
-                string temp = "";
-                if (diff.TotalHours >= 1)
-                {
-                    temp = $"{(int)diff.TotalHours} hours left";
-                }
-                else if (diff.TotalMinutes >= 1)
-                {
-                    temp = $"{(int)diff.TotalMinutes} minutes left";
-                }
-                else
-                {
-                    temp = $"Ended";
-                    @* continue; *@
-                }
-
-                <div class="box-item" @("onclick=GoToRoom('" + Post.PostId + "')")>
-                    <div class="score">
-                        <div class="box">
-                            <span></span>
-                            <div class="number">
-                                <b class='top' style="--i:0;">@Post.PartyList.Count()</b>
-                                <b class='bot' style="--i:1;">@Post.MaxSize</b>
+                    
+                    TimeSpan diff = (TimeSpan)(Post.TimeOut - DateTime.Now);
+                    string temp = "";
+                    if (diff.TotalHours >= 1)
+                    {
+                        temp = $"{(int)diff.TotalHours} hours left";
+                    }
+                    else if (diff.TotalMinutes >= 1)
+                    {
+                        temp = $"{(int)diff.TotalMinutes} minutes left";
+                    }
+                    else
+                    {
+                        temp = $"Ended";
+                        @* continue; *@
+                    }
+                    
+                    <div class="box-item" @("onclick=GoToRoom('" + Post.PostId + "')")>
+                        @* add the Boss image *@
+                        <div class="img-box">
+                            <img src="https://cdn.mos.cms.futurecdn.net/d379AErHqrYX8WErHFfTHX-650-80.jpeg.webp" alt="">
+                            
+                        </div>
+                        
+                        <div class="wrap-box">
+                            <div class="score">
+                            <div class="box">
+                                <span></span>
+                                <div class="number">
+                                    <b class='top' style="--i:0;">@Post.PartyList.Count()</b>
+                                    <b class='bot' style="--i:1;">@Post.MaxSize</b>
+                                </div>
                             </div>
                         </div>
                     </div>
