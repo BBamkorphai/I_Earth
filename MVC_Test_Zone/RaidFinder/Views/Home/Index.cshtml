@@ -62,7 +62,7 @@
                     </div>
                     <div class="line-block"></div>
                     <div class="data">
-                        <h2 class="name">@Post.Name</h2>
+                        <h2 class="name">@Post.Name.Split(',')[1]</h2>
                         <h3 class="info">
                             @Post.Description
                         </h3>
@@ -70,12 +70,15 @@
                         <div class="icon"><i class="fa fa-plus-circle"></i></div>
                     </div>
                 </div>
+                <script>
+                    var BossQueryUrl = @Url.Action("BossImage", "Home", new { name = @Post.Name.Split(',')[0] });
+                </script>
             }
         }
-		
-		<script>
-			var searchUrl = '@Url.Action("Search", "Home")';
-		</script>
+        <script>
+            var searchUrl = '@Url.Action("Search", "Home")';
+            var BossQueryUrl = '@Url.Action("BossImage", "Home")';
+        </script>
 		<script src="~/lib/js/search.js"></script>
     </div>
 	

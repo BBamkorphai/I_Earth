@@ -11,7 +11,6 @@ function test() {
 
     console.log("postname : " + postname);
 }
-
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("Name").addEventListener('input', test);
     document.getElementById("boss").addEventListener('change', test);

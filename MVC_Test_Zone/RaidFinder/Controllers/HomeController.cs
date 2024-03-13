@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using RaidFinder.Models;
 using Microsoft.AspNetCore.Http;
 using System.Net.NetworkInformation;
-
+using System.IO;
 namespace I_EARTH.Controllers;
 
 public class HomeController : Controller
@@ -126,7 +126,7 @@ public class HomeController : Controller
     {
         IndexModels.UpdatePostDB();
 		if (query == "" || query == null    ) { return Json(IndexModels.GetPosts().ToList()); }
-		var filteredPosts = IndexModels.GetPosts().Where(post => post.Name.ToLower().StartsWith(query.ToLower())).ToList();
+		var filteredPosts = IndexModels.GetPosts().Where(post => post.Name.Split(',')[1].ToLower().StartsWith(query.ToLower())).ToList();
         //foreach (var post in filteredPosts)
         //{
             
@@ -135,6 +135,7 @@ public class HomeController : Controller
         var Jsonified = Json(filteredPosts);
         return Jsonified;
     }
+
     //dummy leader
     //[HttpGet]
 
