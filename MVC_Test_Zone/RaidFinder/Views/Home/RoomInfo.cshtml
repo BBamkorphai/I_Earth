@@ -29,7 +29,33 @@
 		<div class="room">
 			<div class="roomlayout">
 				<div class="raidimg">
-					<img src="https://staticg.sportskeeda.com/editor/2023/08/ef4f5-16920041832591-1920.jpg"></img>
+					@{
+						<b>@Model.Post.Name.Split(',')[0]</b>
+						if (@Model.Post.Name.Split(',')[0] == "boss1")
+						{
+							<img src="~/image/DEILJHO.jpg"></img>
+						}
+						else if (@Model.Post.Name.Split(',')[0] == "boss2")
+						{
+							<img src="~/image/KULVE_TAROTH.jpg"></img>
+						}
+						else if (@Model.Post.Name.Split(',')[0] == "boss3")
+						{
+							<img src="~/image/KUSHALA_DAORA.jpg"></img>
+						}
+						else if (@Model.Post.Name.Split(',')[0] == "boss4")
+						{
+							<img src="~/image/LUNASTRA.jpg"></img>
+						}
+						else if (@Model.Post.Name.Split(',')[0] == "boss5")
+						{
+							<img src="~/image/NERGIGANTE.jpg"></img>
+						} else
+						{
+							<img src="https://staticg.sportskeeda.com/editor/2023/08/ef4f5-16920041832591-1920.jpg"></img>
+						}
+					}
+					
 					<h1>BOSS NAME</h1>
 				</div>
 				<div class="roominfo">
