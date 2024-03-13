@@ -110,11 +110,13 @@ public class HomeController : Controller
     public IActionResult Search(string query)
     {
         IndexModels.UpdatePostDB();
-        var filteredPosts = IndexModels.GetPosts().Where(post => post.Name.ToLower().StartsWith(query.ToLower())).ToList();
+		if (query == "" || query == null    ) { return Json(IndexModels.GetPosts().ToList()); }
+		var filteredPosts = IndexModels.GetPosts().Where(post => post.Name.ToLower().StartsWith(query.ToLower())).ToList();
         //foreach (var post in filteredPosts)
         //{
             
         //}
+        
         var Jsonified = Json(filteredPosts);
         return Jsonified;
     }

@@ -25,9 +25,59 @@
 		</div>
 	</div>
 	<div class="line"></div>
-
-        <div class="grid-container">
 		<input type="text" id="search"></input>
+        <div class="grid-container">
+        @if (Model != null && Model.Count() > 0)
+        {
+            @foreach (var Post in Model)
+            {
+
+                TimeSpan diff = (TimeSpan)(Post.TimeOut - DateTime.Now);
+                string temp = "";
+                if (diff.TotalHours >= 1)
+                {
+                    temp = $"{(int)diff.TotalHours} hours left";
+                }
+                else if (diff.TotalMinutes >= 1)
+                {
+                    temp = $"{(int)diff.TotalMinutes} minutes left";
+                }
+                else
+                {
+                    temp = $"Ended";
+                    @* continue; *@
+                }
+
+                <div class="box-item" @("onclick=GoToRoom('" + Post.PostId + "')")>
+                    <div class="score">
+                        <div class="box">
+                            <span></span>
+                            <div class="number">
+                                <b class='top' style="--i:0;">@Post.PartyList.Count()</b>
+                                <b class='bot' style="--i:1;">@Post.MaxSize</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level">
+                        <h3>Power Level</h3>
+                        <h2>@Post.PowerLevel+</h2>
+                    </div>
+                    <div class="line-block"></div>
+                    <div class="data">
+                        <h2 class="name">@Post.Name</h2>
+                        <h3 class="info">
+                            @Post.Description
+                        </h3>
+                        <small class="date">@temp</small>
+                        <div class="icon"><i class="fa fa-plus-circle"></i></div>
+                    </div>
+                </div>
+            }
+        }
+		
+		<script>
+			var searchUrl = '@Url.Action("Search", "Home")';
+		</script>
 		<script src="~/lib/js/search.js"></script>
     </div>
 </div>
