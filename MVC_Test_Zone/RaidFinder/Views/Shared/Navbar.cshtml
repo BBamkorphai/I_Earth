@@ -26,7 +26,7 @@
 		<nav class="navbar">
 			<li>
 				<ul><a href="/home">Home</a></ul>
-				<ul><a href="/home/addpost">Create Room</a></ul>
+				
 				@if (contxt.HttpContext.Session.GetInt32("UserId") == null || contxt.HttpContext.Session.GetInt32("UserId") == 0)
 				{
 					<ul><a href="/account/login">Log In</a></ul>
@@ -34,6 +34,7 @@
 				}
 				else
 				{
+					<ul><a href="/home/addpost">Create Room</a></ul>
 					<ul><a href="/user/Profile/@contxt.HttpContext.Session.GetInt32("UserId")">Profile</a></ul>
 					<ul><a href="/account/logout">Log Out</a></ul>
 				}

@@ -99,8 +99,17 @@ public class HomeController : Controller
         UserDB.UpdateDB();
         IndexModels.UpdatePostDB();
         var post = IndexModels.GetPostCopyById(id.HasValue ? id.Value : 0);
-
-        return View(post);
+        var imagelist = new List<byte[]>();
+        foreach (var User in post.PartyList)
+        {
+            imagelist.Add(ImageMethod.GetImageById(User.UserId));
+		}
+        var viewModel = new RoomInfoViewModel
+        {
+            Post = post,
+            ImageList = imagelist,
+        };
+        return View(viewModel);
     }
     public IActionResult Profile()
     {

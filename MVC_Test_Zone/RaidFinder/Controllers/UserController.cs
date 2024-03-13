@@ -54,28 +54,15 @@ namespace RaidFinder.Controllers
 			return RedirectToAction(nameof(Index));
 		}
 
-        private byte[] GetImageById(int? id)
-        {
-            byte[] image = null;
-            using(var connection = new SqlConnection("Server=localhost;Database=UserDB;Trusted_Connection=True;"))
-            {
-                connection.Open();
-                using (var cmd = new SqlCommand("SELECT ImageData FROM Images WHERE UserId = @UserId", connection))
-                {
-                    cmd.Parameters.AddWithValue("@UserId", id);
-                    image = (byte[])cmd.ExecuteScalar();
-                }
-            }
-            return image;
-        }
+        
 		public IActionResult Profile(int? id)
         {
             UserDB.UpdateDB();
             var User = UserDB.GetUserCopyById((int)id);
-            var Image = GetImageById(id);
+            var Image = ImageMethod.GetImageById(id);
             if (Image == null)
             {
-                Image = GetImageById(0);
+                Image = ImageMethod.GetImageById(0);
             }
             var viewModel = new ProfileViewModel
             {
@@ -88,10 +75,10 @@ namespace RaidFinder.Controllers
         public IActionResult EditProfile(int? id)
         {
             var User = UserDB.GetUserCopyById(id.HasValue?id.Value:0);
-            var Image = GetImageById(id);
+            var Image = ImageMethod.GetImageById(id);
             if (Image == null)
             {
-                Image = GetImageById(0);
+                Image = ImageMethod.GetImageById(0);
             }
             var viewModel = new ProfileViewModel
             {
@@ -150,9 +137,6 @@ namespace RaidFinder.Controllers
             UserDB.DeleteUser(id.Value);
             AuthDB.DeleteUser(id.Value);
             return RedirectToAction("Logout", "Account");
-        }
-        public IActionResult test(Auth auth) {
-            return View(auth);
         }
 
     }

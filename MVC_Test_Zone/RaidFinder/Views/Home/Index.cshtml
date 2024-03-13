@@ -33,18 +33,14 @@
 
                 TimeSpan diff = (TimeSpan)(Post.TimeOut - DateTime.Now);
                 string temp = "";
-                if (diff.TotalHours >= 1)
+                if (diff.TotalMinutes >= 1)
                 {
-                    temp = $"{(int)diff.TotalHours} hours left";
-                }
-                else if (diff.TotalMinutes >= 1)
-                {
-                    temp = $"{(int)diff.TotalMinutes} minutes left";
+                    temp = $"{(int)diff.TotalHours} hours {(((int)diff.TotalMinutes%60))} minutes left";
                 }
                 else
                 {
                     temp = $"Ended";
-                    @* continue; *@
+                    continue;
                 }
 
                 <div class="box-item" @("onclick=GoToRoom('" + Post.PostId + "')")>

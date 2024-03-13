@@ -4,7 +4,7 @@ function test() {
     var postname = document.getElementById("Name").value;
     var concatinated = selectedValue + "," + postname;
     document.getElementById("concatenatedValue").innerText = concatinated;
-    document.getElementById("postName").innerHTML = concatinated;
+    document.getElementById("postName").value = concatinated;
     console.log("concatinated : " + concatinated);
 
     console.log("dropdown : " + selectedValue);

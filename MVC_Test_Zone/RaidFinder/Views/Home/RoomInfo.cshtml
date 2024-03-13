@@ -1,6 +1,6 @@
 ﻿@using RaidFinder.Models
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@model RaidingPostModels
+@model RoomInfoViewModel
 @inject IHttpContextAccessor contxt;
 @{
 	ViewData["Title"] = "RoomInfo";
@@ -9,7 +9,7 @@
 
 @section AdditionalCSS {
 	<script src="~/lib/js/BoxClick.js"></script>
-	@if (Model.OwnerId == @contxt.HttpContext.Session.GetInt32("UserId"))
+	@if (Model.Post.OwnerId == @contxt.HttpContext.Session.GetInt32("UserId"))
 	{
 		<link rel="stylesheet" href="~/lib/css/roominfo.css">
 	}
@@ -37,54 +37,86 @@
 						<div class="box">
 							<span></span>
 							<div class="number">
-								<b class='top' style="--i:0;">@Model.PartyList.Count()</b>
-								<b class='bot' style="--i:1;">@Model.MaxSize</b>
+								<b class='top' style="--i:0;">@Model.Post.PartyList.Count()</b>
+								<b class='bot' style="--i:1;">@Model.Post.MaxSize</b>
 							</div>
 						</div>
 						<div class="roomtitle">
 							<h2>POWER LEVEL</h2>
-							<b>@Model.PowerLevel</b>
+							<b>@Model.Post.PowerLevel</b>
 						</div>
 					</div>
 					<div class="roomdest">
-						<h2>@Model.Name</h2>
+						<h2>@Model.Post.Name</h2>
 						<p>
-							@Model.Description
+							@Model.Post.Description
 						</p>
 					</div>
 				</div>
 				<div>
 					<h2>Party List</h2>
 					<div class="memberlist">
-						@foreach (var User in Model.PartyList)
-						{
-							@if (User != null)
+						@{
+							int count = 0;
+							foreach (var User in Model.Post.PartyList)
 							{
-								<div>
-									<img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
-									@if (Model.OwnerId == User.UserId)
-									{
-										<h3><b>Party Leader</b></h3>
-									}
-									<p>U : @User.Name</p>
-									<p>@User.Stat.Class LV @User.Stat.Level</p>
-									<p>PW @User.Stat.PowerLevel</p>
-									@if (Model.OwnerId != User.UserId)
-									{
-										<button onclick="window.location.href='@Url.Action("KickUser", "Home", new { PostId = Model.PostId, UserId = User.UserId })';"><span>&#x274C;</span></button>
-									}
-								</div>
+									@if (User != null)
+								{
+										<div>
+											<img src="data:image;base64,@Convert.ToBase64String(Model.ImageList[count])">
+											@if (Model.Post.OwnerId == User.UserId)
+										{
+												<h3><b>Party Leader</b></h3>
+										}
+											<p>U : @User.Name</p>
+											<p>@User.Stat.Class LV @User.Stat.Level</p>
+											<p>PW @User.Stat.PowerLevel</p>
+											@if (Model.Post.OwnerId != User.UserId)
+										{
+												<button onclick="window.location.href='@Url.Action("KickUser", "Home", new { PostId = Model.Post.PostId, UserId = User.UserId })';"><span>&#x274C;</span></button>
+										}
+										</div>
+								}
+								count = count + 1;
 							}
 						}
 					</div>
 				</div>
-				
+
 			</div>
 			<div class="roominteractive">
-				<button id="join" onclick="window.location.href='@Url.Action("JoinRoom", "Home", new { PostId = Model.PostId })';"><span> + Join team </span></button>
-				<button id="delete" onclick="window.location.href='@Url.Action("DeletePost", "Home", new { id = Model.PostId })';"><span> Delete Post </span></button>
-				<button id="save" onclick="window.location.href='@Url.Action("EditPost", "Home", new { id = Model.PostId })';"><span> Edit Post </span></button>
+				@* 				var joinbutton = document.getElementById("join");
+for (var i = 0; i < Model.Post.Partylist.length; i++) {
+	var user = Model.Post.Partylist[i];
+	if (user.UserId == userid) {
+		joinButton.style.display = "none";
+		console.log("here display none");
+		break;
+	}
+} *@
+
+				@{
+					var flag = false;
+					foreach(var user in Model.Post.PartyList)
+					{
+						if (user.UserId == @contxt.HttpContext.Session.GetInt32("UserId"))
+						{
+							flag = true;
+						} 
+					}
+					if (flag != true)
+					{
+						<button id="join" onclick="window.location.href='@Url.Action("JoinRoom", "Home", new { PostId = Model.Post.PostId })';"><span> + Join team </span></button>
+					}
+				}
+				
+				<button id="delete" onclick="window.location.href='@Url.Action("DeletePost", "Home", new { id = Model.Post.PostId })';"><span> Delete Post </span></button>
+				<button id="save" onclick="window.location.href='@Url.Action("EditPost", "Home", new { id = Model.Post.PostId })';"><span> Edit Post </span></button>
 			</div>
 		</div>
+@* 		<script>
+			var userid = @contxt.HttpContext.Session.GetInt32("UserId");
+		</script>
+		<script src="~/lib/js/joinhide.js"></script> *@
 	</div>
 }

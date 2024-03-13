@@ -4,6 +4,6 @@
     {
         public int PowerLevel { get; set; }
         public int Level { get; set; }
-		public string Class { get; set; } = string.Empty;
+		public string Class { get; set; } = "None";
     }
 }

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () { }
+document.addEventListener('DOMContentLoaded', function () {
 
     function displayResults(results) {
         const parent = document.getElementsByClassName("grid-container")[0];
@@ -119,7 +119,10 @@ document.addEventListener('DOMContentLoaded', function () { }
                 box_item.appendChild(data);
 
                 // Append box_item to parent
-                parent.appendChild(box_item);
+                if (willRender == True) {
+                    parent.appendChild(box_item);
+                }
+                
             });
         } else {
             parent.innerHTML = '<li>No results found</li>';
