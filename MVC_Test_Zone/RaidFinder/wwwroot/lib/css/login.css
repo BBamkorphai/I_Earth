@@ -39,7 +39,7 @@ body {
 }
 
 .LogoImage img {
-    width: 300px;
+    width: 150px;
 }
 
 .Placeholder {
@@ -133,7 +133,7 @@ ButtonSpacer:hover {
     }
 
     .LogoImage {
-        width: 300px;
+        width: 150px;
     }
 
     .Placeholder {

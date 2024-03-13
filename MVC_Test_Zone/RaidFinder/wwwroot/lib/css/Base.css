@@ -42,32 +42,13 @@ body {
             font-size: 28px;
         }
 
-    .container-1 .btn {
+    .container-1 #search {
         margin-left: 20px;
         padding-left: 15px;
+        background-color: rgba(195, 165, 85,0.4);
+        height: 30px;
+        border-radius: 5px;
     }
-
-.create-btn:hover, .create-btn:hover .fa-plus {
-    background-color: var(--color-background-button);
-    cursor: pointer;
-}
-
-.create-btn {
-    background-color: var(--color-background-box);
-    color: var(--color-font-button);
-    font-size: 18px;
-    padding: 12px 15px;
-    border-radius: 10px;
-    border: 2px solid var(--color-font-white);
-}
-
-.btn .fa-plus {
-    color: var(--color-font-button);
-    font-size: 16px;
-    font-weight: 100;
-    background-color: var(--color-background-box);
-}
-
 
 .line {
     width: 100%;
