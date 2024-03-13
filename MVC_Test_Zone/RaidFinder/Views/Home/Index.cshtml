@@ -15,8 +15,7 @@
 }
 
 <div class="container">
-
-	<div class="container-1">
+    <div class="container-1">
 		<div class="text-party">
 			<h2>Party List</h2>
 		</div>
@@ -49,7 +48,12 @@
                     }
                     
                     <div class="box-item" @("onclick=GoToRoom('" + Post.PostId + "')")>
-                        <div class="score">
+                        @* add the Boss image *@
+                        <div class="img-box">
+                            <img src="https://cdn.mos.cms.futurecdn.net/d379AErHqrYX8WErHFfTHX-650-80.jpeg.webp" alt="">
+                        </div>
+                        <div class="wrap-box">
+                            <div class="score">
                             <div class="box">
                                 <span></span>
                                 <div class="number">
@@ -71,13 +75,12 @@
                             <small class="date">@temp</small>
                             <div class="icon"><i class="fa fa-plus-circle"></i></div>
                         </div>
+                        </div>
+
+                        
                     </div>
             }
         }
-      
-      <!-- box 1 -->
-      
-
-
     </div>
+	
 </div>
