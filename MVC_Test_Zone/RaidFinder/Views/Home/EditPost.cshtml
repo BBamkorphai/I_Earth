@@ -22,36 +22,43 @@
 
     <div class="main">
         <div class="box-container">
-        <form id="form" method="post" asp-controller="home" asp-action="addpost">
-            <label for="NamePost">Post Name</label> </br>
-            <input type="text" asp-for="Name" name="Name" value="@Model.Name"/><br />
-            <label for="PowerLevel">Power Level</label></br>
-            <input type="text" asp-for="PowerLevel" name="PowerLevel" value="@Model.PowerLevel" /><br />
-            <label for="MaxSize">Capacity</label></br>
-            <input type="text" asp-for="MaxSize" name="MaxSize" value="@Model.MaxSize"/><br />
-            <label for="Description">Description</label></br>
-            <textarea id="Des" name="Description" rows="5" cols="20" asp-for="Description">"@Model.Description"
+            <form id="form" method="post" asp-controller="home" asp-action="addpost">
+                <label for="NamePost">Post Name</label> </br>
+                <input type="text" asp-for="Name" name="Name" value="@Model.Name" /><br />
+                <label for="PowerLevel">Power Level</label></br>
+                <input type="text" asp-for="PowerLevel" name="PowerLevel" value="@Model.PowerLevel" /><br />
+                <label for="MaxSize">Capacity</label></br>
+                <input type="text" asp-for="MaxSize" name="MaxSize" value="@Model.MaxSize" /><br />
+                <label for="Description">Description</label></br>
+                <textarea id="Des" name="Description" rows="5" cols="20" asp-for="Description">"@Model.Description"
             </textarea>
-            <input type="text" asp-for="PowerLevel" name="PowerLevel" /><br />
-            <label for="MaxSize">Max size (Max:5)</label></br>
-            <input type="number" asp-for="MaxSize" name="MaxSize"min='0' max='5'/><br />
-            <label for="Description">Description</label></br>
-            <textarea id="Des" name="Description" rows="5" cols="20" maxlength="100" asp-for="Description">
+                <input type="text" asp-for="PowerLevel" name="PowerLevel" /><br />
+                <label for="MaxSize">Max size (Max:5)</label></br>
+                <input type="number" asp-for="MaxSize" name="MaxSize" min='0' max='5' /><br />
+                <label for="Description">Description</label></br>
+                <label for="Boss">Boss Name</label></br>
+                <select name="Boss" id="bosses">
+                    <option value="NorNor">NorNor</option>
+                    <option value="I_Earth">I_Earth</option>
+                    <option value="Apec">Apec</option>
+                    <option value="KorPhai">KorPhai</option>
+                </select></br>
+                <textarea id="Des" name="Description" rows="5" cols="20" maxlength="100" asp-for="Description">
         </textarea></br>
-            <label for="TimeOut setting">Timeout setting</label></br>
-            <div class="Box">
-                <input type="number" min="0" max="99" name="Hour" placeholder="Hour" />
-                <input type="number" min="0" max="99" name="Minute"  placeholder="Min" />
-            </div>
-            <br />
-            <input id="ownerId" type="hidden" asp-for="OwnerId" value="@Model.OwnerId" /><br />
-            <input type="hidden" name="Users" value="@ViewBag.PartyList" />
-            <input id="postId" type="hidden" asp-for="PostId" value="@Model.PostId"/><br />
-            <input type="submit" value="Save" />
-        </form>
+                <label for="TimeOut setting">Timeout setting</label></br>
+                <div class="Box">
+                    <input type="number" min="0" max="99" name="Hour" placeholder="Hour" />
+                    <input type="number" min="0" max="99" name="Minute" placeholder="Min" />
+                </div>
+                <br />
+                <input id="ownerId" type="hidden" asp-for="OwnerId" value="@Model.OwnerId" /><br />
+                <input type="hidden" name="Users" value="@ViewBag.PartyList" />
+                <input id="postId" type="hidden" asp-for="PostId" value="@Model.PostId" /><br />
+                <input type="submit" value="Save" />
+            </form>
+        </div>
     </div>
-    </div>
-    
+
 
 </body>
 

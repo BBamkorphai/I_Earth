@@ -12,25 +12,25 @@
     --color-font-white: #FFFFFF;
     --color-font: #BEA455;
     --color-font-button: #D3DACC;
-    --color-line:rgba(211, 218, 204,0.8);
-    --color-background-button:rgba(131,96,12,0.8);
-    --color-background-box:rgba(131,96,12,0.4);
+    --color-line: rgba(211, 218, 204, 0.8);
+    --color-background-button: rgba(131, 96, 12, 0.8);
+    --color-background-box: rgba(131, 96, 12, 0.4);
     --color-hover-button: rgba(0, 0, 0, 0.4);
 }
 
 body {
     height: 100vh;
-    background-image: linear-gradient(to left,rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url('https://img5.pic.in.th/file/secure-sv1/45196.jpeg');
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('https://img5.pic.in.th/file/secure-sv1/45196.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-} 
+}
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
     padding-left: 2%;
     border-bottom: var(--color-line) solid 2px;
 }
@@ -47,7 +47,7 @@ header {
     padding-left: 2%;
     justify-content: space-between;
     align-items: center;
-    border-bottom:var(--color-line) solid 2px ;
+    border-bottom: var(--color-line) solid 2px;
 }
 
 #text {
@@ -70,15 +70,12 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  
 }
 
 #form {
     width: 100%;
     height: auto;
     padding: 30px 30px 5px 30px;
-   
 }
 
 
@@ -106,20 +103,22 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=text]:hover, #Des:hover {
+input[type=text]:hover,
+#Des:hover {
+    transition: all 0.2 ease-out;
     background-color: var(--color-background-button);
 }
 
 input[type=submit]:hover {
     background-color: var(--color-background-button);
     box-shadow: 5px 5px var(--color-hover-button);
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease-out;
     border-color: var(--color-font-white);
     border: none;
 }
 
 #Des {
-    display:block ;
+    display: block;
     margin: 8px 0;
     padding: 12px 20px;
     background-color: var(--color-background-box);
@@ -132,6 +131,21 @@ input[type=submit]:hover {
     resize: none;
     width: 70%;
     height: auto;
+}
+
+#bosses {
+    margin: 8px 0;
+    height: 30px;
+    padding: 2px;
+    border-radius: 10px !important;
+    border: 1px solid var(--color-font-white) !important;
+    outline: 1px solid var(--color-font-button);
+    background-color: var(--color-background-box);
+}
+
+#bosses:hover {
+    transition: all 0.2 ease-out;
+    background-color: var(--color-background-button);
 }
 
 .box {
@@ -153,7 +167,23 @@ input[type=number] {
     box-sizing: border-box;
 }
 
-    input[type=number]:hover {
-       
-        background-color: var(--color-background-button);
+input[type=number]:hover {
+    transition: all 0.2 ease-out;
+    background-color: var(--color-background-button);
+}
+
+@media (max-width: 760px)  {
+    body {
+        height: 120vh; 
     }
+}
+
+@media (max-width: 1252px) {
+    body {
+        height : 130vh;
+    }
+    input[type=submit] {
+        bottom : -10rem;
+    }
+}
+

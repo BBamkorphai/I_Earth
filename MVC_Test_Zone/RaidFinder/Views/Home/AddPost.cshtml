@@ -14,37 +14,45 @@
 </head>
 
 <body>
-        <header>
-            <h1 id="title">Raid Finder</h1>
-        </header>
-        <div class="text">
-            <h2 id="text">Add Post</h2>
-        </div>
+    <header>
+        <h1 id="title">Raid Finder</h1>
+    </header>
+    <div class="text">
+        <h2 id="text">Add Post</h2>
+    </div>
 
     <div class="main"> </div>
-        <div class="box-container">
-            <form id="form" method="post" asp-controller="home" asp-action="addpost">
-                <label for="NamePost">Post Name</label> </br>
-                <input type="text" asp-for="Name" name="Name" /><br />
-                <label for="PowerLevel">Power Level</label></br>
-                <input type="text" asp-for="PowerLevel" name="PowerLevel" /><br />
-                <label for="MaxSize">Max Size (Max:5)</label></br>
-                <input type="number" asp-for="MaxSize" name="MaxSize"min='0' max='5'/><br />
-                <label for="Description">Description</label></br>
-                <textarea id="Des" name="Description" rows="5" cols="20" maxlength="100" asp-for="Description">
+    <div class="box-container">
+        <form id="form" method="post" asp-controller="home" asp-action="addpost">
+            <label for="NamePost">Post Name</label> </br>
+            <input type="text" asp-for="Name" name="Name" /><br />
+            <label for="PowerLevel">Power Level</label></br>
+            <input type="text" asp-for="PowerLevel" name="PowerLevel" /><br />
+            <label for="MaxSize">Max Size (Max:5)</label></br>
+            <input type="number" asp-for="MaxSize" name="MaxSize" min='0' max='5' /><br />
+            <label for="Boss">Boss Name</label></br>
+            <select name="Boss" id="bosses">
+                <option value="NorNor">NorNor</option>
+                <option value="I_Earth">I_Earth</option>
+                <option value="Apec">Apec</option>
+                <option value="KorPhai">KorPhai</option>
+            </select></br>
+            <label for="Description">Description</label></br>
+            <textarea id="Des" name="Description" rows="5" cols="20" maxlength="100" asp-for="Description">
             </textarea></br>
-                <label for="TimeOut setting">Timeout setting</label></br>
-                <div class="Box">
-                    <input type="number" min="0" max="99" name="Hour" placeholder="Hour" />
-                    <input type="number" min="0" max="99" name="Minute"  placeholder="Min" />
-                </div>
-                <br />
-                <input id="ownerId" type="hidden" asp-for="OwnerId" value="@contxt.HttpContext.Session.GetInt32("UserId")" /><br />
-                <input type="submit" value="Save" />
-            </form>
-        </div>
-    
-    
+            <label for="TimeOut setting">Timeout setting</label></br>
+            <div class="Box">
+                <input type="number" min="0" max="99" name="Hour" placeholder="Hour" />
+                <input type="number" min="0" max="99" name="Minute" placeholder="Min" />
+            </div>
+            <br />
+            <input id="ownerId" type="hidden" asp-for="OwnerId"
+                value="@contxt.HttpContext.Session.GetInt32("UserId")" /><br />
+            <input type="submit" value="Save" />
+        </form>
+    </div>
+
+
 
 </body>
 
