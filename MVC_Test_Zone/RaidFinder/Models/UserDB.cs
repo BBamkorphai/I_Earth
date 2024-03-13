@@ -39,7 +39,7 @@ namespace RaidFinder.Models
             }
         }
 
-        public static void AddUser(User user)
+        public static int AddUser(User user)
         {
             if (_Users.Count() == 0) { user.UserId = 1; }
             else if (user.UserId == 0) { user.UserId = _Users.Max(x => x.UserId) + 1; }
@@ -61,6 +61,7 @@ namespace RaidFinder.Models
                 //SqlCommand iuoff = new SqlCommand("SET IDENTITY_INSERT Users OFF", con);
             }
             UpdateDB();
+            return user.UserId;
         }
 
         public static List<User> GetUsers() => _Users;
