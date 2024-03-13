@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 box_item.appendChild(data);
 
                 // Append box_item to parent
-                if (willRender == True) {
+                if (willRender == true) {
                     parent.appendChild(box_item);
                 }
                 
