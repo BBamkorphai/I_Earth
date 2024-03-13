@@ -1,4 +1,4 @@
-@using RaidFinder.Models
+﻿@using RaidFinder.Models
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @model RaidingPostModels
 @inject IHttpContextAccessor contxt;
@@ -8,76 +8,83 @@
 }
 
 @section AdditionalCSS {
-    <script src="~/lib/js/BoxClick.js"></script>
-    @if (Model.OwnerId == @contxt.HttpContext.Session.GetInt32("UserId"))
-    {
-        <link rel="stylesheet" href="~/lib/css/roominfo.css">
-    }
-    else
-    {
-        <link rel="stylesheet" href="~/lib/css/roominfo2.css">
-    }
+	<script src="~/lib/js/BoxClick.js"></script>
+	@if (Model.OwnerId == @contxt.HttpContext.Session.GetInt32("UserId"))
+	{
+		<link rel="stylesheet" href="~/lib/css/roominfo.css">
+	}
+	else
+	{
+		<link rel="stylesheet" href="~/lib/css/roominfo.css">
+	}
 }
 
 
-@if (Model != null) {
-        <div>
-            <div class="subtab">
-                <h2><b>Party List</b></h2>
-                <button><b>+ create your own</b></button>
-            </div><hr>
-            <div class="room">
-                <div class="roominfo">
-                    <div>
-                        <div class="box">
-                            <span></span>
-                            <div class="number">
-                                <b class='top' style="--i:0;">@Model.PartyList.Count()</b>
-                                <b class='bot' style="--i:1;">@Model.MaxSize</b>
-                            </div>
-                        </div>
-                        <div class="roomtitle">
-                            <h2>POWER LEVEL</h2>
-                            <b>@Model.PowerLevel</b>
-                        </div>
-                    </div>
-                    <div class="roomdest" style="border-left:solid white">
-                        <h2>@Model.Name</h2>
-                        <p>
-                            @Model.Description
-                        </p>
-                    </div>
-                </div><hr>
-                <div class="memberlist">
-                    @foreach (var User in Model.PartyList)
-                    {
-                        @if (User != null)
-                        {
-                            <div>
-                                @if (Model.OwnerId != User.UserId)
-                                {
-                                    <button onclick="window.location.href='@Url.Action("KickUser", "Home", new { PostId = Model.PostId, UserId = User.UserId })';">X</button>
-                                } 
-                                <img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
-                                @if (Model.OwnerId == User.UserId)
-                                {
-                                    <h3><b>Party Leader</b></h3>
-                                }
-                                <p>U : @User.Name</p>
-                                <p>@User.Stat.Class LV @User.Stat.Level</p>
-                                <p>PW @User.Stat.PowerLevel</p>
-                            </div>
-                        }
-                    }
-                </div>
-
-                <div class="roominteractive">
-                    <button id="join" onclick="window.location.href='@Url.Action("JoinRoom", "Home", new { PostId = Model.PostId })';"> + Join team </button>
-                    <button id="delete" onclick="window.location.href='@Url.Action("DeletePost", "Home", new { id = Model.PostId })';"> Delete Post </button>
-                    <button id="save" onclick="window.location.href='@Url.Action("EditPost", "Home", new { id = Model.PostId })';"> Edit Post </button>
-                </div>
-            </div>
-        </div>
-
-
+@if (Model != null)
+{
+	<div>
+		<div class="subtab">
+			<h2><b>Party List</b></h2>
+		</div><hr>
+		<div class="room">
+			<div class="roomlayout">
+				<div class="raidimg">
+					<img src="https://staticg.sportskeeda.com/editor/2023/08/ef4f5-16920041832591-1920.jpg"></img>
+					<h1>BOSS NAME</h1>
+				</div>
+				<div class="roominfo">
+					<div class="roomheader">
+						<div class="box">
+							<span></span>
+							<div class="number">
+								<b class='top' style="--i:0;">@Model.PartyList.Count()</b>
+								<b class='bot' style="--i:1;">@Model.MaxSize</b>
+							</div>
+						</div>
+						<div class="roomtitle">
+							<h2>POWER LEVEL</h2>
+							<b>@Model.PowerLevel</b>
+						</div>
+					</div>
+					<div class="roomdest">
+						<h2>@Model.Name</h2>
+						<p>
+							@Model.Description
+						</p>
+					</div>
+				</div>
+				<div>
+					<h2>Party List</h2>
+					<div class="memberlist">
+						@foreach (var User in Model.PartyList)
+						{
+							@if (User != null)
+							{
+								<div>
+									<img src="https://cdn4.sharechat.com/img_945769_3157a239_1674544942589_sc.jpg?tenant=sc&referrer=tag-service&f=589_sc.jpg">
+									@if (Model.OwnerId == User.UserId)
+									{
+										<h3><b>Party Leader</b></h3>
+									}
+									<p>U : @User.Name</p>
+									<p>@User.Stat.Class LV @User.Stat.Level</p>
+									<p>PW @User.Stat.PowerLevel</p>
+									@if (Model.OwnerId != User.UserId)
+									{
+										<button onclick="window.location.href='@Url.Action("KickUser", "Home", new { PostId = Model.PostId, UserId = User.UserId })';"><span>&#x274C;</span></button>
+									}
+								</div>
+							}
+						}
+					</div>
+				</div>
+				
+			</div>
+			<div class="roominteractive">
+				<button id="join" onclick="window.location.href='@Url.Action("JoinRoom", "Home", new { PostId = Model.PostId })';"><span> + Join team </span></button>
+				<button id="delete"><span> Delete Post </span></button>
+				<button id="save"><span> Save Post </span></button>
+			</div>
+		</div>
+	</div>
 }
