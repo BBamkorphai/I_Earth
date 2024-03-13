@@ -49,6 +49,12 @@ body {
         border-radius: 5px;
     }
 
+    .container-1:hover #search{
+        transition: all 0.3s ease-in-out;
+        border-color:var(--color-font-button);
+        background-color: rgba(195, 165, 85,0.8);
+    }
+
 .line {
     width: 100%;
     border: 1px solid var(--color-font-button);
@@ -178,7 +184,7 @@ body {
     padding: 0;
     position: absolute;
     right: 75px;
-    top: 300px;
+    top: 290px;
     font-size: 20px;
 }
 
@@ -188,11 +194,12 @@ body {
 
 .name {
     font-size: 15px;
+    padding-left: 15px;
 }
 
 .info {
     overflow-wrap: break-word;
-    padding: 2px;
+    padding: 10px 15px 15px 15px;
     font-size: 12px;
 }
 
@@ -200,6 +207,7 @@ body {
     position: absolute;
     display: block;
     bottom: 20px;
+    left: 20px;
 }
 
 .icon {
@@ -267,7 +275,7 @@ body {
     .box {
         margin: 2px;
         left: 15px;
-        top: -5px;
+        top: -1px;
         height: 50px;
         width: 50px;
         border: solid var(--color-font-white) 2px;
@@ -315,7 +323,6 @@ body {
         padding: 0px;
         display: flex;
         justify-content: center;
-        border-bottom: #FFFFFF 0.5px solid;
     }
 
     .img-box img {
@@ -337,26 +344,31 @@ body {
         padding: 0;
         position: absolute;
         right: 65px;
-        top: 165px;
+        top: 150px;
         font-size: 13px;
     }
 
     .data {
         font-size: small;
-        padding: 3px 2px 2px 2px;
+        padding:repeat(4,5px);
     }
-
+    
     .name {
-        padding-top: 3px;
+        padding-left:10px;
         font-size: 13px;
     }
 
     .info {
-        padding: 2px;
+        padding: 10px;
         font-size: 9px;
+    }
+    .icon {
+        bottom: 15px;
+        right: 25px;
     }
 
     .icon .fa {
+        right:3px;
         font-size: 30px;
     }
 
@@ -366,6 +378,7 @@ body {
     }
 
     .date {
+        left:15px;
         font-size: 8px;
     }
 
@@ -412,7 +425,7 @@ body {
     .box {
         margin: 2px;
         left: 15px;
-        top: -5px;
+        top: -2px;
         height: 50px;
         width: 50px;
         border: solid var(--color-font-white) 2px;
@@ -460,7 +473,6 @@ body {
         padding: 0px;
         display: flex;
         justify-content: center;
-        border-bottom: #FFFFFF 0.5px solid;
     }
 
     .img-box img {
@@ -482,22 +494,22 @@ body {
         padding: 0;
         position: absolute;
         right: 65px;
-        top: 165px;
+        top: 155px;
         font-size: 13px;
     }
 
     .data {
         font-size: small;
-        padding: 3px 2px 2px 2px;
+        padding: repeat(4,5px);
     }
 
     .name {
-        padding-top: 3px;
+        padding: 5px;
         font-size: 13px;
     }
 
     .info {
-        padding: 2px;
+        padding: 5px;
         font-size: 9px;
     }
 
