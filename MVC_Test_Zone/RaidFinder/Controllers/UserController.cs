@@ -7,6 +7,12 @@ namespace RaidFinder.Controllers
 {
     public class UserController : Controller
     {
+        private readonly IHttpContextAccessor contxt;
+        public UserController(IHttpContextAccessor httpContextAccessor)
+        {
+            contxt = httpContextAccessor;
+            contxt.HttpContext.Session.SetInt32("UserId", 0);
+        }
         public IActionResult ViewStat(int? id)
         {
             UserDB.UpdateDB();
@@ -143,7 +149,8 @@ namespace RaidFinder.Controllers
         { 
             if (!id.HasValue) { return RedirectToAction("Profile"); }
             UserDB.DeleteUser(id.Value);
-            return RedirectToAction("Profile", "User", new { id = id });
+            AuthDB.DeleteUser(id.Value);
+            return RedirectToAction("Logout", "Account");
         }
         public IActionResult test(Auth auth) {
             return View(auth);
