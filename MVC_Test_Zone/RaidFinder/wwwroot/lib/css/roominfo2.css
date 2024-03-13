@@ -1,3 +1,7 @@
+body {
+    background-image: linear-gradient(to left,rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url('https://cdn.discordapp.com/attachments/1209874309896609863/1216376681720447036/1353167.png?ex=66002a10&is=65edb510&hm=0240ec06eb55ddf9480cf9a4741c250a964a41271a5b44f7bf909d05b6df297e&')
+}
+
 .subtab {
     position: relative;
     align-items: center;
