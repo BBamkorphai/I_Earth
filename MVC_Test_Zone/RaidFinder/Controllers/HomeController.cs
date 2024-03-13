@@ -109,8 +109,12 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Search(string query)
     {
-        
+        IndexModels.UpdatePostDB();
         var filteredPosts = IndexModels.GetPosts().Where(post => post.Name.ToLower().StartsWith(query.ToLower())).ToList();
+        //foreach (var post in filteredPosts)
+        //{
+            
+        //}
         var Jsonified = Json(filteredPosts);
         return Jsonified;
     }

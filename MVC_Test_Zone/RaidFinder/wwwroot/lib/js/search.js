@@ -1,33 +1,55 @@
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
 
     function displayResults(results) {
-        var resultsList = $('#results');    
-        resultsList.empty();
+        var resultsList = document.getElementById('results');
+        resultsList.innerHTML = '';
         if (results && results.length > 0) {
-            for (var i = 0; i < results.length; i++) {
-                resultsList.append('<li>' + results[i].name + '</li>');
-            }
+            results.forEach(function (result) {
+                var TimeOut = new Date(result.timeOut);
+                //console.log(typeof result.timeOut + " is a type of " + result.timeOut);
+                //console.log("----------*");
+                //console.log(TimeOut.getTime());
+                //console.log("----------*");
+                var currentTime = new Date();
+                var diff = TimeOut.getTime() - currentTime.getTime();
+                /*console.log(diff);*/
+                var willRender = true;
+                if (diff <= 0) {
+                    willRender = false;
+                }
+                /*console.log(willRender);*/
+                var hourLeft = Math.floor(diff / (1000 * 60 * 60));
+                diff -= hourLeft * (1000 * 60 * 60);
+                var minuteLeft = Math.floor(diff / (1000 * 60));
+
+                var timeString = hourLeft + " Hour " + minuteLeft + " Minute Left"
+                /*console.log(timeString);*/
+            });
         } else {
-            resultsList.append('<li>No results found</li>');
+            resultsList.innerHTML = '<li>No results found</li>';
         }
-        
     }
 
-    $('#search').on('input', function () {
-        var query = $(this).val().trim();
+    document.getElementById('search').addEventListener('input', function () {
+        var query = this.value.trim();
         if (query === '') {
-            $('#results').empty();
+            document.getElementById('results').innerHTML = '';
             return;
         }
         if (query != null) {
-            $.ajax({
-                url: searchUrl,
-                type: 'POST',
-                data: { query: query },
-                success: function (data) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', searchUrl);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log("Before parse" + xhr.responseText);
+                    var data = JSON.parse(xhr.responseText);
+                    console.log("-------------------");
+                    console.log("After parse" + data);
                     displayResults(data);
                 }
-            });
+            };
+            xhr.send('query=' + encodeURIComponent(query));
         }
     });
 });
