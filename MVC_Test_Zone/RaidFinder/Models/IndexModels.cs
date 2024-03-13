@@ -27,10 +27,10 @@ namespace RaidFinder.Models
                 while (reader.Read())
                 {
                     var post = new RaidingPostModels();
-                    post.Name = reader["Name"].ToString();
+                    post.Name = reader["Name"].ToString().Trim(' ');
                     post.PowerLevel = Convert.ToInt32(reader["PowerLevel"]);
                     post.MaxSize = Convert.ToInt32(reader["MaxSize"]);
-                    post.Description = reader["Description"].ToString();
+                    post.Description = reader["Description"].ToString().Trim(' ');
                     post.OwnerId = Convert.ToInt32(reader["OwnerId"]);
                     var tmp = reader["PartyList"].ToString().Split('s').Where(x => int.TryParse(x, out _)).Select(int.Parse).ToList();
                     foreach (var item in tmp)

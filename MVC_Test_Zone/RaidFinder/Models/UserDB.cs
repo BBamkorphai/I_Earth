@@ -26,11 +26,11 @@ namespace RaidFinder.Models
                 while (reader.Read())
                 {
                     var user = new User();
-                    user.Name = reader["Name"].ToString();
+                    user.Name = reader["Name"].ToString().Trim(' ');
                     user.UserId = Convert.ToInt32(reader["UserId"]);
                     user.Stat.PowerLevel = Convert.ToInt32(reader["PowerLevel"]);
                     user.Stat.Level = Convert.ToInt32(reader["Lv"]);
-                    user.Stat.Class = reader["Class"].ToString();
+                    user.Stat.Class = reader["Class"].ToString().Trim(' ');
                     if (_Users.FirstOrDefault(x => x.UserId == user.UserId) == null)
                     {
                         _Users.Add(user);
