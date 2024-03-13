@@ -23,12 +23,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 var timeString = hourLeft + " Hour " + minuteLeft + " Minute Left"
                 /*console.log(timeString);*/
-                
 
                 // Create the box item
                 const box_item = document.createElement("div");
                 box_item.classList.add("box-item");
 
+                //if (name == "Boss1") { return System.IO.File.ReadAllBytes(@"wwwroot/image/DEILJHO.jpg"); }
+                //else if (name == "Boss2") { return System.IO.File.ReadAllBytes(@"wwwroot/image/KULVE_TAROTH.jpg"); }
+                //else if (name == "Boss3") { return System.IO.File.ReadAllBytes(@"wwwroot/image/KUSHALA_DAORA.jpg"); }
+                //else if (name == "Boss4") { return System.IO.File.ReadAllBytes(@"wwwroot/image/LUNASTRA.jpg"); }
+                //else if (name == "Boss5") { return System.IO.File.ReadAllBytes(@"wwwroot/image/NERGIGANTE.jpg"); }
+                //return System.IO.File.ReadAllBytes(@"wwwroot/image/DEILJHO.jpg");
+                var imageLink = "";
+                if (result.name.split(',')[0] == "boss1") {
+                    imageLink = "image/DEILJHO.jpg"
+                } else if (result.name.split(',')[0] == "boss2") {
+                    imageLink = "image/KULVE_TAROTH.jpg"
+                } else if (result.name.split(',')[0] == "boss3") {
+                    imageLink = "image/KUSHALA_DAORA.jpg"
+                } else if (result.name.split(',')[0] == "boss4") {
+                    imageLink = "image/LUNASTRA.jpg"
+                } else if (result.name.split(',')[0] == "boss5") {
+                    imageLink = "image/NERGIGANTE.jpg"
+                }
                 // Add onclick event
                 box_item.onclick = function () {
                     GoToRoom(result.postId);
@@ -50,8 +67,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 const data = document.createElement("div");
                 data.classList.add("data");
 
+                var currentPageUrl = window.location.href;
+                var fullImageUrl = new URL(imageLink, currentPageUrl).href;
+
                 const img = document.createElement("img");
-                img.setAttribute("src", "https://cdn.mos.cms.futurecdn.net/d379AErHqrYX8WErHFfTHX-650-80.jpeg.webp");
+                img.src = fullImageUrl;
 
                 const box = document.createElement("div");
                 box.classList.add("box");
@@ -148,19 +168,19 @@ document.addEventListener('DOMContentLoaded', function () {
         /*        if (query != null) {*/
         const parent = document.getElementsByClassName("grid-container")[0];
         parent.innerHTML = "";
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', searchUrl);
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    console.log("Before parse" + xhr.responseText);
-                    var data = JSON.parse(xhr.responseText);
-                    console.log("-------------------");
-                    console.log("After parse" + data);
-                    displayResults(data);
-                }
-            };
-            xhr.send('query=' + encodeURIComponent(query));
-/*        }*/
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', searchUrl);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                console.log("Before parse" + xhr.responseText);
+                var data = JSON.parse(xhr.responseText);
+                console.log("-------------------");
+                console.log("After parse" + data);
+                displayResults(data);
+            }
+        };
+        xhr.send('query=' + encodeURIComponent(query));
+        /*        }*/
     });
 });

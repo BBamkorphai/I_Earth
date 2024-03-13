@@ -45,7 +45,28 @@
 
                 <div class="box-item" @("onclick=GoToRoom('" + Post.PostId + "')")>
                     <div class="img-box">
-                            <img src="https://cdn.mos.cms.futurecdn.net/d379AErHqrYX8WErHFfTHX-650-80.jpeg.webp" alt="">  
+                        @{
+                            if (Post.Name.Split(',')[0] == "boss1")
+                            {
+                                <img src="image/DEILJHO.jpg" alt="">
+                            }
+                            else if (Post.Name.Split(',')[0] == "boss2")
+                            {
+                                <img src="image/KULVE_TAROTH.jpg" alt="">
+                            }
+                            else if (Post.Name.Split(',')[0] == "boss3")
+                            {
+                                <img src="image/KUSHALA_DAORA.jpg" alt="">
+                            }
+                            else if (Post.Name.Split(',')[0] == "boss4")
+                            {
+                                <img src="image/LUNASTRA.jpg" alt="">
+                            }
+                            else if (Post.Name.Split(',')[0] == "boss5")
+                            {
+                                <img src="image/NERGIGANTE.jpg" alt="">
+                            }
+                        }  
                         </div>
                     <div class="score">
                         <div class="box">
@@ -62,7 +83,7 @@
                     </div>
                     <div class="line-block"></div>
                     <div class="data">
-                        <h2 class="name">@Post.Name</h2>
+                        <h2 class="name">@Post.Name.Split(',')[1]</h2>
                         <h3 class="info">
                             @Post.Description
                         </h3>
@@ -70,12 +91,15 @@
                         <div class="icon"><i class="fa fa-plus-circle"></i></div>
                     </div>
                 </div>
+                <script>
+                    var BossQueryUrl = @Url.Action("BossImage", "Home", new { name = @Post.Name.Split(',')[0] });
+                </script>
             }
         }
-		
-		<script>
-			var searchUrl = '@Url.Action("Search", "Home")';
-		</script>
+        <script>
+            var searchUrl = '@Url.Action("Search", "Home")';
+            var BossQueryUrl = '@Url.Action("BossImage", "Home")';
+        </script>
 		<script src="~/lib/js/search.js"></script>
     </div>
 	
