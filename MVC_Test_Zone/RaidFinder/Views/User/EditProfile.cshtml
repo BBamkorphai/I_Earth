@@ -11,16 +11,24 @@
     <input type="submit" value="Save" />
 </form> *@
 
-<html>
-<head>
+
+@{
+    ViewData["Title"] = "Base test";
+    Layout = "~/Views/Shared/Navbar.cshtml";
+}
+
+@section AdditionalCSS {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="~/lib/css/EditProfile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
-</head>
-<body>
+}
+<html>
+
+
+
     <div class="Container">
         <div class="MainBox">
             <form class ="MainBox" method="post" asp-controller="user" asp-action="editprofile" autocomplete="off" enctype="multipart/form-data">
@@ -71,5 +79,5 @@
             }
         });
     </script>
-</body>
+
 </html>
