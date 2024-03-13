@@ -103,6 +103,26 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    public IActionResult Search()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Search(string query)
+    {
+        IndexModels.UpdatePostDB();
+		if (query == "" || query == null    ) { return Json(IndexModels.GetPosts().ToList()); }
+		var filteredPosts = IndexModels.GetPosts().Where(post => post.Name.ToLower().StartsWith(query.ToLower())).ToList();
+        //foreach (var post in filteredPosts)
+        //{
+            
+        //}
+        
+        var Jsonified = Json(filteredPosts);
+        return Jsonified;
+    }
     //dummy leader
     //[HttpGet]
 
