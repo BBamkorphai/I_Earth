@@ -70,12 +70,13 @@ public class HomeController : Controller
     public IActionResult JoinRoom(int? PostId)
     {
         var UserId = contxt.HttpContext.Session.GetInt32("UserId");
+        var User = UserDB.GetUserCopyById((int)contxt.HttpContext.Session.GetInt32("UserId"));
         var post = IndexModels.GetPostCopyById(PostId.HasValue ? PostId.Value : 0);
-        if ((post.PartyList.FirstOrDefault(x => x.UserId == UserId) != null) || (contxt.HttpContext.Session.GetInt32("UserId") == 0) || post.PartyList.Count == post.MaxSize)
+        if ((post.PartyList.FirstOrDefault(x => x.UserId == UserId) != null) || (contxt.HttpContext.Session.GetInt32("UserId") == 0) || post.PartyList.Count == post.MaxSize || post.PowerLevel > User.Stat.PowerLevel)
         {
             return NoContent();
         }
-        post.PartyList.Add(UserDB.GetUserCopyById((int)contxt.HttpContext.Session.GetInt32("UserId")));
+        post.PartyList.Add(User);
         IndexModels.UpdatePost((int)PostId, post);
         UserDB.UpdateDB();
         IndexModels.UpdatePostDB();

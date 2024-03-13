@@ -35,7 +35,7 @@ namespace RaidFinder.Controllers
             contxt.HttpContext.Session.SetInt32("UserId", 0);
             return RedirectToAction("Index","Home");
         }
-        public IActionResult Index()
+        public IActionResult Login()
         {
             return View();
         } 
