@@ -83,6 +83,7 @@ body {
     width:100%;
     grid-template-columns: repeat(3, 0.3fr);
     justify-content: center;
+    column-gap: 3%;
     row-gap: 3%;
     padding: 2% 5% 3% 8%;
 }
@@ -97,6 +98,7 @@ body {
 
     .box-item:hover {
         background-color: var(--color-background-button);
+        border-radius: 14px;
     }
 
         .box-item:hover .score p,
@@ -207,7 +209,7 @@ body {
 .info {
     overflow-wrap: break-word;
     padding: 2px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .date {
