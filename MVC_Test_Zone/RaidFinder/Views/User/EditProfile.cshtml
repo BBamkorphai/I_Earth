@@ -1,6 +1,6 @@
 ﻿@using RaidFinder.Models
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@model User
+@model ProfileViewModel
 
 @* <form method="post" asp-controller="user" asp-action="editstat">
     <input type="hidden" asp-for="UserId" />
@@ -23,21 +23,53 @@
 <body>
     <div class="Container">
         <div class="MainBox">
+            <form class ="MainBox" method="post" asp-controller="user" asp-action="editprofile" autocomplete="off" enctype="multipart/form-data">
             <div class="Image">
-                <p>test</p>
+                <div class="circle"><img class="UserProfile" src="data:image;base64,@Convert.ToBase64String(Model.Image)" alt="User Profile" id="profile_image"/></div>
+                <br />
+                <input type="file" name="file" id="file" class="file-input">
+                <label for="file" class="file-label">Choose file</label>
             </div>
             <div class="Form">
-                <form method="post" asp-controller="user" asp-action="editstat">
-                    <input type="hidden" asp-for="UserId" />
-                    <></>
-                    <b>Name </b><input type="text" asp-for="Name" /><br />
-                    <b>Level </b><input type="text" asp-for="Stat.Level" /><br />
-                    <b>PLV </b><input type="text" asp-for="Stat.PowerLevel" /><br />
-                    <b>Class </b><input type="text" asp-for="Stat.Class" /><br />
-                    <input type="submit" value="Save" />
-                </form>
+                
+                    <input type="hidden" asp-for="User.UserId" />
+                    <div class="Form_group">
+                        <input type="input" asp-for="User.Name" class="Form__field" placeholder="Name" id="name" />
+                        <label for="name" class="Form__label">Name</label>
+                    </div>
+                    <div class="Form_group">
+                        
+                        <input type="input" asp-for="User.Stat.Level" class="Form__field" placeholder="Level" id="level" />
+                        <label for="level" class="Form__label">Level</label>
+                    </div>
+                    <div class="Form_group">
+                        
+                        <input type="input" asp-for="User.Stat.PowerLevel" class="Form__field" placeholder="Power Level" id="powerLevel" />
+                        <label for="powerLevel" class="Form__label">Power Level</label>
+                    </div>
+                    <div class="Form_group">
+                        
+                        <input type="input" asp-for="User.Stat.Class" class="Form__field" placeholder="Class" id="class" />
+                        <label for="class" class="Form__label">Class</label>
+                    </div>
+                    <input type="submit" class="file-label" value="Save" />
+                
             </div>
+            </form>
         </div>
     </div>
+    <script>
+        document.getElementById('file').addEventListener('change', function (event) {
+            var file = event.target.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var image = document.getElementById('profile_image');
+                    image.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
 </body>
 </html>

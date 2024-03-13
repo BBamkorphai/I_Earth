@@ -1,6 +1,6 @@
 ﻿@using RaidFinder.Models
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@model User
+@model ProfileViewModel
 @{
     ViewData["Title"] = "Base test";
     Layout = "~/Views/Shared/Navbar.cshtml";
@@ -17,22 +17,22 @@
     <div class="Container">
         <div class="Profile">
             <div class="User">
-                <img class="UserProfile" src="~/image/jhin.jpg" alt="User Profile"/>
-                <div style="font-size:32px; display:flex; justify-content: center;">Name: @Model.Name</div>
+            <img class="UserProfile" src= "data:image;base64,@Convert.ToBase64String(Model.Image)" alt="User Profile" />
+            <div style="font-size:32px; display:flex; justify-content: center;">Name: @Model.User.Name</div>
             </div>
             <div class="wall"></div>
             <div class="UserInfo">
                 <div class="class_block">
                     <img class="class_image" src="~/image/monk.png" alt="Class Image">
-                    <h2>Class: @Model.Stat.Class</h2>
+                    <h2>Class: @Model.User.Stat.Class</h2>
                 </div>
                 <div class="Name_and_Level_block">
-                    <h2 style="margin-bottom: 20px;">Level: @Model.Stat.Level</h2>
-                    <h2 style="margin-bottom: 20px;">Power: @Model.Stat.PowerLevel</h2>
+                <h2 style="margin-bottom: 20px;">Level: @Model.User.Stat.Level</h2>
+                <h2 style="margin-bottom: 20px;">Power: @Model.User.Stat.PowerLevel</h2>
                 </div>
                 <div class="UserModify">
-                    <img style="margin: 20px;" class="icon" src="~/image/edit.png" alt="Edit Icon" onclick="window.location.href='@Url.Action("EditStat", "User", new { id = Model.UserId })';">
-                    <img style="margin: 20px;" class="icon" src="~/image/delete.png" alt="Delete Icon" onclick="window.location.href='@Url.Action("DeleteUser", "User", new { id = Model.UserId })';">
+                <img style="margin: 20px;" class="icon" src="~/image/edit.png" alt="Edit Icon" onclick="window.location.href='@Url.Action("EditProfile", "User", new { id = Model.User.UserId })';">
+                <img style="margin: 20px;" class="icon" src="~/image/delete.png" alt="Delete Icon" onclick="window.location.href='@Url.Action("DeleteUser", "User", new { id = Model.User.UserId })';">
                 </div>
             </div>
         </div>
