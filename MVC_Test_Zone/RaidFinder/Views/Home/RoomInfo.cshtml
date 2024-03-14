@@ -30,33 +30,38 @@
 			<div class="roomlayout">
 				<div class="raidimg">
 					@{
-						<b>@Model.Post.Name.Split(',')[0]</b>
 						if (@Model.Post.Name.Split(',')[0] == "boss1")
 						{
 							<img src="~/image/DEILJHO.jpg"></img>
+							<h1>Devil Jho</h1>
 						}
 						else if (@Model.Post.Name.Split(',')[0] == "boss2")
 						{
 							<img src="~/image/KULVE_TAROTH.jpg"></img>
+							<h1>Kulve Taroth</h1>
 						}
 						else if (@Model.Post.Name.Split(',')[0] == "boss3")
 						{
 							<img src="~/image/KUSHALA_DAORA.jpg"></img>
+							<h1>Kushala Daora</h1>
 						}
 						else if (@Model.Post.Name.Split(',')[0] == "boss4")
 						{
 							<img src="~/image/LUNASTRA.jpg"></img>
+							<h1>Lunastra</h1>
 						}
 						else if (@Model.Post.Name.Split(',')[0] == "boss5")
 						{
 							<img src="~/image/NERGIGANTE.jpg"></img>
+							<h1>Nergigante</h1>
 						} else
 						{
 							<img src="https://staticg.sportskeeda.com/editor/2023/08/ef4f5-16920041832591-1920.jpg"></img>
+							<h1>Hidden Boss</h1>
 						}
 					}
+
 					
-					<h1>BOSS NAME</h1>
 				</div>
 				<div class="roominfo">
 					<div class="roomheader">
@@ -73,7 +78,7 @@
 						</div>
 					</div>
 					<div class="roomdest">
-						<h2>@Model.Post.Name</h2>
+						<h2>@Model.Post.Name.Split(',')[1]</h2>
 						<p>
 							@Model.Post.Description
 						</p>
