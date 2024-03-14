@@ -145,7 +145,7 @@ input[type=submit]:hover {
     height: auto;
 }
 
-#bosses {
+#boss {
     margin: 8px 0;
     height: 30px;
     padding: 2px;
@@ -155,7 +155,7 @@ input[type=submit]:hover {
     background-color: var(--color-background-box);
 }
 
-    #bosses:hover {
+    #boss:hover {
         transition: all 0.2 ease-out;
         background-color: var(--color-background-button);
     }
