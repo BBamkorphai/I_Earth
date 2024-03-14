@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const name = document.createElement("h2");
                 name.classList.add("name");
-                name.innerHTML = result.name;
+                name.innerHTML = result.name.split(',')[1];
 
                 const info = document.createElement("h3");
                 info.classList.add("info");
