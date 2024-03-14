@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 //return System.IO.File.ReadAllBytes(@"wwwroot/image/DEILJHO.jpg");
                 var imageLink = "";
                 if (result.name.split(',')[0] == "boss1") {
-                    imageLink = "image/DEILJHO.jpg"
+                    imageLink = "image/DEVILJHO.jpg"
                 } else if (result.name.split(',')[0] == "boss2") {
                     imageLink = "image/KULVE_TAROTH.jpg"
                 } else if (result.name.split(',')[0] == "boss3") {

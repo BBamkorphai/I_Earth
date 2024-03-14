@@ -51,7 +51,7 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
@@ -121,7 +121,7 @@ body {
 
     .memberlist button {
         position: absolute;
-        bottom: 30px;
+        bottom: 10%;
         width: 30px;
         height: 30px;
         padding: 5px;
@@ -133,8 +133,7 @@ body {
         border: solid red 3px;
         border-radius: 50%;
         cursor: pointer;
-        transition: 0.2s;
-        display: none;
+        transition: width,height,margin 0.2s;
     }
 
         .memberlist button:hover {
@@ -245,6 +244,17 @@ body {
         display: none;
     }
 
+@media (max-width:1080px) {
+    .memberlist {
+        display: block;
+    }
+
+        .memberlist button {
+            bottom: 80%;
+            right: 5%;
+        }
+}
+
 @media (max-width:720px) {
     .room {
         margin-left: 20px;
@@ -252,10 +262,6 @@ body {
     }
 
     .roomlayout {
-        display: block;
-    }
-
-    .room .roominfo, .memberlist {
         display: block;
     }
 

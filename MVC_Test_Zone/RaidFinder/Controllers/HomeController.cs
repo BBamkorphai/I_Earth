@@ -135,6 +135,10 @@ public class HomeController : Controller
         var Jsonified = Json(filteredPosts);
         return Jsonified;
     }
+    public IActionResult Contact()
+    {
+        return View();
+    }
 
     //dummy leader
     //[HttpGet]

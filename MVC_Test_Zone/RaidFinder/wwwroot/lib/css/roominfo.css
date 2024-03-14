@@ -31,28 +31,28 @@ body {
 .roomlayout {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 350px auto ;
+    grid-template-rows: 350px auto;
     gap: 10px;
 }
 
 .roominfo {
     padding: 10px;
     position: relative;
-    height:auto;
+    height: auto;
     border-bottom: solid white 3px;
 }
 
 .roomheader {
-    display:flex;
+    display: flex;
 }
 
 .raidimg {
-    grid-row:1/3;
-    width:100%;
-    height:100%;
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
     .raidimg img {
@@ -64,18 +64,17 @@ body {
     }
 
 .roomtitle {
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     font-size: 25px;
     text-align: center;
-    width:100%;
-
+    width: 100%;
 }
 
 .roomdest {
-    height:auto;
+    height: auto;
 }
 
     .roomdest p {
@@ -92,11 +91,11 @@ body {
 }
 
     .memberlist div {
-        display:flex;
-        justify-content:flex-start;
-        align-items:center;
-        flex-direction:column;
-        text-align:center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
         padding: 10px;
         position: relative;
         word-wrap: break-word;
@@ -121,12 +120,12 @@ body {
     }
 
     .memberlist button {
-        position:absolute;
-        bottom:30px;
+        position: absolute;
+        bottom: 30px;
         width: 30px;
         height: 30px;
-        padding:5px;
-        margin:10px;
+        padding: 5px;
+        margin: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -134,7 +133,7 @@ body {
         border: solid red 3px;
         border-radius: 50%;
         cursor: pointer;
-        transition:0.2s;
+        transition: 0.2s;
     }
 
         .memberlist button:hover {
@@ -148,7 +147,7 @@ body {
     height: 130px;
     width: 130px;
     border: solid white 3px;
-    background-color: #897F6C ;
+    background-color: #897F6C;
     border-radius: 50%;
     text-align: center;
     font-size: 40px;
@@ -192,9 +191,9 @@ body {
 
 .roominteractive {
     margin: 10px;
-    padding:0px;
-    display:flex;
-    justify-content:space-between;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
     grid-column: 1/3;
 }
 
@@ -214,7 +213,7 @@ body {
         border: solid white 2px;
         cursor: pointer;
         font-family: "Anta",sans-serif;
-        overflow:hidden;
+        overflow: hidden;
     }
 
         .roominteractive button::before {
@@ -230,7 +229,7 @@ body {
         }
 
         .roominteractive button:hover::before {
-            left:0px;
+            left: 0px;
         }
 
     .roominteractive #join {
@@ -245,6 +244,17 @@ body {
         display: inline;
     }
 
+@media (max-width:1080px) {
+    .memberlist {
+        display: block;
+    }
+
+        .memberlist button {
+            bottom: 80%;
+            right: 5%;
+        }
+}
+
 @media (max-width:720px) {
     .room {
         margin-left: 20px;
@@ -252,7 +262,7 @@ body {
     }
 
     .roomlayout {
-        display:block;
+        display: block;
     }
 
     .room .roominfo, .memberlist {
@@ -266,7 +276,7 @@ body {
     .roominfo {
         padding-bottom: 20px;
     }
- 
+
     .roomtitle {
         right: 0px;
     }

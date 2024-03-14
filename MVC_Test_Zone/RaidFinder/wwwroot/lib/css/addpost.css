@@ -76,7 +76,20 @@ label {
     height: auto;
     padding: 30px 30px 5px 30px;
 }
+#bosses {
+    margin: 8px 0;
+    height: 30px;
+    padding: 2px;
+    border-radius: 10px !important;
+    border: 1px solid var(--color-font-white) !important;
+    outline: 1px solid var(--color-font-button);
+    background-color: var(--color-background-box);
+}
 
+    #bosses:hover {
+        transition: all 0.2 ease-out;
+        background-color: var(--color-background-button);
+    }
 
 input[type=text] {
     width: 70%;
