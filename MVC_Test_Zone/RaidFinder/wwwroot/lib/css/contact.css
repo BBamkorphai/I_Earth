@@ -4,6 +4,13 @@
     height: 100vh;
 }
 
+section header {
+    color:white;
+    text-align: center;
+    font-size:60px;
+    padding-top:150px;
+}
+
 .wave {
     position: absolute;
     bottom: 0;

@@ -12,7 +12,7 @@ public class HomeController : Controller
     private readonly IHttpContextAccessor contxt;
     public HomeController(IHttpContextAccessor httpContextAccessor)
     {
-        contxt = httpContextAccessor;
+		contxt = httpContextAccessor;
     }
 
     public IActionResult Index()
@@ -72,6 +72,7 @@ public class HomeController : Controller
     public IActionResult JoinRoom(int? PostId)
     {
         var UserId = contxt.HttpContext.Session.GetInt32("UserId");
+        if (UserId == 0) {  return NoContent(); }
         var User = UserDB.GetUserCopyById((int)contxt.HttpContext.Session.GetInt32("UserId"));
         var post = IndexModels.GetPostCopyById(PostId.HasValue ? PostId.Value : 0);
         if ((post.PartyList.FirstOrDefault(x => x.UserId == UserId) != null) || (contxt.HttpContext.Session.GetInt32("UserId") == 0) || post.PartyList.Count == post.MaxSize || post.PowerLevel > User.Stat.PowerLevel)

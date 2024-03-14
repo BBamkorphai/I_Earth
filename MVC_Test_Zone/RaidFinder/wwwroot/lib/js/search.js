@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 var diff = TimeOut.getTime() - currentTime.getTime();
                 /*console.log(diff);*/
                 var willRender = true;
-                if (diff <= 0) {
+                if (diff <= 1) {
                     willRender = false;
                 }
                 /*console.log(willRender);*/
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 power.innerHTML = "Power Level";
 
                 const powervalue = document.createElement("h2");
-                powervalue.innerHTML = result.powerLevel;
+                powervalue.innerHTML = result.powerLevel + "+";
 
                 const name = document.createElement("h2");
                 name.classList.add("name");
