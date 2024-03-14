@@ -54,7 +54,6 @@ namespace RaidFinder.Models
             using (SqlConnection con = new SqlConnection("Server=localhost;Database=UserDB;Trusted_Connection=True;"))
             {
                 con.Open();
-                //SqlCommand iuon = new SqlCommand("SET IDENTITY_INSERT Users ON", con);
                 using (SqlCommand cmd = new SqlCommand(sqlcmd, con))
                 {
                     cmd.Parameters.Add("@PostId", SqlDbType.Int).Value = post.PostId;
@@ -64,15 +63,9 @@ namespace RaidFinder.Models
                     cmd.Parameters.Add("@Description", SqlDbType.Char).Value = post.Description;
                     cmd.Parameters.Add("@OwnerId", SqlDbType.Int).Value = post.OwnerId;
                     cmd.Parameters.Add("@TimeOut", SqlDbType.DateTime).Value = post.TimeOut;
-                    //var tmp = new List<String>();
-                    //foreach (var user in post.PartyList)
-                    //{
-                    //    tmp.Add(user.UserId.ToString());
-                    //}
                     cmd.Parameters.Add("@PartyList", SqlDbType.Char).Value = post.OwnerId.ToString();
                     int Out = cmd.ExecuteNonQuery();
                 }
-                //SqlCommand iuoff = new SqlCommand("SET IDENTITY_INSERT Users OFF", con);
             }
             UpdatePostDB();
         }
@@ -101,10 +94,12 @@ namespace RaidFinder.Models
         public static int UpdatePost(int id, RaidingPostModels post)
         {
             var tmp = _Posts.FirstOrDefault(x => x.PostId == id);
-            if (tmp == null)
+			var Max = post.MaxSize;
+			if (tmp == null)
             {
                 return 404;
             }
+            
             else
             {
                 using (var connection = new SqlConnection("Server=localhost;Database=UserDB;Trusted_Connection=True;"))
@@ -121,7 +116,9 @@ namespace RaidFinder.Models
                         var tmpstr = new List<string>();
                         foreach (var user in post.PartyList)
                         {
+                            if (Max  <= 0) { break; }
                             tmpstr.Add(user.UserId.ToString());
+                            Max = Max - 1;
                         }
                         command.Parameters.Add("@PartyList", SqlDbType.Char).Value = string.Join("s", tmpstr); ;
                         command.Parameters.Add("@TimeOut", SqlDbType.DateTime).Value = post.TimeOut;

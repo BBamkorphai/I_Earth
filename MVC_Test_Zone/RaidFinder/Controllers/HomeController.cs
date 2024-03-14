@@ -128,10 +128,7 @@ public class HomeController : Controller
         IndexModels.UpdatePostDB();
 		if (query == "" || query == null    ) { return Json(IndexModels.GetPosts().ToList()); }
 		var filteredPosts = IndexModels.GetPosts().Where(post => post.Name.Split(',')[1].ToLower().StartsWith(query.ToLower())).ToList();
-        //foreach (var post in filteredPosts)
-        //{
-            
-        //}
+
         
         var Jsonified = Json(filteredPosts);
         return Jsonified;
@@ -141,13 +138,4 @@ public class HomeController : Controller
         return View();
     }
 
-    //dummy leader
-    //[HttpGet]
-
-    //[HttpPost]
-    //public IActionResult Privacy([FromBody] RaidingPostModels model)
-    //{
-    //    Console.WriteLine(model.RaidingName + model.PowerLevel + model.PartyMaxSize + model.LeaderIP + model.RaidingTime);
-    //    return Ok(model);
-    //}
 }

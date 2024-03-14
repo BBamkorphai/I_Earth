@@ -171,8 +171,8 @@ input[type= text], input[type=password], input[type=input] {
 .circle {
     width: 200px;
     height: 200px;
-    margin : 40px;
-    background: linear-gradient(to top, #3acfd5 0%, #3a4ed5 100%);
+    margin: 40px;
+    background: linear-gradient(to top, black 0%, #a49261 100%);
     border-radius: 50%;
     position: relative;
     display: flex;
